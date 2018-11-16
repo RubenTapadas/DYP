@@ -1,0 +1,83 @@
+@font-face {
+  font-family: contm;
+  src: url("contm");
+}
+
+html {
+  background-color: #ffffff;
+}
+
+div, a {
+  font-family: continuum !important;
+}
+
+/* navbar */
+.navbar {
+  background-color: #ffffff !important;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-brand img {
+  height: 30px;
+}
+
+.nav-link {
+  height: 2rem;
+  padding: 0px;
+  color: #151515 !important;
+  font-size: 1.3rem !important;
+}
+
+.nav-link img {
+  width: 100%;
+  height: 100%;
+}
+
+.active>.nav-link {
+  color: #a52b2b !important;
+  font-weight: bold !important;
+}
+
+.toright {
+  text-align: right;
+}
+
+/* carousel */
+.carousel-indicators li {
+  background-color: rgba(0, 0, 0, .5) !important;
+  height: 6px;
+}
+
+.carousel-indicators .active {
+  background-color: rgb(165, 43, 43) !important;
+}
+
+.carousel-control-prev-icon {
+  visibility: hidden;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+.art {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(https://picsum.photos/500/200/?random);
+}
+
+.artdes {
+  width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.tableartdes {
+  padding: 0 10px 10px 10px;
+  background-color: #151515;
+  height: auto;
+}
