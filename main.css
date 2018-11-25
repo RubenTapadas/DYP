@@ -3,19 +3,31 @@
   src: url("contm");
 }
 
-html {
-  background-color: #ffffff;
-}
-
-div, a {
+* {
+  padding: 0;
+  margin: 0;
   font-family: continuum !important;
 }
 
-/* navbar */
-.navbar {
+.light {
+  color: #ffffff !important;
   background-color: #ffffff !important;
 }
 
+.light_text {
+  color: #151515;
+}
+
+.dark {
+  color: #151515 !important;
+  background-color: #151515 !important;
+}
+
+.dark_text {
+  color: #ffffff;
+}
+
+/* navbar */
 .navbar-brand {
   padding: 0;
 }
@@ -63,21 +75,12 @@ div, a {
   padding-top: 50px;
 }
 
-.art {
+.slot {
   height: 200px;
+  text-align: center;
+  padding-top: 160px;
+  text-shadow: 0 0 10px #555, 0 0 5px #333;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url(https://picsum.photos/500/200/?random);
-}
-
-.artdes {
-  width: 100%;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.tableartdes {
-  padding: 0 10px 10px 10px;
-  background-color: #151515;
-  height: auto;
 }
