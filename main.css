@@ -28,6 +28,7 @@
 }
 
 /* navbar */
+
 .navbar-brand {
   padding: 0;
 }
@@ -58,6 +59,7 @@
 }
 
 /* carousel */
+
 .carousel-indicators li {
   background-color: rgba(0, 0, 0, .5) !important;
   height: 6px;
@@ -83,4 +85,29 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url(https://picsum.photos/500/200/?random);
+}
+
+/* login Regiter */
+
+.btn-primary {
+  background-color: #151515;
+  border-color: #151515;
+}
+
+.btn-primary:hover {
+  background-color: #a52b2b;
+  border-color: #a52b2b;
+}
+
+.no_textdecoration {
+  text-decoration: none !important;
+}
+
+.text_highlight {
+  width: auto !important;
+  padding-right:0;
+}
+
+.text_highlight:hover {
+  color: #a52b2b !important;
 }
