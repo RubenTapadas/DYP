@@ -28,7 +28,6 @@
 }
 
 /* navbar */
-
 .navbar-brand {
   padding: 0;
 }
@@ -59,7 +58,6 @@
 }
 
 /* carousel */
-
 .carousel-indicators li {
   background-color: rgba(0, 0, 0, .5) !important;
   height: 6px;
@@ -87,8 +85,37 @@
   background-image: url(https://picsum.photos/500/200/?random);
 }
 
-/* login Regiter */
+.out-note {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(21, 21, 21, 0.5);
+  z-index: 20;
+  cursor: pointer;
+  visibility: hidden;
+}
 
+.note {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: calc(50% - 100px);
+  background-color: #ffffff;
+  color:#151515;
+  padding: 40px 200px;
+  font-size: 30px;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+.note > h2{
+  font-size: 40px;
+  color:#a52b2b;
+  font-weight: bold;
+}
+
+/* login Regiter */
 .btn-primary {
   background-color: #151515;
   border-color: #151515;
@@ -105,7 +132,7 @@
 
 .text_highlight {
   width: auto !important;
-  padding-right:0;
+  padding-right: 0;
 }
 
 .text_highlight:hover {
