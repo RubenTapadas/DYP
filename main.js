@@ -2,7 +2,7 @@ $(window).on('load', function() {
 
   //Note
   $(".out-note").click(function() {
-    $(".out-note").fadeOut();
+    $(this).fadeOut();
   });
 
   //Edit - Fill inputs
@@ -11,42 +11,27 @@ $(window).on('load', function() {
   $("#edit-email").val('someone@test.com');
   $("#edit-password").val('12345');
 
-  //Edit - Change active page
-  function changeactivetab() {
+  //Edit - Change active
+  function changeactive() {
     $("#option1,#option2,#option3").removeClass("active");
     $(this).addClass("active");
 
     $("#user1,#user2,#user3").css("display", "none");;
 
-
     if ($(this).attr("id") == ('option1')) {
       $("#user1").fadeIn();
-    }
-    else if ($(this).attr("id") == ('option2')) {
+    } else if ($(this).attr("id") == ('option2')) {
       $("#user2").fadeIn();
-    }
-    else if ($(this).attr("id") == ('option3')) {
+    } else if ($(this).attr("id") == ('option3')) {
       $("#user3").fadeIn();
     }
-    console.log($(this).attr("id"));
-    //else if ($this.is('#option2')) {
-    //  $("#user2").css("display", "block");
-    //}
-    //else if ($this.is('#option3')) {
-      //$("#user3").css("display", "block");
-    //}
-
-
   }
 
-  $("#option1").click(changeactivetab);
-  $("#option2").click(changeactivetab),
-    function() {
-      $("#user2").css("display", "block");
-    }
-  $("#option3").click(changeactivetab);
+  $("#option1").click(changeactive);
+  $("#option2").click(changeactive);
+  $("#option3").click(changeactive);
 
-
+  $(".out-note-pass").fadeIn();
 
   //Google
   function onSignIn(googleUser) {
