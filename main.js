@@ -6,7 +6,12 @@ $(window).on('load', function() {
   });
 
   //Edit - Fill inputs
-  $("#edit-firstname").val('Someone');
+  var firstname = ;
+  var lastname = ;
+  var email = ;
+  var password = ;
+
+  $("#edit-firstname").val(firstname);
   $("#edit-lastname").val('Test');
   $("#edit-email").val('someone@test.com');
   $("#edit-password").val('12345');
