@@ -31,8 +31,6 @@ $(window).on('load', function() {
   $("#option2").click(changeactive);
   $("#option3").click(changeactive);
 
-  $(".out-note-pass").fadeIn();
-
   //Google
   function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();

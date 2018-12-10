@@ -6,6 +6,7 @@
 * {
   padding: 0;
   margin: 0;
+  outline: 0;
   font-family: continuum !important;
 }
 
@@ -209,4 +210,18 @@ label {
   transform: translate3d(0, -100%, 0);
   opacity: 1;
   margin-left: -12px;
+}
+
+/* Footer */
+.page-footer{
+  background-color:#151515;
+}
+
+.footer-copyright{
+  border-top: 1px solid #ffffff;
+}
+
+.page-footer a{
+  color: #a52b2b;
+  text-decoration: none;
 }
