@@ -35,19 +35,23 @@ $(window).on('load', function() {
   $("#name-submit").click(function() {
     var name = $('#name').val();
     if ($.trim(name) != ''){
-      $.post('main.php', {name: name}, function(data){
-        alert(data);
-      });
+      $.ajax({
+        url:"main.php", //the page containing php script
+        type: "POST", //request type
+        success:function(result){
+         alert(result);
+       }
+     });
     }
   });
 
   //Google
-  function onSignIn(googleUser) {
+  /* function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
     console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
     console.log('Name: ' + profile.getName());
     console.log('Image URL: ' + profile.getImageUrl());
     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-  }
+  } */
 
 });
