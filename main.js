@@ -6,12 +6,7 @@ $(window).on('load', function() {
   });
 
   //Edit - Fill inputs
-  var firstname = ;
-  var lastname = ;
-  var email = ;
-  var password = ;
-
-  $("#edit-firstname").val(firstname);
+  $("#edit-firstname").val('Someone');
   $("#edit-lastname").val('Test');
   $("#edit-email").val('someone@test.com');
   $("#edit-password").val('12345');
@@ -35,6 +30,16 @@ $(window).on('load', function() {
   $("#option1").click(changeactive);
   $("#option2").click(changeactive);
   $("#option3").click(changeactive);
+
+  //test
+  $("#name-submit").click(function() {
+    var name = $('#name').val();
+    if ($.trim(name) != ''){
+      $.post('main.php', {name: name}, function(data){
+        alert(data);
+      });
+    }
+  });
 
   //Google
   function onSignIn(googleUser) {
