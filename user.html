@@ -92,84 +92,65 @@
 
       <div class="user-profile" id="user1">
         <h1>User Profile</h1>
-        <form class="p-4 shade" style="padding-top: 2.7rem !important;">
-          <div class="form-row">
-            <div class="col">
-              <div class="form-group">
-                <input type="text" id="edit-firstname" class="form-control" required>
-                <label class="form-control-placeholder" for="edit-firstname">First name</label>
-              </div>
-            </div>
-            <div class="col">
-              <div class="form-group">
-                <input type="text" id="edit-lastname" class="form-control" required>
-                <label class="form-control-placeholder" for="edit-lastname">Last name</label>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <input type="text" id="edit-email" class="form-control" required>
-            <label class="form-control-placeholder" for="edit-email">Email address</label>
-          </div>
-          <div class="form-group">
-            <input type="password" id="edit-password" class="form-control" required>
-            <label class="form-control-placeholder" for="edit-password">Password</label>
-          </div>
-          <button type="submit" id="edit1" class="btn btn-primary">Save</button>
-        </form>
-      </div>
-
-      <div class="user-profile" id="user2">
-        <h1>Address</h1>
-        <form class="p-4 shade" style="padding-top: 2.7rem !important;">
-          <div class="form-group">
-            <input type="text" id="edit-country" class="form-control" required>
-            <label class="form-control-placeholder" for="edit-country">Country</label>
-          </div>
-          <div class="form-group">
-            <input type="text" id="edit-city" class="form-control" required>
-            <label class="form-control-placeholder" for="edit-city">City</label>
-          </div>
-          <div class="form-group">
-            <input type="text" id="edit-streetname" class="form-control" required>
-            <label class="form-control-placeholder" for="edit-streetname">Street name</label>
-          </div>
-          <div class="form-group">
-            <input type="text" id="edit-housenumber" class="form-control" required>
-            <label class="form-control-placeholder" for="edit-housenumber">House number</label>
-          </div>
-          <div class="form-group">
-            <input type="text" id="edit-postalcode" class="form-control" required>
-            <label class="form-control-placeholder" for="edit-postalcode">Postal code</label>
-          </div>
-          <button type="submit" id="edit2" class="btn btn-primary">Save</button>
-        </form>
-      </div>
-
-      <div class="user-profile" id="user3">
-        <h1>Purchase History</h1>
         <form class="p-4 shade">
           <div class="slot-purchase">
             <div class="row">
-              <div class="col-2" id="past-product"></div>
-
+              <div class="col-2" id="purchases-image"></div>
               <div class="col-10">
-                <h4>Name of the product</h4>
-                <div class="row">
-                  <div class="col-2">
-                    <span>Produto</span>
-                    <p>Nome do produto</p>
-                    <span>Produto</span>
-                    <p>Nome do produto</p>
-                    <span>Produto</span>
-                    <p>Nome do produto</p>
-                    <span>Produto</span>
-                    <p>Nome do produto</p>
+                <h3 class="font-weight-bold">Name of the product</h3>
+                <div class="specs">
+                  <div class="row specs-half align-items-center">
+                    <div class="col-4 align-middle">
+                      <div class="spec-icon d-inline-block mr-2 slot-1"></div>
+                      <div class="d-inline-block">
+                        <span>Size</span>
+                        <p>Name of product</p>
+                      </div>
+                    </div>
+                    <div class="col-4 align-middle">
+                      <div class="spec-icon d-inline-block mr-2 slot-2"></div>
+                      <div class="d-inline-block">
+                        <span>Ram</span>
+                        <p>Name of product</p>
+                      </div>
+                    </div>
+                    <div class="col-4 align-middle">
+                      <div class="spec-icon d-inline-block mr-2 slot-3"></div>
+                      <div class="d-inline-block">
+                        <span>Storage</span>
+                        <p>Name of product</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row specs-half align-items-center">
+                    <div class="col-4 align-middle">
+                      <div class="spec-icon d-inline-block mr-2 slot-4"></div>
+                      <div class="d-inline-block">
+                        <span>Battery</span>
+                        <p>Name of product</p>
+                      </div>
+                    </div>
+                    <div class="col-4 align-middle">
+                      <div class="spec-icon d-inline-block mr-2 slot-5"></div>
+                      <div class="d-inline-block">
+                        <span>Processor</span>
+                        <p>Name of product</p>
+                      </div>
+                    </div>
+                    <div class="col-4 align-middle">
+                      <div class="spec-icon d-inline-block mr-2 slot-6"></div>
+                      <div class="d-inline-block">
+                        <span>More</span>
+                        <p>More info about the product</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </form>
+        <div class="pt-3"></div>
       </div>
     </div>
 
