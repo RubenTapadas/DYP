@@ -345,3 +345,7 @@ label {
   background: transparent;
     border: none;
 }
+
+.pointer{
+  cursor:pointer !important;
+}

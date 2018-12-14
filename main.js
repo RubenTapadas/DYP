@@ -51,8 +51,6 @@ $(window).on('load', function() {
       console.log("email wrong format");
     } else if (register_password == "" || register_password == null) {
       console.log("password nothing");
-      console.log($('#register-password').val());
-      console.log(register_password);
     } else if (register_password2 == "" || register_password2 == null) {
       console.log("password2 nothing");
     } else if (register_password2 != register_password) {
@@ -76,36 +74,25 @@ $(window).on('load', function() {
     }
   });
 
-  //Change Pages
-  $("#page").click(function() {
-    console.log("pass");
-  });
+  //Login
+  $("#login").click(function() {
+    var login_email = $.trim($('#login-email').val());
+    var login_password = $.trim($('#login-password').val());
 
-  /* $(function() {
-    $('#register').click(function() {
-      var firstname2 = $('#register-firstname').val();
-      var lastname2 = $('#register-lastname').val();
-      var email2 = $('#register-email').val();
-      var password2 = $('#register-password').val();
+    if (login_email == "" || login_email == null) {
+      console.log("email nothing");
+    } else if (!testEmail.test(login_email)) {
+      console.log("email wrong format");
+    } else if (login_password == "" || login_password == null) {
+      console.log("password nothing");
+    } else {
       console.log('starting ajax');
-      $.ajax({
-        url: "./php/register.php",
-        type: "post",
-        data: {
-          firstname: firstname2,
-          lastname: lastname2,
-          email: email2,
-          password: password2
-        },
-
-        success: function(data) {
-          var dataParsed = JSON.parse(data);
-          console.log(dataParsed);
-        }
-      });
-
-    });
-  });*/
+    }
+  });
+  //Change Pages
+  $("#go-productdetails").click(function() {
+    window.location.href = 'home.html';
+  });
 
   //Google
   /* function onSignIn(googleUser) {
