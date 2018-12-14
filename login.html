@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="main.css">
 </head>
 
-<body class="light">
+<body class="semi-light">
   <div class="footer-compensate">
     <div class="out-note">
       <div class="note">
@@ -34,35 +34,37 @@
     </div>
 
     <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom light font-weight-bold">
-      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="login.html">Login/Register</a>
-          </li>
-        </ul>
-      </div>
-      <div class="mx-auto order-0">
-        <a class="navbar-brand mx-auto" href="home.html"><img src="img/logo.svg" alt="DYP logo" /></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-        <ul class="navbar-nav ml-auto">
+      <div class="container pt-0">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="login.html">Login/Register</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mx-auto order-0">
+          <a class="navbar-brand mx-auto" href="home.html"><img src="img/logo.svg" alt="DYP logo" /></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Products
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Smartphones</a>
-              <a class="dropdown-item" href="#">Tablets</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Info</a>
-          </li>
-        </ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Products
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Smartphones</a>
+                <a class="dropdown-item" href="#">Tablets</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Info</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -80,7 +82,7 @@
               <input type="password" id="login-password" class="form-control" required>
               <label class="form-control-placeholder" for="login-password">Password</label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-primary">Submit</button>
           </form>
           <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div>
         <a class="no_textdecoration" href="#"><small class="text_highlight form-text text-muted mt-2">Forgot Username?</small></a>
@@ -92,48 +94,44 @@
             <div class="form-row">
               <div class="col">
                 <div class="form-group">
-                  <input type="text" id="register-firstname" class="form-control" required>
+                  <input type="text" id="register-firstname" class="form-control">
                   <label class="form-control-placeholder" for="register-firstname">First name</label>
                 </div>
               </div>
               <div class="col">
                 <div class="form-group">
-                  <input type="text" id="register-lastname" class="form-control" required>
+                  <input type="text" id="register-lastname" class="form-control">
                   <label class="form-control-placeholder" for="register-lastname">Last name</label>
                 </div>
               </div>
             </div>
             <div class="form-group">
-              <input type="text" id="register-email" class="form-control" required>
+              <input type="text" id="register-email" class="form-control">
               <label class="form-control-placeholder" for="register-email">Email address</label>
             </div>
             <div class="form-row">
               <div class="col">
                 <div class="form-group mb-0">
-                  <input type="password" id="register-password" class="form-control" required>
+                  <input type="password" id="register-password" class="form-control">
                   <label class="form-control-placeholder" for="register-password">Password</label>
                 </div>
               </div>
               <div class="col">
                 <div class="form-group mb-0">
-                  <input type="password" id="register-password2" class="form-control" required>
+                  <input type="password" id="register-password2" class="form-control">
                   <label class="form-control-placeholder" for="register-password2">Confirm</label>
                 </div>
               </div>
             </div>
             <small class="form-text text-muted mb-3">Use 8 or more characters with a mix of letters, numbers & symbols</small>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" id="register" class="btn btn-primary">Submit</button>
           </form>
         </div>
       </div>
     </div>
 
-    name <input type="text" id="name">
-    <input type="submit" id="name-submit" value="grab">
-    <div id="name-data"></div>
 
-
-    <footer class="page-footer font-small mt-5">
+    <footer class="page-footer font-small mt-5 dark-text">
       <div class="container text-center text-md-left">
         <div class="row pb-2">
           <div class="col-md-6 mt-md-0 mt-3">

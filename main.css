@@ -14,8 +14,11 @@ body {
   height: 100%;
 }
 
+.semi-light {
+  background-color: #f6f6f6 !important;
+}
+
 .light {
-  color: #ffffff !important;
   background-color: #ffffff !important;
 }
 
@@ -28,11 +31,16 @@ body {
   background-color: #151515 !important;
 }
 
-.dark_text {
-  color: #ffffff;
+.dark-text {
+  color: #ffffff !important;
 }
 
 /* navbar */
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .navbar-brand {
   padding: 0;
 }
@@ -280,11 +288,11 @@ label {
   height: 105px;
 }
 
-.specs-half>.col-4>.d-inline-block>span{
+.specs-half>.col-4>.d-inline-block>span {
   font-size: 25px;
 }
 
-.specs-half>.col-4>.d-inline-block>p{
+.specs-half>.col-4>.d-inline-block>p {
   font-size: 18px;
   margin-top: -7px;
 }
@@ -300,27 +308,40 @@ label {
   background-position: center center;
 }
 
-.slot-1{
+.slot-1 {
   background-image: url(img/spec-size.svg);
 }
 
-.slot-2{
+.slot-2 {
   background-image: url(img/spec-ram.svg);
 }
 
-.slot-3{
+.slot-3 {
   background-image: url(img/spec-storage.svg);
 }
 
-.slot-4{
+.slot-4 {
   background-image: url(img/spec-battery.svg);
 }
 
-.slot-5{
+.slot-5 {
   background-image: url(img/spec-processor.svg);
   background-size: 40px 40px;
 }
 
-.slot-6{
+.slot-6 {
   background-image: url(img/plus.svg);
+}
+
+.purchase-copy{
+  height:299px;
+  width:100%;
+  background-color:black;
+  z-index:40;
+  margin-top:-299px;
+}
+
+.hide-input{
+  background: transparent;
+    border: none;
 }

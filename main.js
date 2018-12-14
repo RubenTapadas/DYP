@@ -31,19 +31,81 @@ $(window).on('load', function() {
   $("#option2").click(changeactive);
   $("#option3").click(changeactive);
 
-  //test
-  $("#name-submit").click(function() {
-    var name = $('#name').val();
-    if ($.trim(name) != ''){
+  //Register
+  var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+
+  $("#register").click(function() {
+    var register_firstname = $.trim($('#register-firstname').val());
+    var register_lastname = $.trim($('#register-lastname').val());
+    var register_email = $.trim($('#register-email').val());
+    var register_password = $('#register-password').val();
+    var register_password2 = $('#register-password2').val();
+
+    if (register_firstname == "" || register_firstname == null) {
+      console.log("firstname nothing");
+    } else if (register_lastname == "" || register_lastname == null) {
+      console.log("lastname nothing");
+    } else if (register_email == "" || register_email == null) {
+      console.log("email nothing");
+    } else if (!testEmail.test(register_email)) {
+      console.log("email wrong format");
+    } else if (register_password == "" || register_password == null) {
+      console.log("password nothing");
+      console.log($('#register-password').val());
+      console.log(register_password);
+    } else if (register_password2 == "" || register_password2 == null) {
+      console.log("password2 nothing");
+    } else if (register_password2 != register_password) {
+      console.log("password and password2 not same");
+    } else {
+      console.log('starting ajax');
       $.ajax({
-        url:"main.php", //the page containing php script
-        type: "POST", //request type
-        success:function(result){
-         alert(result);
-       }
-     });
+        url: "./php/register.php",
+        type: "post",
+        data: {
+          firstname: register_firstname,
+          lastname: register_lastname,
+          email: register_email,
+          password: register_password
+        },
+        success: function(data) {
+          var dataParsed = JSON.parse(data);
+          console.log(dataParsed);
+        }
+      });
     }
   });
+
+  //Change Pages
+  $("#page").click(function() {
+    console.log("pass");
+  });
+
+  /* $(function() {
+    $('#register').click(function() {
+      var firstname2 = $('#register-firstname').val();
+      var lastname2 = $('#register-lastname').val();
+      var email2 = $('#register-email').val();
+      var password2 = $('#register-password').val();
+      console.log('starting ajax');
+      $.ajax({
+        url: "./php/register.php",
+        type: "post",
+        data: {
+          firstname: firstname2,
+          lastname: lastname2,
+          email: email2,
+          password: password2
+        },
+
+        success: function(data) {
+          var dataParsed = JSON.parse(data);
+          console.log(dataParsed);
+        }
+      });
+
+    });
+  });*/
 
   //Google
   /* function onSignIn(googleUser) {
