@@ -1,3 +1,25 @@
+<?php
+  session_start();
+  if(!isset($_SESSION["id"])){
+    header("Location: login.php");
+    exit();
+  }
+
+  $id = intval($_SESSION['id']);
+
+  $connection = mysqli_connect('localhost', 'root', '', 'dyp');
+  $q = "SELECT * FROM user WHERE id_user = '$id'";
+  $result = mysqli_query($connection, $q);
+  while($rowval = mysqli_fetch_array($result))
+  {
+    $firstname= $rowval['firstname'];
+    $lastname= $rowval['lastname'];
+    $email= $rowval['email'];
+    $password= $rowval['password'];
+    $country= $rowval['country'];
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="eng">
 
@@ -10,6 +32,7 @@
 </head>
 
 <body class="semi-light">
+
   <div class="footer-compensate">
 
     <div class="out-note">
@@ -43,7 +66,7 @@
           </ul>
         </div>
         <div class="mx-auto order-0">
-          <a class="navbar-brand mx-auto" href="home.html"><img src="img/logo.svg" alt="DYP logo" /></a>
+          <a class="navbar-brand mx-auto" href="home.php"><img src="img/logo.svg" alt="DYP logo" /></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -96,27 +119,27 @@
 
       <div class="user-profile" id="user1">
         <h1>User Profile</h1>
-        <form class="p-4 shade light" style="padding-top: 2.7rem !important;">
+        <form class="p-4 pt-5 shade light">
           <div class="form-row">
             <div class="col">
               <div class="form-group">
-                <input type="text" id="edit-firstname" class="form-control" required>
+                <input type="text" id="edit-firstname" class="form-control" required value="<?php echo  $firstname; ?>">
                 <label class="form-control-placeholder" for="edit-firstname">First name</label>
               </div>
             </div>
             <div class="col">
               <div class="form-group">
-                <input type="text" id="edit-lastname" class="form-control" required>
+                <input type="text" id="edit-lastname" class="form-control" required value="<?php echo  $lastname; ?>">
                 <label class="form-control-placeholder" for="edit-lastname">Last name</label>
               </div>
             </div>
           </div>
           <div class="form-group">
-            <input type="text" id="edit-email" class="form-control" required>
+            <input type="text" id="edit-email" class="form-control" required value="<?php echo  $email; ?>">
             <label class="form-control-placeholder" for="edit-email">Email address</label>
           </div>
           <div class="form-group">
-            <input type="password" id="edit-password" class="form-control" required>
+            <input type="text" id="edit-password" class="form-control" required value="<?php echo  $password; ?>">
             <label class="form-control-placeholder" for="edit-password">Password</label>
           </div>
           <button type="submit" id="edit1" class="btn btn-primary">Save</button>
@@ -126,7 +149,7 @@
         <h1>Address</h1>
         <form class="p-4 shade light" style="padding-top: 2.7rem !important;">
           <div class="form-group">
-            <input type="text" id="edit-country" class="form-control" required>
+            <input type="text" id="edit-country" class="form-control" required value="<?php echo  $country; ?>">
             <label class="form-control-placeholder" for="edit-country">Country</label>
           </div>
           <div class="form-group">

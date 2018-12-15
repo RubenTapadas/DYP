@@ -186,6 +186,17 @@ label {
   color: #151515;
 }
 
+.user-mini{
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background: #151515;
+  background-image: url(https://picsum.photos/100/100/?random);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+
 .user-profile>h1 {
   color: #a52b2b;
   font-weight: bold;
@@ -348,4 +359,17 @@ label {
 
 .pointer{
   cursor:pointer !important;
+}
+
+.user_yes{
+  display:none;
+}
+
+.user_no{
+  display:none;
+}
+
+.logout{
+    font-size: 0.8rem !important;
+    padding-top: 9px;
 }

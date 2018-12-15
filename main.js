@@ -1,22 +1,30 @@
 $(window).on('load', function() {
 
+
+
+  if ($.isNumeric($('#fetch_user_id').val()) && $('#fetch_user_id').val() != "0") {
+    $(".user_yes").show();
+    $(".user_no").hide();
+    console.log("yes");
+  } else {
+    $(".user_yes").hide();
+    $(".user_no").show();
+    console.log("no");
+  }
+
   //Note
   $(".out-note").click(function() {
     $(this).fadeOut();
   });
 
   //Edit - Fill inputs
-  $("#edit-firstname").val('Someone');
-  $("#edit-lastname").val('Test');
-  $("#edit-email").val('someone@test.com');
-  $("#edit-password").val('12345');
 
   //Edit - Change active
   function changeactive() {
     $("#option1,#option2,#option3").removeClass("active");
     $(this).addClass("active");
 
-    $("#user1,#user2,#user3").css("display", "none");;
+    $("#user1,#user2,#user3").css("display", "none");
 
     if ($(this).attr("id") == ('option1')) {
       $("#user1").fadeIn();
@@ -93,6 +101,7 @@ $(window).on('load', function() {
   $("#go-productdetails").click(function() {
     window.location.href = 'home.html';
   });
+
 
   //Google
   /* function onSignIn(googleUser) {
