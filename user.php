@@ -17,6 +17,7 @@
     $email= $rowval['email'];
     $password= $rowval['password'];
     $country= $rowval['country'];
+    $image= $rowval['image'];
   }
 ?>
 
@@ -29,6 +30,8 @@
   <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
+
+
 </head>
 
 <body class="semi-light">
@@ -93,9 +96,9 @@
     <div class="blank"></div>
     <div class="container">
       <div class="top-banner">
-        <div class="user-image d-inline-block position-absolute" style="z-index:10"></div>
+        <div class="user-image d-inline-block position-absolute" style="z-index:10; background-image: url(img/profiles/<?php echo  $image; ?>);"></div>
         <div class="user-name d-inline-block" style="padding-left:170px;">
-          <input class="dark-text hide-input" type="text" value="Someone Test" readonly>
+          <input class="dark-text hide-input" type="text" value="<?php echo  $firstname; ?> <?php echo  $lastname; ?>" readonly>
         </div>
       </div>
 

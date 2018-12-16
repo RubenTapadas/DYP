@@ -169,7 +169,6 @@ label {
   width: 150px;
   height: 150px;
   background: #151515;
-  background-image: url(https://picsum.photos/350/550/?random);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
@@ -187,11 +186,10 @@ label {
 }
 
 .user-mini{
-  border-radius: 50%;
+  border-radius: 10%;
   width: 32px;
   height: 32px;
   background: #151515;
-  background-image: url(https://picsum.photos/100/100/?random);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;

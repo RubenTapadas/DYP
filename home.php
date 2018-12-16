@@ -11,6 +11,7 @@
       $firstname= $rowval['firstname'];
       $lastname= $rowval['lastname'];
       $email= $rowval['email'];
+      $image= $rowval['image'];
     }
   }
 ?>
@@ -59,7 +60,7 @@
             <li class="nav-item">
               <a class="nav-link user_no" href="login.php">Login/Register</a>
               <div class="user_yes">
-                <div class="user-mini float-left"></div>
+                <div class="user-mini float-left" style="background-image: url(img/profiles/<?php echo  $image; ?>);"></div>
                 <a class="nav-link float-left ml-3" href="user.php">
                   <?php echo  $firstname; ?>
                   <?php echo  $lastname; ?></a>
@@ -153,7 +154,7 @@
             <ul class="list-unstyled">
               <li>
                 <a href="#!">
-                  <?php echo  $fistname; ?></a>
+                  <?php echo  $firstname; ?></a>
               </li>
               <li>
                 <a href="#!">Link 2</a>
