@@ -35,7 +35,7 @@
 </head>
 
 <body class="semi-light">
-
+  <input type="hidden" id="fetch_user_id" value="<?php echo $id; ?>">
   <div class="footer-compensate">
 
     <div class="out-note">
@@ -64,7 +64,16 @@
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="login.html">Login/Register</a>
+              <a class="nav-link user_no" href="login.php">Login/Register</a>
+              <div class="user_yes active">
+                <a class="float-left" href="user.php">
+                  <div class="user-mini float-left" style="background-image: url(img/profiles/<?php echo  $image; ?>);"></div>
+                </a>
+                <a class="nav-link float-left ml-3" href="user.php">
+                  <?php echo  $firstname; ?>
+                  <?php echo  $lastname; ?></a>
+                <a class="nav-link float-left logout ml-1" href="login.php">(logout)</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -107,13 +116,13 @@
         <!-- Links -->
         <ul class="navbar-nav">
           <li class="nav-item active" id="option1">
-            <a class="nav-link" href="#">Profile</a>
+            <a class="nav-link" href="#"><span class="fas fa-user pr-1"></span>Profile</a>
           </li>
           <li class="nav-item" id="option2">
-            <a class="nav-link" href="#">Address</a>
+            <a class="nav-link" href="#"><span class="fas fa-map-marker-alt pr-1"></span>Address</a>
           </li>
           <li class="nav-item" id="option3">
-            <a class="nav-link" href="#">Purchases</a>
+            <a class="nav-link" href="#"><span class="fas fa-shopping-cart pr-1"></span>Purchases</a>
           </li>
         </ul>
 
@@ -121,35 +130,53 @@
 
 
       <div class="user-profile" id="user1">
-        <h1>User Profile</h1>
-        <form class="p-4 pt-5 shade light">
-          <div class="form-row">
-            <div class="col">
-              <div class="form-group">
-                <input type="text" id="edit-firstname" class="form-control" required value="<?php echo  $firstname; ?>">
-                <label class="form-control-placeholder" for="edit-firstname">First name</label>
+        <h1><span class="fas fa-user pr-2"></span>Profile</h1>
+        <div class="form-row">
+          <div class="col-9" style="padding-right: 15px;">
+            <form class="p-4 pt-5 shade light">
+              <div class="form-row">
+                <div class="col">
+                  <div class="form-group">
+                    <input type="text" id="edit-firstname" class="form-control" required value="<?php echo  $firstname; ?>">
+                    <label class="form-control-placeholder" for="edit-firstname">First name</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <input type="text" id="edit-lastname" class="form-control" required value="<?php echo  $lastname; ?>">
+                    <label class="form-control-placeholder" for="edit-lastname">Last name</label>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col">
               <div class="form-group">
-                <input type="text" id="edit-lastname" class="form-control" required value="<?php echo  $lastname; ?>">
-                <label class="form-control-placeholder" for="edit-lastname">Last name</label>
+                <input type="text" id="edit-email" class="form-control" required value="<?php echo  $email; ?>">
+                <label class="form-control-placeholder" for="edit-email">Email address</label>
               </div>
-            </div>
+              <div class="form-group">
+                <input type="text" id="edit-password" class="form-control" required value="<?php echo  $password; ?>">
+                <label class="form-control-placeholder" for="edit-password">Password</label>
+              </div>
+              <button type="submit" id="edit1" class="btn btn-primary">Save</button>
+            </form>
           </div>
-          <div class="form-group">
-            <input type="text" id="edit-email" class="form-control" required value="<?php echo  $email; ?>">
-            <label class="form-control-placeholder" for="edit-email">Email address</label>
+          <div class="col-3" style="padding-left: 15px;">
+            <h4><b>Profile image</b></h4>
+            <form class="shade light p-4">
+              <div class="form-row" style=" margin: 0 auto;width:170px;">
+                <div class="user-image d-inline-block position-absolute" style="width:170px; height:170px; z-index:10; background-image: url(img/profiles/<?php echo  $image; ?>);"></div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <button type="submit" id="editphoto" class="btn btn-primary" style="margin-top: 198px; width:100%">Change image</button>
+                </div>
+              </div>
+            </form>
           </div>
-          <div class="form-group">
-            <input type="text" id="edit-password" class="form-control" required value="<?php echo  $password; ?>">
-            <label class="form-control-placeholder" for="edit-password">Password</label>
-          </div>
-          <button type="submit" id="edit1" class="btn btn-primary">Save</button>
-        </form>
+        </div>
       </div>
+
       <div class="user-profile" id="user2">
-        <h1>Address</h1>
+        <h1><span class="fas fa-map-marker-alt pr-2"></span>Address</h1>
         <form class="p-4 shade light" style="padding-top: 2.7rem !important;">
           <div class="form-group">
             <input type="text" id="edit-country" class="form-control" required value="<?php echo  $country; ?>">
@@ -174,8 +201,79 @@
           <button type="button" id="edit2" class="btn btn-primary">Save</button>
         </form>
       </div>
+
       <div class="user-profile" id="user3">
-        <h1>Purchase History</h1>
+        <h1><span class="fas fa-shopping-cart pr-2"></span>Purchase History</h1>
+        <form class="p-4 mb-4 shade light pointer" id="go-productdetails2">
+          <div class="slot-purchase">
+            <div class="row">
+              <div class="col-2" id="purchases-image"></div>
+              <div class="col-10">
+                <h3 class="font-weight-bold">Name of the product</h3>
+                <div class="specs">
+                  <div class="row specs-half align-items-center">
+                    <div class="col-4 align-middle purchased-colum">
+                      <div class="purchase-cover-icon d-inline-block">
+                        <span class="fas fa-arrows-alt-v purchase-icon rotate-45"></span>
+                      </div>
+                      <div class="d-inline-block">
+                        <span>Screen Size</span>
+                        <p>6.18</p>
+                      </div>
+                    </div>
+                    <div class="col-4 align-middle purchased-colum">
+                      <div class="purchase-cover-icon d-inline-block">
+                        <span class="fas fa-memory purchase-icon"></span>
+                      </div>
+                      <div class="d-inline-block">
+                        <span>RAM</span>
+                        <p>8GB</p>
+                      </div>
+                    </div>
+                    <div class="col-4 align-middle purchased-colum">
+                      <div class="purchase-cover-icon d-inline-block">
+                        <span class="fas fa-folder purchase-icon"></span>
+                      </div>
+                      <div class="d-inline-block">
+                        <span>Internal Storage</span>
+                        <p>256GB</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row specs-half align-items-center">
+                    <div class="col-4 align-middle purchased-colum">
+                      <div class="purchase-cover-icon d-inline-block">
+                        <span class="fas fa-battery-three-quarters purchase-icon"></span>
+                      </div>
+                      <div class="d-inline-block">
+                        <span>Battery</span>
+                        <p>4000mAh</p>
+                      </div>
+                    </div>
+                    <div class="col-4 align-middle purchased-colum">
+                      <div class="purchase-cover-icon d-inline-block">
+                        <span class="fas fa-microchip purchase-icon fa-rotate-90"></span>
+                      </div>
+                      <div class="d-inline-block">
+                        <span>Processor</span>
+                        <p>Octa-core</p>
+                      </div>
+                    </div>
+                    <div class="col-4 align-middle purchased-colum">
+                      <div class="purchase-cover-icon d-inline-block">
+                        <span class="fas fa-plus purchase-icon"></span>
+                      </div>
+                      <div class="d-inline-block">
+                        <span>More</span>
+                        <p>Product details</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
         <form class="p-4 shade light pointer" id="go-productdetails">
           <div class="slot-purchase">
             <div class="row">
@@ -297,6 +395,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="main.js"></script>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
 </body>
 
 </html>

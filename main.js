@@ -1,15 +1,16 @@
 $(window).on('load', function() {
 
-
-
+  //User header
   if ($.isNumeric($('#fetch_user_id').val()) && $('#fetch_user_id').val() != "0") {
     $(".user_yes").show();
     $(".user_no").hide();
     console.log("yes");
+    console.log($('#fetch_user_id').val());
   } else {
     $(".user_yes").hide();
     $(".user_no").show();
     console.log("no");
+    console.log($('#fetch_user_id').val());
   }
 
   //Note

@@ -84,11 +84,11 @@
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Products
+                Design Your Product
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Smartphones</a>
-                <a class="dropdown-item" href="#">Tablets</a>
+                <a class="dropdown-item" href="#">Smartphone</a>
+                <a class="dropdown-item" href="#">Tablet</a>
               </div>
             </li>
             <li class="nav-item">

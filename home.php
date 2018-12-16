@@ -60,11 +60,13 @@
             <li class="nav-item">
               <a class="nav-link user_no" href="login.php">Login/Register</a>
               <div class="user_yes">
-                <div class="user-mini float-left" style="background-image: url(img/profiles/<?php echo  $image; ?>);"></div>
+                <a class="float-left" href="user.php">
+                  <div class="user-mini float-left" style="background-image: url(img/profiles/<?php echo  $image; ?>);"></div>
+                </a>
                 <a class="nav-link float-left ml-3" href="user.php">
                   <?php echo  $firstname; ?>
                   <?php echo  $lastname; ?></a>
-                <a  class="nav-link float-left logout ml-1" href="login.php">(logout)</a>
+                <a class="nav-link float-left logout ml-1" href="login.php">(logout)</a>
               </div>
             </li>
           </ul>

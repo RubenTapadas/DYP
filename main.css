@@ -165,7 +165,7 @@ label {
 
 /* User */
 .user-image {
-  border-radius: 50%;
+  border-radius: 5%;
   width: 150px;
   height: 150px;
   background: #151515;
@@ -185,7 +185,7 @@ label {
   color: #151515;
 }
 
-.user-mini{
+.user-mini {
   border-radius: 10%;
   width: 32px;
   height: 32px;
@@ -213,6 +213,30 @@ label {
 
 #user2, #user3 {
   display: none;
+}
+
+.purchase-cover-icon {
+  width: 70px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.purchase-icon {
+  font-size: 56px;
+  padding-top: 4px;
+  margin: 0 auto;
+}
+
+.purchased-colum{
+  height:73px
+}
+
+.rotate-45{
+  -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 /* Float Label Form*/
@@ -298,12 +322,12 @@ label {
 }
 
 .specs-half>.col-4>.d-inline-block>span {
-  font-size: 25px;
+  font-size: 21px;
 }
 
 .specs-half>.col-4>.d-inline-block>p {
-  font-size: 18px;
-  margin-top: -7px;
+  font-size: 25px;
+  margin-top: -11px;
 }
 
 .specs>div>p {
@@ -342,32 +366,32 @@ label {
   background-image: url(img/plus.svg);
 }
 
-.purchase-copy{
-  height:299px;
-  width:100%;
-  background-color:black;
-  z-index:40;
-  margin-top:-299px;
+.purchase-copy {
+  height: 299px;
+  width: 100%;
+  background-color: black;
+  z-index: 40;
+  margin-top: -299px;
 }
 
-.hide-input{
+.hide-input {
   background: transparent;
-    border: none;
+  border: none;
 }
 
-.pointer{
-  cursor:pointer !important;
+.pointer {
+  cursor: pointer !important;
 }
 
-.user_yes{
-  display:none;
+.user_yes {
+  display: none;
 }
 
-.user_no{
-  display:none;
+.user_no {
+  display: none;
 }
 
-.logout{
-    font-size: 0.8rem !important;
-    padding-top: 9px;
+.logout {
+  font-size: 0.8rem !important;
+  padding-top: 9px;
 }
