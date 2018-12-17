@@ -203,7 +203,7 @@
       </div>
 
       <div class="user-profile" id="user3">
-        <h1><span class="fas fa-shopping-cart pr-2"></span>Purchase History</h1>
+        <h1><span class="fas fa-shopping-cart pr-2"></span>Purchases</h1>
         <form class="p-4 mb-4 shade light pointer" id="go-productdetails2">
           <div class="slot-purchase">
             <div class="row">
