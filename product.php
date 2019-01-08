@@ -21,7 +21,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Home</title>
+  <title>Design Your Product</title>
   <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
@@ -105,6 +105,11 @@
             </div>
           </div>
           <div class="col pb-5">
+            <div class="">
+              <div class="float-right product-price">
+                <span id="product-price">0</span><span style="font-size:28px;" class="fas fa-euro-sign py-1">
+              </div>
+            </div>
             <h1>Body</h1>
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 25%; background-color:#151515" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -112,21 +117,38 @@
 
             <form style="padding-top: 2.7rem !important;">
               <h3 class="pb-4">Main Body</h3>
-              <div class="form-group product-detail d-inline-block mr-3">
+              <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="AL">Plastic</option>
-                  <option value="AK">Aluminium</option>
+                  <option value="5">5"</option>
+                  <option value="5.5">5.5"</option>
+                  <option value="6">6"</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Size</label>
+              </div>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="plastic">Plastic</option>
+                  <option value="aluminium">Aluminium</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
-              <div class="form-group product-detail d-inline-block mr-3">
+              <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
                   <option value="AL">Plastic</option>
                   <option value="AK">Aluminium</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Color</label>
+              </div>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="plastic">1</option>
+                  <option value="aluminium">2</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Layout</label>
               </div>
 
               <h3 class="pb-4">Home Button</h3>
@@ -152,8 +174,41 @@
                   <option value="AL">Plastic</option>
                   <option value="AK">Aluminium</option>
                 </select>
-                <label class="form-control-placeholder" for="edit-streetname">Tactie</label>
+                <label class="form-control-placeholder" for="edit-streetname">Layout</label>
               </div>
+
+              <h3 class="pb-4">Volume Button</h3>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="AL">Plastic</option>
+                  <option value="AK">Aluminium</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Material</label>
+              </div>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="AL">Plastic</option>
+                  <option value="AK">Aluminium</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Color</label>
+              </div>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="AL">Plastic</option>
+                  <option value="AK">Aluminium</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Layout</label>
+              </div>
+
+
+
+
+
+
+
               <div class="form-group">
                 <input type="text" id="edit-streetname" class="form-control" required>
                 <label class="form-control-placeholder" for="edit-streetname">Volume button</label>
@@ -169,9 +224,6 @@
               <div class="form-group">
                 <input type="text" id="edit-postalcode" class="form-control" required>
                 <label class="form-control-placeholder" for="edit-postalcode">Size</label>
-              </div>
-              <div class="float-left product-price">
-                <span id="product-price">0</span><span style="font-size:28px;" class="fas fa-euro-sign py-1">
               </div>
               <button type="button" id="next" class="btn btn-primary float-right mt-2">Next</button>
             </form>

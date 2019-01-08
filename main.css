@@ -398,6 +398,10 @@ label {
   padding-top: 9px;
 }
 
+.progress{
+  width: 100%;
+}
+
 .product-phone {
   height: 100%;
   width: 100%;
