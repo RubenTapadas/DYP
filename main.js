@@ -98,6 +98,7 @@ $(window).on('load', function() {
       console.log('starting ajax');
     }
   });
+
   //Change Pages
   $("#go-productdetails").click(function() {
     window.location.href = 'home.html';

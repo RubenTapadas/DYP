@@ -397,3 +397,28 @@ label {
   font-size: 0.8rem !important;
   padding-top: 9px;
 }
+
+.product-phone {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: url(img/decoy.png) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.product-box{
+  height:500px;
+}
+
+.product-price{
+  font-size:40px;
+  color:green;
+}
+
+.product-detail{
+  width:150px;
+}
