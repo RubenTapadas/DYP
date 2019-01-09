@@ -112,8 +112,163 @@
             </div>
             <h1>Body</h1>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 25%; background-color:#151515" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" style="width: 20%; background-color:#151515" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
+
+tipo produto
+
+display
+border
+back panel
+sides
+battery
+
+home button
+volume button
+lock button
+
+charging port
+jack
+nfc
+
+main camera
+selfie camera
+flash
+
+cpu
+gpu
+memory
+ram
+mic
+dual sim
+
+
+            <form style="padding-top: 2.7rem !important;">
+              <h3 class="pb-4">Display</h3>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="5">5"</option>
+                  <option value="5.5">5.5"</option>
+                  <option value="6">6"</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Size</label>
+              </div>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="plastic">Plastic</option>
+                  <option value="aluminium">Aluminium</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Material</label>
+              </div>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="plastic">Yes</option>
+                  <option value="aluminium">No</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Notch</label>
+              </div>
+
+              <h3 class="pb-4">Border</h3>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="AL">Plastic</option>
+                  <option value="AK">Aluminium</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Color</label>
+              </div>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="AL">Plastic</option>
+                  <option value="AK">Aluminium</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Layout</label>
+              </div>
+
+              <h3 class="pb-4">Sides</h3>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="AL">Plastic</option>
+                  <option value="AK">Aluminium</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Material</label>
+              </div>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="AL">Plastic</option>
+                  <option value="AK">Aluminium</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Color</label>
+              </div>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="AL">Plastic</option>
+                  <option value="AK">Aluminium</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Layout</label>
+              </div>
+
+              <h3 class="pb-4">Back Panel</h3>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="AL">Plastic</option>
+                  <option value="AK">Aluminium</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Material</label>
+              </div>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="AL">Plastic</option>
+                  <option value="AK">Aluminium</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Color</label>
+              </div>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="AL">Plastic</option>
+                  <option value="AK">Aluminium</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Layout</label>
+              </div>
+
+              <h3 class="pb-4">Battery</h3>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="AL">Plastic</option>
+                  <option value="AK">Aluminium</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Material</label>
+              </div>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="AL">Plastic</option>
+                  <option value="AK">Aluminium</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Color</label>
+              </div>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="AL">Plastic</option>
+                  <option value="AK">Aluminium</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Layout</label>
+              </div>
+
+              <button type="button" id="next" class="btn btn-primary float-right mt-2">Next</button>
+            </form>
 
             <form style="padding-top: 2.7rem !important;">
               <h3 class="pb-4">Main Body</h3>
