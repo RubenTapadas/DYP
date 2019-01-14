@@ -81,13 +81,7 @@
           <ul class="navbar-nav ml-auto">
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle pr-2" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Design Your Product
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Smartphones</a>
-                <a class="dropdown-item" href="#">Tablets</a>
-              </div>
+              <a class="nav-link pr-4" href="product.php">Design Your Product</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Info</a>

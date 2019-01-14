@@ -81,13 +81,7 @@
           <ul class="navbar-nav ml-auto">
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle pr-2" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Design Your Product
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Smartphones</a>
-                <a class="dropdown-item" href="#">Tablets</a>
-              </div>
+              <a class="nav-link pr-4" href="product.php">Design Your Product</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Info</a>
@@ -455,66 +449,76 @@
             </form>
 
             <form id="product-slide-5" style="padding-top: 2.7rem !important; display:none">
-              <h3 class="pb-4">CPU</h3>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
-                  <option value="" selected="selected"></option>
-                  <option value="plastic">Low end</option>
-                  <option value="aluminium">Medium</option>
-                  <option value="aluminium">High end</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Model</label>
+              <div class="container pt-0">
+                <div class="row">
+                  <div class="col-sm">
+                    <h3 class="pb-4">CPU</h3>
+                    <div class="form-group product-detail d-inline-block">
+                      <select class="form-control" required>
+                        <option value="" selected="selected"></option>
+                        <option value="plastic">Low end</option>
+                        <option value="aluminium">Medium</option>
+                        <option value="aluminium">High end</option>
+                      </select>
+                      <label class="form-control-placeholder" for="edit-streetname">Model</label>
+                    </div>
+                    <h3 class="pb-4">GPU</h3>
+                    <div class="form-group product-detail d-inline-block">
+                      <select class="form-control" required>
+                        <option value="" selected="selected"></option>
+                        <option value="plastic">Low end</option>
+                        <option value="aluminium">Medium</option>
+                        <option value="aluminium">High end</option>
+                      </select>
+                      <label class="form-control-placeholder" for="edit-streetname">Model</label>
+                    </div>
+                    <h3 class="pb-4">Dual SIM/Micro SD</h3>
+                    <div class="form-group product-detail d-inline-block">
+                      <select class="form-control" required>
+                        <option value="" selected="selected"></option>
+                        <option value="plastic">Only SIM</option>
+                        <option value="aluminium">SIM and Micro SD</option>
+                        <option value="aluminium">Dual SIM and Micro SD</option>
+                      </select>
+                      <label class="form-control-placeholder" for="edit-streetname">Position</label>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <h3 class="pb-4">Storage</h3>
+                    <div class="form-group product-detail d-inline-block">
+                      <select class="form-control" required>
+                        <option value="" selected="selected"></option>
+                        <option value="plastic">Only SIM</option>
+                        <option value="aluminium">SIM and Micro SD</option>
+                        <option value="aluminium">Dual SIM and Micro SD</option>
+                      </select>
+                      <label class="form-control-placeholder" for="edit-streetname">Option</label>
+                    </div>
+                    <h3 class="pb-4">RAM</h3>
+                    <div class="form-group product-detail d-inline-block">
+                      <select class="form-control" required>
+                        <option value="" selected="selected"></option>
+                        <option value="plastic">Only SIM</option>
+                        <option value="aluminium">SIM and Micro SD</option>
+                        <option value="aluminium">Dual SIM and Micro SD</option>
+                      </select>
+                      <label class="form-control-placeholder" for="edit-streetname">Option</label>
+                    </div>
+                    <h3 class="pb-4">Battery</h3>
+                    <div class="form-group product-detail d-inline-block">
+                      <select class="form-control" required>
+                        <option value="" selected="selected"></option>
+                        <option value="plastic">Only SIM</option>
+                        <option value="aluminium">SIM and Micro SD</option>
+                        <option value="aluminium">Dual SIM and Micro SD</option>
+                      </select>
+                      <label class="form-control-placeholder" for="edit-streetname">Option</label>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 class="pb-4">GPU</h3>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
-                  <option value="" selected="selected"></option>
-                  <option value="plastic">Low end</option>
-                  <option value="aluminium">Medium</option>
-                  <option value="aluminium">High end</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Model</label>
-              </div>
-              <h3 class="pb-4">Dual SIM/Micro SD</h3>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
-                  <option value="" selected="selected"></option>
-                  <option value="plastic">Only SIM</option>
-                  <option value="aluminium">SIM and Micro SD</option>
-                  <option value="aluminium">Dual SIM and Micro SD</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Position</label>
-              </div>
-              <h3 class="pb-4">Storage</h3>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
-                  <option value="" selected="selected"></option>
-                  <option value="plastic">Only SIM</option>
-                  <option value="aluminium">SIM and Micro SD</option>
-                  <option value="aluminium">Dual SIM and Micro SD</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Option</label>
-              </div>
-              <h3 class="pb-4">RAM</h3>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
-                  <option value="" selected="selected"></option>
-                  <option value="plastic">Only SIM</option>
-                  <option value="aluminium">SIM and Micro SD</option>
-                  <option value="aluminium">Dual SIM and Micro SD</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Option</label>
-              </div>
-              <h3 class="pb-4">Battery</h3>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
-                  <option value="" selected="selected"></option>
-                  <option value="plastic">Only SIM</option>
-                  <option value="aluminium">SIM and Micro SD</option>
-                  <option value="aluminium">Dual SIM and Micro SD</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Option</label>
-              </div>
+
+
 
               <button type="button" id="product-slide-5-button" class="btn btn-primary float-right mt-2">Finish</button>
             </form>
