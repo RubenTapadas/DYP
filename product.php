@@ -115,33 +115,6 @@
               <div class="progress-bar" role="progressbar" style="width: 20%; background-color:#151515" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
 
-            tipo produto
-
-            display
-            border
-            back panel
-            sides
-
-            home button
-            volume button
-            lock button
-
-            charging port
-            jack
-            nfc
-
-            main camera
-            selfie camera
-            flash
-
-            cpu
-            gpu
-            memory
-            ram
-            mic
-            dual sim
-            battery
-
 
             <form id="product-slide-1" style="padding-top: 2.7rem !important;">
               <h3 class="pb-4">Display</h3>
@@ -550,8 +523,6 @@
         </div>
       </div>
     </section>
-    mic
-    battery
     <footer class="page-footer font-small mt-5 fixed-bottom dark-text">
       <div class="container text-center text-md-left">
         <div class="row pb-2">

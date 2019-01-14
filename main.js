@@ -108,18 +108,22 @@ $(window).on('load', function() {
   $("#product-slide-1-button").click(function() {
     $("#product-slide-1").fadeOut();
     $("#product-slide-2").delay( 390 ).fadeIn();
+    $(".progress-bar").css("width", "40%");
   });
   $("#product-slide-2-button").click(function() {
     $("#product-slide-2").fadeOut();
     $("#product-slide-3").delay( 390 ).fadeIn();
+    $(".progress-bar").css("width", "60%");
   });
   $("#product-slide-3-button").click(function() {
     $("#product-slide-3").fadeOut();
     $("#product-slide-4").delay( 390 ).fadeIn();
+    $(".progress-bar").css("width", "80%");
   });
   $("#product-slide-4-button").click(function() {
     $("#product-slide-4").fadeOut();
     $("#product-slide-5").delay( 390 ).fadeIn();
+    $(".progress-bar").css("width", "100%");
   });
 
 
