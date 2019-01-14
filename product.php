@@ -512,6 +512,36 @@
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Position</label>
               </div>
+              <h3 class="pb-4">Storage</h3>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="plastic">Only SIM</option>
+                  <option value="aluminium">SIM and Micro SD</option>
+                  <option value="aluminium">Dual SIM and Micro SD</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Option</label>
+              </div>
+              <h3 class="pb-4">RAM</h3>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="plastic">Only SIM</option>
+                  <option value="aluminium">SIM and Micro SD</option>
+                  <option value="aluminium">Dual SIM and Micro SD</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Option</label>
+              </div>
+              <h3 class="pb-4">Battery</h3>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="plastic">Only SIM</option>
+                  <option value="aluminium">SIM and Micro SD</option>
+                  <option value="aluminium">Dual SIM and Micro SD</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Option</label>
+              </div>
 
               <button type="button" id="product-slide-5-button" class="btn btn-primary float-right mt-2">Finish</button>
             </form>
@@ -520,8 +550,6 @@
         </div>
       </div>
     </section>
-    memory
-    ram
     mic
     battery
     <footer class="page-footer font-small mt-5 fixed-bottom dark-text">
