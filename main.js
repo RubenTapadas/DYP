@@ -104,7 +104,22 @@ $(window).on('load', function() {
     window.location.href = 'home.html';
   });
 
+  //Product Type
+  $("#product-phone").click(function() {
+    $("#product-phone").css("border", "solid 5px");
+    $("#product-tablet").css("border", "none");
+  });
+  $("#product-tablet").click(function() {
+    $("#product-tablet").css("border", "solid 5px");
+    $("#product-phone").css("border", "none");
+  });
+
   //Product Slides
+  $("#product-slide-0-button").click(function() {
+    $("#product-slide-0").fadeOut();
+    $("#product-slide-1").delay( 390 ).fadeIn();
+    $(".progress-bar").css("width", "20%");
+  });
   $("#product-slide-1-button").click(function() {
     $("#product-slide-1").fadeOut();
     $("#product-slide-2").delay( 390 ).fadeIn();
@@ -124,6 +139,33 @@ $(window).on('load', function() {
     $("#product-slide-4").fadeOut();
     $("#product-slide-5").delay( 390 ).fadeIn();
     $(".progress-bar").css("width", "100%");
+  });
+
+
+  $("#product-slide-5-button").click(function() {
+    $("#product-slide-1").fadeOut();
+    $("#product-slide-0").delay( 390 ).fadeIn();
+    $(".progress-bar").css("width", "0%");
+  });
+  $("#product-slide-6-button").click(function() {
+    $("#product-slide-2").fadeOut();
+    $("#product-slide-1").delay( 390 ).fadeIn();
+    $(".progress-bar").css("width", "20%");
+  });
+  $("#product-slide-7-button").click(function() {
+    $("#product-slide-3").fadeOut();
+    $("#product-slide-2").delay( 390 ).fadeIn();
+    $(".progress-bar").css("width", "40%");
+  });
+  $("#product-slide-8-button").click(function() {
+    $("#product-slide-4").fadeOut();
+    $("#product-slide-3").delay( 390 ).fadeIn();
+    $(".progress-bar").css("width", "60%");
+  });
+  $("#product-slide-9-button").click(function() {
+    $("#product-slide-5").fadeOut();
+    $("#product-slide-4").delay( 390 ).fadeIn();
+    $(".progress-bar").css("width", "80%");
   });
 
 

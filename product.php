@@ -109,8 +109,34 @@
               <div class="progress-bar" role="progressbar" style="width: 20%; background-color:#151515" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
 
+            <form id="product-slide-0" style="padding-top: 2.7rem !important;">
+              <div class="container" style="margin-top: -43px;padding-bottom: 43px;">
+                <div class="row">
+                  <div class="col-sm">
+                    <div id="product-phone" class="pt-5 pb-3 product-type">
+                      <div style="margin:0 auto;width:62.5px">
+                        <span style="font-size:100px;" class="fas fa-mobile-alt"></span>
+                      </div>
+                      <p style="font-size:33px;text-align: center;">Smartphone</p>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <div id="product-tablet" class="pt-5 pb-3 product-type">
+                      <div style="margin:0 auto;width:87.5px">
+                        <span style="font-size:100px;" class="fas fa-tablet-alt"></span>
+                      </div>
+                      <p style="font-size:33px;text-align: center;">Tablet</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-            <form id="product-slide-1" style="padding-top: 2.7rem !important;">
+              <div>
+                <button type="button" id="product-slide-0-button" class="btn btn-primary float-right mt-2">Next</button>
+              </div>
+
+            </form>
+            <form id="product-slide-1" style="padding-top: 2.7rem !important;display:none">
               <h3 class="pb-4">Display</h3>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
@@ -199,8 +225,11 @@
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Color</label>
               </div>
+              <div>
+                <button type="button" id="product-slide-5-button" class="btn btn-primary float-left mt-2">Previous</button>
+                <button type="button" id="product-slide-1-button" class="btn btn-primary float-right mt-2">Next</button>
+              </div>
 
-              <button type="button" id="product-slide-1-button" class="btn btn-primary float-right mt-2">Next</button>
             </form>
 
 
@@ -330,7 +359,10 @@
                 <label class="form-control-placeholder" for="edit-streetname">Position</label>
               </div>
 
-              <button type="button" id="product-slide-2-button" class="btn btn-primary float-right mt-2">Next</button>
+              <div>
+                <button type="button" id="product-slide-6-button" class="btn btn-primary float-left mt-2">Previous</button>
+                <button type="button" id="product-slide-2-button" class="btn btn-primary float-right mt-2">Next</button>
+              </div>
             </form>
 
             <form id="product-slide-3" style="padding-top: 2.7rem !important; display:none">
@@ -379,7 +411,10 @@
                 <label class="form-control-placeholder" for="edit-streetname">Include</label>
               </div>
 
-              <button type="button" id="product-slide-3-button" class="btn btn-primary float-right mt-2">Next</button>
+              <div>
+                <button type="button" id="product-slide-7-button" class="btn btn-primary float-left mt-2">Previous</button>
+                <button type="button" id="product-slide-3-button" class="btn btn-primary float-right mt-2">Next</button>
+              </div>
             </form>
 
             <form id="product-slide-4" style="padding-top: 2.7rem !important; display:none">
@@ -445,7 +480,10 @@
                 <label class="form-control-placeholder" for="edit-streetname">Type</label>
               </div>
 
-              <button type="button" id="product-slide-4-button" class="btn btn-primary float-right mt-2">Next</button>
+              <div>
+                <button type="button" id="product-slide-8-button" class="btn btn-primary float-left mt-2">Previous</button>
+                <button type="button" id="product-slide-4-button" class="btn btn-primary float-right mt-2">Next</button>
+              </div>
             </form>
 
             <form id="product-slide-5" style="padding-top: 2.7rem !important; display:none">
@@ -519,8 +557,10 @@
               </div>
 
 
-
-              <button type="button" id="product-slide-5-button" class="btn btn-primary float-right mt-2">Finish</button>
+              <div>
+                <button type="button" id="product-slide-9-button" class="btn btn-primary float-left mt-2">Previous</button>
+                <button type="button" id="product-slide-5-button" class="btn btn-primary float-right mt-2">Finish</button>
+              </div>
             </form>
 
           </div>

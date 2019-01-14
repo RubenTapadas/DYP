@@ -426,3 +426,10 @@ label {
 .product-detail{
   width:150px;
 }
+
+.product-type{
+  border-radius: 5px;
+  width:280px;
+  margin: 0 auto;
+  cursor: pointer;
+}
