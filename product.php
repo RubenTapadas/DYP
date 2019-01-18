@@ -106,7 +106,7 @@
             </div>
             <h1>Body</h1>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 20%; background-color:#151515" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" style="width: 0%; background-color:#151515" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
 
             <form id="product-slide-0" style="padding-top: 2.7rem !important;">
@@ -164,7 +164,7 @@
                 <label class="form-control-placeholder" for="edit-streetname">Size</label>
               </div>
 
-              <h3 class="pb-4">Border</h3>
+              <h3 class="pb-4">Frame</h3>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
@@ -241,6 +241,7 @@
                   <option value="" selected="selected"></option>
                   <option value="plastic">Plastic</option>
                   <option value="aluminium">Aluminium</option>
+                  <option value="plastic">Stainless steel frame</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Include</label>
               </div>
@@ -256,8 +257,11 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Plastic</option>
-                  <option value="aluminium">Aluminium</option>
+                  <option value="aluminium">Black</option>
+                  <option value="aluminium">White</option>
+                  <option value="aluminium">Rose Gold</option>
+                  <option value="aluminium">Steel</option>
+                  <option value="plastic">Gold</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Color</label>
               </div>

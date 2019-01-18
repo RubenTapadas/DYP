@@ -327,6 +327,10 @@
           </div>
         </form>
         <div class="pt-3"></div>
+        <div class="values">
+          <input id="p-type" type="text" value="">
+          <input id="p-display-material" type="text" value="">
+        </div>
       </div>
 
 
