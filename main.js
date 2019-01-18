@@ -50,22 +50,7 @@ $(window).on('load', function() {
     var register_password = $('#register-password').val();
     var register_password2 = $('#register-password2').val();
 
-    if (register_firstname == "" || register_firstname == null) {
-      console.log("firstname nothing");
-    } else if (register_lastname == "" || register_lastname == null) {
-      console.log("lastname nothing");
-    } else if (register_email == "" || register_email == null) {
-      console.log("email nothing");
-    } else if (!testEmail.test(register_email)) {
-      console.log("email wrong format");
-    } else if (register_password == "" || register_password == null) {
-      console.log("password nothing");
-    } else if (register_password2 == "" || register_password2 == null) {
-      console.log("password2 nothing");
-    } else if (register_password2 != register_password) {
-      console.log("password and password2 not same");
-    } else {
-      console.log('starting ajax');
+    if (register_firstname == "" || register_firstname == null) {} else if (register_lastname == "" || register_lastname == null) {} else if (register_email == "" || register_email == null) {} else if (!testEmail.test(register_email)) {} else if (register_password == "" || register_password == null) {} else if (register_password2 == "" || register_password2 == null) {} else if (register_password2 != register_password) {} else {
       $.ajax({
         url: "./php/register.php",
         type: "post",
@@ -77,7 +62,6 @@ $(window).on('load', function() {
         },
         success: function(data) {
           var dataParsed = JSON.parse(data);
-          console.log(dataParsed);
         }
       });
     }
@@ -117,57 +101,66 @@ $(window).on('load', function() {
   //Product Slides
   $("#product-slide-0-button").click(function() {
     $("#product-slide-0").fadeOut();
-    $("#product-slide-1").delay( 390 ).fadeIn();
+    $("#product-slide-1").delay(390).fadeIn();
     $(".progress-bar").css("width", "20%");
   });
   $("#product-slide-1-button").click(function() {
     $("#product-slide-1").fadeOut();
-    $("#product-slide-2").delay( 390 ).fadeIn();
+    $("#product-slide-2").delay(390).fadeIn();
     $(".progress-bar").css("width", "40%");
   });
   $("#product-slide-2-button").click(function() {
     $("#product-slide-2").fadeOut();
-    $("#product-slide-3").delay( 390 ).fadeIn();
+    $("#product-slide-3").delay(390).fadeIn();
     $(".progress-bar").css("width", "60%");
   });
   $("#product-slide-3-button").click(function() {
     $("#product-slide-3").fadeOut();
-    $("#product-slide-4").delay( 390 ).fadeIn();
+    $("#product-slide-4").delay(390).fadeIn();
     $(".progress-bar").css("width", "80%");
   });
   $("#product-slide-4-button").click(function() {
     $("#product-slide-4").fadeOut();
-    $("#product-slide-5").delay( 390 ).fadeIn();
+    $("#product-slide-5").delay(390).fadeIn();
     $(".progress-bar").css("width", "100%");
   });
 
 
   $("#product-slide-5-button").click(function() {
     $("#product-slide-1").fadeOut();
-    $("#product-slide-0").delay( 390 ).fadeIn();
+    $("#product-slide-0").delay(390).fadeIn();
     $(".progress-bar").css("width", "0%");
   });
   $("#product-slide-6-button").click(function() {
     $("#product-slide-2").fadeOut();
-    $("#product-slide-1").delay( 390 ).fadeIn();
+    $("#product-slide-1").delay(390).fadeIn();
     $(".progress-bar").css("width", "20%");
   });
   $("#product-slide-7-button").click(function() {
     $("#product-slide-3").fadeOut();
-    $("#product-slide-2").delay( 390 ).fadeIn();
+    $("#product-slide-2").delay(390).fadeIn();
     $(".progress-bar").css("width", "40%");
   });
   $("#product-slide-8-button").click(function() {
     $("#product-slide-4").fadeOut();
-    $("#product-slide-3").delay( 390 ).fadeIn();
+    $("#product-slide-3").delay(390).fadeIn();
     $(".progress-bar").css("width", "60%");
   });
   $("#product-slide-9-button").click(function() {
     $("#product-slide-5").fadeOut();
-    $("#product-slide-4").delay( 390 ).fadeIn();
+    $("#product-slide-4").delay(390).fadeIn();
     $(".progress-bar").css("width", "80%");
   });
 
+  //Product Slides
+  $(".product-circle").click(function() {
+    $(this).parent().find('*').removeClass("active-color-black").removeClass("active-color-white");
+    if ($(this).attr("id") == "color-black") {
+      $(this).addClass("active-color-white");
+    } else {
+      $(this).addClass("active-color-black");
+    }
+  });
 
 
   //Google

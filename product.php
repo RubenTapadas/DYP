@@ -149,40 +149,60 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Yes</option>
-                  <option value="aluminium">No</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Notch</label>
               </div>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="5">5"</option>
-                  <option value="5.5">5.5"</option>
-                  <option value="6">6"</option>
+                  <option value="5'">5'</option>
+                  <option value="5.5'">5.5'</option>
+                  <option value="6'">6'</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Size</label>
               </div>
-
-              <h3 class="pb-4">Frame</h3>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="18:6">18:6"</option>
+                  <option value="18:9">18:9"</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Aspect ratio</label>
+              </div>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="720p">720p"</option>
+                  <option value="1080p">1080p"</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Resolution</label>
+              </div>
+              <br>
+              <h3 class="d-inline-block">Border</h3>
+              <div id="border-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
+                <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
+                <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
+                <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
+              </div>
+              <br>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
                   <option value="AL">Plastic</option>
                   <option value="AK">Aluminium</option>
                 </select>
-                <label class="form-control-placeholder" for="edit-streetname">Color</label>
-              </div>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
-                  <option value="" selected="selected"></option>
-                  <option value="AL">Plastic</option>
-                  <option value="AK">Aluminium</option>
-                </select>
                 <label class="form-control-placeholder" for="edit-streetname">Size</label>
               </div>
-
-              <h3 class="pb-4">Sides</h3>
+              <br>
+              <h3 class="d-inline-block">Frame</h3>
+              <div id="border-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
+                <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
+                <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
+                <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
+              </div>
+              <br>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
@@ -190,14 +210,6 @@
                   <option value="AK">Aluminium</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
-              </div>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
-                  <option value="" selected="selected"></option>
-                  <option value="AL">Plastic</option>
-                  <option value="AK">Aluminium</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Color</label>
               </div>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
@@ -208,7 +220,14 @@
                 <label class="form-control-placeholder" for="edit-streetname">Shape</label>
               </div>
 
-              <h3 class="pb-4">Back Panel</h3>
+              <br>
+              <h3 class="d-inline-block">Back Panel</h3>
+              <div id="border-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
+                <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
+                <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
+                <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
+              </div>
+              <br>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
@@ -216,14 +235,6 @@
                   <option value="AK">Aluminium</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
-              </div>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
-                  <option value="" selected="selected"></option>
-                  <option value="AL">Plastic</option>
-                  <option value="AK">Aluminium</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Color</label>
               </div>
               <div>
                 <button type="button" id="product-slide-5-button" class="btn btn-primary float-left mt-2">Previous</button>
@@ -484,6 +495,16 @@
                 <label class="form-control-placeholder" for="edit-streetname">Type</label>
               </div>
 
+              <h3 class="pb-4">Face Unlock</h3>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="plastic">Only Back</option>
+                  <option value="aluminium">Both Sides</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Include</label>
+              </div>
+
               <div>
                 <button type="button" id="product-slide-8-button" class="btn btn-primary float-left mt-2">Previous</button>
                 <button type="button" id="product-slide-4-button" class="btn btn-primary float-right mt-2">Next</button>
@@ -514,13 +535,12 @@
                       </select>
                       <label class="form-control-placeholder" for="edit-streetname">Model</label>
                     </div>
-                    <h3 class="pb-4">Dual SIM/Micro SD</h3>
+                    <h3 class="pb-4">Fingerprint Unlock</h3>
                     <div class="form-group product-detail d-inline-block">
                       <select class="form-control" required>
                         <option value="" selected="selected"></option>
-                        <option value="plastic">Only SIM</option>
-                        <option value="aluminium">SIM and Micro SD</option>
-                        <option value="aluminium">Dual SIM and Micro SD</option>
+                        <option value="plastic">On button</option>
+                        <option value="aluminium">On back</option>
                       </select>
                       <label class="form-control-placeholder" for="edit-streetname">Position</label>
                     </div>
@@ -570,6 +590,57 @@
           </div>
         </div>
       </div>
+    </section>
+    <section>
+      <input type="hidden" id="p-type" value="">
+      <input type="hidden" id="p-display-material" value="">
+      <input type="hidden" id="p-display-notch" value="">
+      <input type="hidden" id="p-display-size" value="">
+      <input type="hidden" id="p-display-aspectratio" value="">
+      <input type="hidden" id="p-display-resolution" value="">
+      <input type="hidden" id="p-border-color" value="">
+      <input type="hidden" id="p-border-size" value="">
+      <input type="hidden" id="p-frame-material" value="">
+      <input type="hidden" id="p-frame-color" value="">
+      <input type="hidden" id="p-frame-shape" value="">
+      <input type="hidden" id="p-backpanel-material" value="">
+      <input type="hidden" id="p-backpanel-color" value="">
+
+      <input type="hidden" id="p-homebutton-include" value="">
+      <input type="hidden" id="p-homebutton-material" value="">
+      <input type="hidden" id="p-homebutton-color" value="">
+      <input type="hidden" id="p-homebutton-position" value="">
+      <input type="hidden" id="p-lockbutton-material" value="">
+      <input type="hidden" id="p-lockbutton-color" value="">
+      <input type="hidden" id="p-lockbutton-position" value="">
+      <input type="hidden" id="p-volumebutton-material" value="">
+      <input type="hidden" id="p-volumebutton-color" value="">
+      <input type="hidden" id="p-volumebutton-position" value="">
+      <input type="hidden" id="p-custombutton-include" value="">
+      <input type="hidden" id="p-custombutton-material" value="">
+      <input type="hidden" id="p-custombutton-color" value="">
+      <input type="hidden" id="p-custombutton-position" value="">
+
+      <input type="hidden" id="p-chargingport-type" value="">
+      <input type="hidden" id="p-jackport-include" value="">
+      <input type="hidden" id="p-jackport-position" value="">
+      <input type="hidden" id="p-nfc-include" value="">
+      <input type="hidden" id="p-wirelesscharging-include" value="">
+
+      <input type="hidden" id="p-maincamera-megapixels" value="">
+      <input type="hidden" id="p-maincamera-type" value="">
+      <input type="hidden" id="p-maincamera-position" value="">
+      <input type="hidden" id="p-frontcamera-megapixels" value="">
+      <input type="hidden" id="p-frontcamera-type" value="">
+      <input type="hidden" id="p-frontcamera-position" value="">
+      <input type="hidden" id="p-flash-type" value="">
+
+      <input type="hidden" id="p-cpu-model" value="">
+      <input type="hidden" id="p-storage-option" value="">
+      <input type="hidden" id="p-gpu-model" value="">
+      <input type="hidden" id="p-ram-option" value="">
+      <input type="hidden" id="p-fingerprintunlock-position" value="">
+      <input type="hidden" id="p-battery-option" value="">
     </section>
     <footer class="page-footer font-small mt-5 fixed-bottom dark-text">
       <div class="container text-center text-md-left">
