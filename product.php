@@ -179,6 +179,14 @@
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Resolution</label>
               </div>
+              <div class="form-group product-detail d-inline-block">
+                <select class="form-control" required>
+                  <option value="" selected="selected"></option>
+                  <option value="lcd">LCD"</option>
+                  <option value="amoled">AMOLED"</option>
+                </select>
+                <label class="form-control-placeholder" for="edit-streetname">Type</label>
+              </div>
               <br>
               <h3 class="d-inline-block">Border</h3>
               <div id="border-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
@@ -190,8 +198,8 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="AL">Plastic</option>
-                  <option value="AK">Aluminium</option>
+                  <option value="small">Small</option>
+                  <option value="big">Big</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Size</label>
               </div>
@@ -206,23 +214,23 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="AL">Plastic</option>
-                  <option value="AK">Aluminium</option>
+                  <option value="plastic">Plastic</option>
+                  <option value="aluminium">Aluminium</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="AL">Plastic</option>
-                  <option value="AK">Aluminium</option>
+                  <option value="rectangular">Rectangular</option>
+                  <option value="rounded">Rounded</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Shape</label>
               </div>
 
               <br>
               <h3 class="d-inline-block">Back Panel</h3>
-              <div id="border-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
+              <div id="backpanel-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
                 <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
                 <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
                 <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
@@ -231,8 +239,8 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="AL">Plastic</option>
-                  <option value="AK">Aluminium</option>
+                  <option value="plastic">Plastic</option>
+                  <option value="aluminium">Aluminium</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
@@ -246,130 +254,116 @@
 
 
             <form id="product-slide-2" style="padding-top: 2.7rem !important;display:none">
-              <h3 class="pb-4">Home Button</h3>
+              <br>
+              <h3 class="d-inline-block">Home Button</h3>
+              <div id="homebutton-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
+                <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
+                <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
+                <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
+              </div>
+              <br>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Plastic</option>
-                  <option value="aluminium">Aluminium</option>
-                  <option value="plastic">Stainless steel frame</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Include</label>
               </div>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="5">5"</option>
-                  <option value="5.5">5.5"</option>
-                  <option value="6">6"</option>
+                  <option value="plastic">Plastic</option>
+                  <option value="aluminium">Aluminium</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="aluminium">Black</option>
-                  <option value="aluminium">White</option>
-                  <option value="aluminium">Rose Gold</option>
-                  <option value="aluminium">Steel</option>
-                  <option value="plastic">Gold</option>
+                  <option value="circle">Circle</option>
+                  <option value="square">Square</option>
                 </select>
-                <label class="form-control-placeholder" for="edit-streetname">Color</label>
+                <label class="form-control-placeholder" for="edit-streetname">Shape</label>
               </div>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
-                  <option value="" selected="selected"></option>
-                  <option value="AL">Plastic</option>
-                  <option value="AK">Aluminium</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Position</label>
+              <br>
+              <h3 class="d-inline-block">Lock Button</h3>
+              <div id="homebutton-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
+                <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
+                <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
+                <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
               </div>
-
-              <h3 class="pb-4">Lock Button</h3>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
-                  <option value="" selected="selected"></option>
-                  <option value="5">5"</option>
-                  <option value="5.5">5.5"</option>
-                  <option value="6">6"</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Material</label>
-              </div>
+              <br>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
                   <option value="plastic">Plastic</option>
                   <option value="aluminium">Aluminium</option>
                 </select>
-                <label class="form-control-placeholder" for="edit-streetname">Color</label>
+                <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="AL">Plastic</option>
-                  <option value="AK">Aluminium</option>
+                  <option value="left">Left</option>
+                  <option value="right">Right</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Position</label>
               </div>
-
-              <h3 class="pb-4">Volume Button</h3>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
-                  <option value="" selected="selected"></option>
-                  <option value="5">5"</option>
-                  <option value="5.5">5.5"</option>
-                  <option value="6">6"</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Material</label>
+              <br>
+              <h3 class="d-inline-block">Volume Button</h3>
+              <div id="homebutton-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
+                <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
+                <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
+                <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
               </div>
+              <br>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
                   <option value="plastic">Plastic</option>
                   <option value="aluminium">Aluminium</option>
                 </select>
-                <label class="form-control-placeholder" for="edit-streetname">Color</label>
+                <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="AL">Plastic</option>
-                  <option value="AK">Aluminium</option>
+                  <option value="left">Left</option>
+                  <option value="right">Right</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Position</label>
               </div>
 
+              <br>
               <h3 class="pb-4">Custom Button</h3>
+              <div id="homebutton-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
+                <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
+                <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
+                <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
+              </div>
+              <br>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Plastic</option>
-                  <option value="aluminium">Aluminium</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Include</label>
               </div>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="5">5"</option>
-                  <option value="5.5">5.5"</option>
-                  <option value="6">6"</option>
+                  <option value="plastic">Plastic</option>
+                  <option value="aluminium">Aluminium</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Plastic</option>
-                  <option value="aluminium">Aluminium</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Color</label>
-              </div>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
-                  <option value="" selected="selected"></option>
-                  <option value="AL">Plastic</option>
-                  <option value="AK">Aluminium</option>
+                  <option value="left">Left</option>
+                  <option value="right">Right</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Position</label>
               </div>
@@ -385,8 +379,8 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Plastic</option>
-                  <option value="aluminium">Aluminium</option>
+                  <option value="mini-usb">Mini-USB</option>
+                  <option value="type-c">Type-C</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Type</label>
               </div>
@@ -394,25 +388,17 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Plastic</option>
-                  <option value="aluminium">Aluminium</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Include</label>
-              </div>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
-                  <option value="" selected="selected"></option>
-                  <option value="plastic">Plastic</option>
-                  <option value="aluminium">Aluminium</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Position</label>
               </div>
               <h3 class="pb-4">NFC</h3>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Plastic</option>
-                  <option value="aluminium">Aluminium</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Include</label>
               </div>
@@ -420,8 +406,8 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Plastic</option>
-                  <option value="aluminium">Aluminium</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Include</label>
               </div>
@@ -437,60 +423,46 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Plastic</option>
-                  <option value="aluminium">Aluminium</option>
+                  <option value="8mp">8MP</option>
+                  <option value="12mp">12MP</option>
+                  <option value="20mp">20MP</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Megapixels</label>
               </div>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Normal</option>
-                  <option value="aluminium">Dual</option>
+                  <option value="normal">Normal</option>
+                  <option value="dual">Dual</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Type</label>
               </div>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Normal</option>
-                  <option value="aluminium">Dual</option>
+                  <option value="vertical">Vertical</option>
+                  <option value="horizontal">Horizontal</option>
                 </select>
-                <label class="form-control-placeholder" for="edit-streetname">Position</label>
+                <label class="form-control-placeholder" for="edit-streetname">Layout</label>
               </div>
 
               <h3 class="pb-4">Front Camera</h3>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Plastic</option>
-                  <option value="aluminium">Aluminium</option>
+                  <option value="8mp">8MP</option>
+                  <option value="12mp">12MP</option>
+                  <option value="20mp">20MP</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Megapixels</label>
-              </div>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
-                  <option value="" selected="selected"></option>
-                  <option value="plastic">Normal</option>
-                  <option value="aluminium">Dual</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Type</label>
-              </div>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
-                  <option value="" selected="selected"></option>
-                  <option value="plastic">Normal</option>
-                  <option value="aluminium">Dual</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Position</label>
               </div>
 
               <h3 class="pb-4">Flash</h3>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Only Back</option>
-                  <option value="aluminium">Both Sides</option>
+                  <option value="only-back">Only Back</option>
+                  <option value="both-sides">Both Sides</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Type</label>
               </div>
@@ -499,8 +471,8 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Only Back</option>
-                  <option value="aluminium">Both Sides</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Include</label>
               </div>
@@ -519,9 +491,9 @@
                     <div class="form-group product-detail d-inline-block">
                       <select class="form-control" required>
                         <option value="" selected="selected"></option>
-                        <option value="plastic">Low end</option>
-                        <option value="aluminium">Medium</option>
-                        <option value="aluminium">High end</option>
+                        <option value="low-end">Low end</option>
+                        <option value="medium">Medium</option>
+                        <option value="high-end">High end</option>
                       </select>
                       <label class="form-control-placeholder" for="edit-streetname">Model</label>
                     </div>
@@ -529,9 +501,9 @@
                     <div class="form-group product-detail d-inline-block">
                       <select class="form-control" required>
                         <option value="" selected="selected"></option>
-                        <option value="plastic">Low end</option>
-                        <option value="aluminium">Medium</option>
-                        <option value="aluminium">High end</option>
+                        <option value="low-end">Low end</option>
+                        <option value="medium">Medium</option>
+                        <option value="high-end">High end</option>
                       </select>
                       <label class="form-control-placeholder" for="edit-streetname">Model</label>
                     </div>
@@ -539,10 +511,10 @@
                     <div class="form-group product-detail d-inline-block">
                       <select class="form-control" required>
                         <option value="" selected="selected"></option>
-                        <option value="plastic">On button</option>
-                        <option value="aluminium">On back</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
                       </select>
-                      <label class="form-control-placeholder" for="edit-streetname">Position</label>
+                      <label class="form-control-placeholder" for="edit-streetname">Include</label>
                     </div>
                   </div>
                   <div class="col-sm">
@@ -550,9 +522,9 @@
                     <div class="form-group product-detail d-inline-block">
                       <select class="form-control" required>
                         <option value="" selected="selected"></option>
-                        <option value="plastic">Only SIM</option>
-                        <option value="aluminium">SIM and Micro SD</option>
-                        <option value="aluminium">Dual SIM and Micro SD</option>
+                        <option value="32gb">32GB</option>
+                        <option value="64gb">64GB</option>
+                        <option value="128gb">128GB</option>
                       </select>
                       <label class="form-control-placeholder" for="edit-streetname">Option</label>
                     </div>
@@ -560,9 +532,9 @@
                     <div class="form-group product-detail d-inline-block">
                       <select class="form-control" required>
                         <option value="" selected="selected"></option>
-                        <option value="plastic">Only SIM</option>
-                        <option value="aluminium">SIM and Micro SD</option>
-                        <option value="aluminium">Dual SIM and Micro SD</option>
+                        <option value="2gb">2GB</option>
+                        <option value="4gb">4GB</option>
+                        <option value="8gb">6GB</option>
                       </select>
                       <label class="form-control-placeholder" for="edit-streetname">Option</label>
                     </div>
@@ -570,9 +542,9 @@
                     <div class="form-group product-detail d-inline-block">
                       <select class="form-control" required>
                         <option value="" selected="selected"></option>
-                        <option value="plastic">Only SIM</option>
-                        <option value="aluminium">SIM and Micro SD</option>
-                        <option value="aluminium">Dual SIM and Micro SD</option>
+                        <option value="2,000mah">2,000mAh</option>
+                        <option value="3,000mah">3,000mAh</option>
+                        <option value="4,000mah">4,000mAh</option>
                       </select>
                       <label class="form-control-placeholder" for="edit-streetname">Option</label>
                     </div>
