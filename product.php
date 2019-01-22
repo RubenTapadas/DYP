@@ -141,14 +141,6 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Plastic</option>
-                  <option value="aluminium">Aluminium</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Material</label>
-              </div>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
-                  <option value="" selected="selected"></option>
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
                 </select>
@@ -336,7 +328,7 @@
               </div>
 
               <br>
-              <h3 class="pb-4">Custom Button</h3>
+              <h3 class="d-inline-block">Custom Button</h3>
               <div id="homebutton-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
                 <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
                 <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
@@ -565,11 +557,12 @@
     </section>
     <section>
       <input type="hidden" id="p-type" value="">
-      <input type="hidden" id="p-display-material" value="">
+
       <input type="hidden" id="p-display-notch" value="">
       <input type="hidden" id="p-display-size" value="">
       <input type="hidden" id="p-display-aspectratio" value="">
       <input type="hidden" id="p-display-resolution" value="">
+      <input type="hidden" id="p-display-type" value="">
       <input type="hidden" id="p-border-color" value="">
       <input type="hidden" id="p-border-size" value="">
       <input type="hidden" id="p-frame-material" value="">
@@ -581,7 +574,7 @@
       <input type="hidden" id="p-homebutton-include" value="">
       <input type="hidden" id="p-homebutton-material" value="">
       <input type="hidden" id="p-homebutton-color" value="">
-      <input type="hidden" id="p-homebutton-position" value="">
+      <input type="hidden" id="p-homebutton-shape" value="">
       <input type="hidden" id="p-lockbutton-material" value="">
       <input type="hidden" id="p-lockbutton-color" value="">
       <input type="hidden" id="p-lockbutton-position" value="">
@@ -595,23 +588,21 @@
 
       <input type="hidden" id="p-chargingport-type" value="">
       <input type="hidden" id="p-jackport-include" value="">
-      <input type="hidden" id="p-jackport-position" value="">
       <input type="hidden" id="p-nfc-include" value="">
       <input type="hidden" id="p-wirelesscharging-include" value="">
 
       <input type="hidden" id="p-maincamera-megapixels" value="">
       <input type="hidden" id="p-maincamera-type" value="">
-      <input type="hidden" id="p-maincamera-position" value="">
+      <input type="hidden" id="p-maincamera-layout" value="">
       <input type="hidden" id="p-frontcamera-megapixels" value="">
-      <input type="hidden" id="p-frontcamera-type" value="">
-      <input type="hidden" id="p-frontcamera-position" value="">
       <input type="hidden" id="p-flash-type" value="">
+      <input type="hidden" id="p-faceunlock-include" value="">
 
       <input type="hidden" id="p-cpu-model" value="">
       <input type="hidden" id="p-storage-option" value="">
       <input type="hidden" id="p-gpu-model" value="">
       <input type="hidden" id="p-ram-option" value="">
-      <input type="hidden" id="p-fingerprintunlock-position" value="">
+      <input type="hidden" id="p-fingerprintunlock-include" value="">
       <input type="hidden" id="p-battery-option" value="">
     </section>
     <footer class="page-footer font-small mt-5 fixed-bottom dark-text">

@@ -162,6 +162,17 @@ $(window).on('load', function() {
     }
   });
 
+  //Product Verification
+  $('select').on('change', function (e) {
+    var optionSelected = $("option:selected", this);
+    var valueSelected = this.value;
+    ....
+});
+
+
+  //Product Verification
+
+
 
   //Google
   /* function onSignIn(googleUser) {
