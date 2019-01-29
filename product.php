@@ -34,8 +34,8 @@
 
     <div class="out-note">
       <div class="note">
-        <h2>Note example</h2>
-        <p>Note description, more words to see if its responsive.</p>
+        <h2 class="note-title">Note example</h2>
+        <p class="note-text">Note description, more words to see if its responsive.</p>
       </div>
     </div>
 
@@ -137,7 +137,7 @@
 
             </form>
             <form id="product-slide-1" style="padding-top: 2.7rem !important;display:none">
-              <h3 class="pb-4">Display</h3>
+              <h3 class="">Display</h3>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
@@ -219,7 +219,6 @@
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Shape</label>
               </div>
-
               <br>
               <h3 class="d-inline-block">Back Panel</h3>
               <div id="backpanel-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
@@ -246,7 +245,6 @@
 
 
             <form id="product-slide-2" style="padding-top: 2.7rem !important;display:none">
-              <br>
               <h3 class="d-inline-block">Home Button</h3>
               <div id="homebutton-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
                 <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
@@ -254,15 +252,15 @@
                 <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
               </div>
               <br>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+              <div  class="form-group product-detail d-inline-block">
+                <select id="include-homebtn" class="form-control" required>
                   <option value="" selected="selected"></option>
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Include</label>
               </div>
-              <div class="form-group product-detail d-inline-block">
+              <div class="form-group product-detail include-homebtn-item">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
                   <option value="plastic">Plastic</option>
@@ -270,7 +268,7 @@
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
-              <div class="form-group product-detail d-inline-block">
+              <div class="form-group product-detail include-homebtn-item">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
                   <option value="circle">Circle</option>
@@ -326,7 +324,6 @@
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Position</label>
               </div>
-
               <br>
               <h3 class="d-inline-block">Custom Button</h3>
               <div id="homebutton-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
@@ -336,14 +333,14 @@
               </div>
               <br>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select id="include-custombtn" class="form-control" required>
                   <option value="" selected="selected"></option>
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Include</label>
               </div>
-              <div class="form-group product-detail d-inline-block">
+              <div class="form-group product-detail include-custombtn-item">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
                   <option value="plastic">Plastic</option>
@@ -351,7 +348,7 @@
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
-              <div class="form-group product-detail d-inline-block">
+              <div class="form-group product-detail include-custombtn-item">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
                   <option value="left">Left</option>
@@ -367,7 +364,7 @@
             </form>
 
             <form id="product-slide-3" style="padding-top: 2.7rem !important; display:none">
-              <h3 class="pb-4">Charging Port</h3>
+              <h3 class="">Charging Port</h3>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
@@ -376,7 +373,7 @@
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Type</label>
               </div>
-              <h3 class="pb-4">Jack Port</h3>
+              <h3 class="">Jack Port</h3>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
@@ -385,7 +382,7 @@
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Include</label>
               </div>
-              <h3 class="pb-4">NFC</h3>
+              <h3 class="">NFC</h3>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
@@ -394,7 +391,7 @@
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Include</label>
               </div>
-              <h3 class="pb-4">Wirless Charging</h3>
+              <h3 class="">Wirless Charging</h3>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
@@ -411,7 +408,7 @@
             </form>
 
             <form id="product-slide-4" style="padding-top: 2.7rem !important; display:none">
-              <h3 class="pb-4">Main Camera</h3>
+              <h3 class="">Main Camera</h3>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
@@ -438,7 +435,7 @@
                 <label class="form-control-placeholder" for="edit-streetname">Layout</label>
               </div>
 
-              <h3 class="pb-4">Front Camera</h3>
+              <h3 class="">Front Camera</h3>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
@@ -449,7 +446,7 @@
                 <label class="form-control-placeholder" for="edit-streetname">Megapixels</label>
               </div>
 
-              <h3 class="pb-4">Flash</h3>
+              <h3 class="">Flash</h3>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
@@ -459,7 +456,7 @@
                 <label class="form-control-placeholder" for="edit-streetname">Type</label>
               </div>
 
-              <h3 class="pb-4">Face Unlock</h3>
+              <h3 class="">Face Unlock</h3>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control" required>
                   <option value="" selected="selected"></option>
@@ -479,7 +476,7 @@
               <div class="container pt-0">
                 <div class="row">
                   <div class="col-sm">
-                    <h3 class="pb-4">CPU</h3>
+                    <h3 class="">CPU</h3>
                     <div class="form-group product-detail d-inline-block">
                       <select class="form-control" required>
                         <option value="" selected="selected"></option>
@@ -489,7 +486,7 @@
                       </select>
                       <label class="form-control-placeholder" for="edit-streetname">Model</label>
                     </div>
-                    <h3 class="pb-4">GPU</h3>
+                    <h3 class="">GPU</h3>
                     <div class="form-group product-detail d-inline-block">
                       <select class="form-control" required>
                         <option value="" selected="selected"></option>
@@ -499,7 +496,7 @@
                       </select>
                       <label class="form-control-placeholder" for="edit-streetname">Model</label>
                     </div>
-                    <h3 class="pb-4">Fingerprint Unlock</h3>
+                    <h3 class="">Fingerprint Unlock</h3>
                     <div class="form-group product-detail d-inline-block">
                       <select class="form-control" required>
                         <option value="" selected="selected"></option>
@@ -510,7 +507,7 @@
                     </div>
                   </div>
                   <div class="col-sm">
-                    <h3 class="pb-4">Storage</h3>
+                    <h3 class="">Storage</h3>
                     <div class="form-group product-detail d-inline-block">
                       <select class="form-control" required>
                         <option value="" selected="selected"></option>
@@ -520,7 +517,7 @@
                       </select>
                       <label class="form-control-placeholder" for="edit-streetname">Option</label>
                     </div>
-                    <h3 class="pb-4">RAM</h3>
+                    <h3 class="">RAM</h3>
                     <div class="form-group product-detail d-inline-block">
                       <select class="form-control" required>
                         <option value="" selected="selected"></option>
@@ -530,7 +527,7 @@
                       </select>
                       <label class="form-control-placeholder" for="edit-streetname">Option</label>
                     </div>
-                    <h3 class="pb-4">Battery</h3>
+                    <h3 class="">Battery</h3>
                     <div class="form-group product-detail d-inline-block">
                       <select class="form-control" required>
                         <option value="" selected="selected"></option>
@@ -547,7 +544,7 @@
 
               <div>
                 <button type="button" id="product-slide-9-button" class="btn btn-primary float-left mt-2">Previous</button>
-                <button type="button" id="product-slide-5-button" class="btn btn-primary float-right mt-2">Finish</button>
+                <button type="button" id="product-slide-5-button" class="btn btn-primary float-right mt-2 verify">Finish</button>
               </div>
             </form>
 

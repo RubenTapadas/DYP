@@ -4,13 +4,9 @@ $(window).on('load', function() {
   if ($.isNumeric($('#fetch_user_id').val()) && $('#fetch_user_id').val() != "0") {
     $(".user_yes").show();
     $(".user_no").hide();
-    console.log("yes");
-    console.log($('#fetch_user_id').val());
   } else {
     $(".user_yes").hide();
     $(".user_no").show();
-    console.log("no");
-    console.log($('#fetch_user_id').val());
   }
 
   //Note
@@ -72,15 +68,7 @@ $(window).on('load', function() {
     var login_email = $.trim($('#login-email').val());
     var login_password = $.trim($('#login-password').val());
 
-    if (login_email == "" || login_email == null) {
-      console.log("email nothing");
-    } else if (!testEmail.test(login_email)) {
-      console.log("email wrong format");
-    } else if (login_password == "" || login_password == null) {
-      console.log("password nothing");
-    } else {
-      console.log('starting ajax');
-    }
+    if (login_email == "" || login_email == null) {} else if (!testEmail.test(login_email)) {} else if (login_password == "" || login_password == null) {} else {}
   });
 
   //Change Pages
@@ -99,10 +87,17 @@ $(window).on('load', function() {
   });
 
   //Product Slides
+
   $("#product-slide-0-button").click(function() {
-    $("#product-slide-0").fadeOut();
-    $("#product-slide-1").delay(390).fadeIn();
-    $(".progress-bar").css("width", "20%");
+    if ($('#p-type').val() == "") {
+      $('.note-title').text("Missing info");
+      $('.note-text').text("You need to pick a type of product first.");
+      $(".out-note").fadeIn();
+    } else {
+      $("#product-slide-0").fadeOut();
+      $("#product-slide-1").delay(390).fadeIn();
+      $(".progress-bar").css("width", "20%");
+    }
   });
   $("#product-slide-1-button").click(function() {
     $("#product-slide-1").fadeOut();
@@ -162,17 +157,45 @@ $(window).on('load', function() {
     }
   });
 
+
+
+  //Product Include
+  $('#include-homebtn').change(function() {
+    if ($(this).val() == 'yes') {
+      $('.include-homebtn-item').css("display", "inline-block");
+    } else if ($(this).val() == 'no') {
+      $('.include-homebtn-item').css("display", "none");
+    }
+  });
+  $('#include-custombtn').change(function() {
+    if ($(this).val() == 'yes') {
+      $('.include-custombtn-item').css("display", "inline-block");
+    } else if ($(this).val() == 'no') {
+      $('.include-custombtn-item').css("display", "none");
+    }
+  });
+
   //Product Verification
-  $('select').on('change', function (e) {
+  $('select').on('change', function(e) {
     var optionSelected = $("option:selected", this);
     var valueSelected = this.value;
-    ....
-});
-
+  });
 
   //Product Verification
+  $('#product-phone').click(function() {
+    $('#p-type').val("phone");
+  });
+  $('#product-tablet').click(function() {
+    $('#p-type').val("tablet");
+  });
+
+  //Product Progress
 
 
+  //Comment Validation
+  $('.verify').click(function() {
+    console.log("Type: " + $('#p-type').val());
+  });
 
   //Google
   /* function onSignIn(googleUser) {
