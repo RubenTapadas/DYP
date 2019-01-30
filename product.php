@@ -139,7 +139,7 @@
             <form id="product-slide-1" style="padding-top: 2.7rem !important;display:none">
               <h3 class="">Display</h3>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-display-notch" required>
                   <option value="" selected="selected"></option>
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
@@ -147,7 +147,7 @@
                 <label class="form-control-placeholder" for="edit-streetname">Notch</label>
               </div>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-display-size" required>
                   <option value="" selected="selected"></option>
                   <option value="5'">5'</option>
                   <option value="5.5'">5.5'</option>
@@ -156,26 +156,26 @@
                 <label class="form-control-placeholder" for="edit-streetname">Size</label>
               </div>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-display-aspectratio" required>
                   <option value="" selected="selected"></option>
-                  <option value="18:6">18:6"</option>
-                  <option value="18:9">18:9"</option>
+                  <option value="18:6">18:6</option>
+                  <option value="18:9">18:9</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Aspect ratio</label>
               </div>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-display-resolution" required>
                   <option value="" selected="selected"></option>
-                  <option value="720p">720p"</option>
-                  <option value="1080p">1080p"</option>
+                  <option value="720p">720p</option>
+                  <option value="1080p">1080p</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Resolution</label>
               </div>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-display-type" required>
                   <option value="" selected="selected"></option>
-                  <option value="lcd">LCD"</option>
-                  <option value="amoled">AMOLED"</option>
+                  <option value="lcd">LCD</option>
+                  <option value="amoled">AMOLED</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Type</label>
               </div>
@@ -188,7 +188,7 @@
               </div>
               <br>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-border-size" required>
                   <option value="" selected="selected"></option>
                   <option value="small">Small</option>
                   <option value="big">Big</option>
@@ -197,14 +197,14 @@
               </div>
               <br>
               <h3 class="d-inline-block">Frame</h3>
-              <div id="border-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
+              <div id="frame-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
                 <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
                 <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
                 <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
               </div>
               <br>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-frame-material" required>
                   <option value="" selected="selected"></option>
                   <option value="plastic">Plastic</option>
                   <option value="aluminium">Aluminium</option>
@@ -212,7 +212,7 @@
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-frame-shape" required>
                   <option value="" selected="selected"></option>
                   <option value="rectangular">Rectangular</option>
                   <option value="rounded">Rounded</option>
@@ -228,7 +228,7 @@
               </div>
               <br>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-backpanel-material" required>
                   <option value="" selected="selected"></option>
                   <option value="plastic">Plastic</option>
                   <option value="aluminium">Aluminium</option>

@@ -181,7 +181,7 @@ $(window).on('load', function() {
     var valueSelected = this.value;
   });
 
-  //Product Verification
+  //Product Progress
   $('#product-phone').click(function() {
     $('#p-type').val("phone");
   });
@@ -189,12 +189,42 @@ $(window).on('load', function() {
     $('#p-type').val("tablet");
   });
 
-  //Product Progress
+  $("#border-colors div").click(function() {
+    $("#p-border-color").val($(this).attr('id'));
+  });
+  $("#frame-colors div").click(function() {
+    $("#p-frame-color").val($(this).attr('id'));
+  });
+  $("#backpanel-colors div").click(function() {
+    $("#p-backpanel-color").val($(this).attr('id'));
+  });
 
+  $('#product-slide-1-button').click(function() {
+    $("#p-display-notch").val($(".p-display-notch").val());
+    $("#p-display-size").val($(".p-display-size").val());
+    $("#p-display-aspectratio").val($(".p-display-aspectratio").val());
+    $("#p-display-resolution").val($(".p-display-resolution").val());
+    $("#p-display-type").val($(".p-display-type").val());
+    $("#p-border-size").val($(".p-border-size").val());
+    $("#p-frame-material").val($(".p-frame-material").val());
+    $("#p-frame-shape").val($(".p-frame-shape").val());
+    $("#p-backpanel-material").val($(".p-backpanel-material").val());
+  });
 
-  //Comment Validation
+  //Comment Console Validation
   $('.verify').click(function() {
-    console.log("Type: " + $('#p-type').val());
+    console.log("Type: " + $('#p-display-notch').val());
+    console.log("Type: " + $('#p-display-size').val());
+    console.log("Type: " + $('#p-display-aspectratio').val());
+    console.log("Type: " + $('#p-display-resolution').val());
+    console.log("Type: " + $('#p-display-type').val());
+    console.log("Type: " + $('#p-border-color').val());
+    console.log("Type: " + $('#p-border-size').val());
+    console.log("Type: " + $('#p-frame-material').val());
+    console.log("Type: " + $('#p-frame-color').val());
+    console.log("Type: " + $('#p-frame-shape').val());
+    console.log("Type: " + $('#p-backpanel-material').val());
+    console.log("Type: " + $('#p-backpanel-color').val());
   });
 
   //Google
