@@ -86,68 +86,9 @@ $(window).on('load', function() {
     $("#product-phone").css("border", "none");
   });
 
-  //Product Slides
+  //Label Click
 
-  $("#product-slide-0-button").click(function() {
-    if ($('#p-type').val() == "") {
-      $('.note-title').text("Missing info");
-      $('.note-text').text("You need to pick a type of product first.");
-      $(".out-note").fadeIn();
-    } else {
-      $("#product-slide-0").fadeOut();
-      $("#product-slide-1").delay(390).fadeIn();
-      $(".progress-bar").css("width", "20%");
-    }
-  });
-  $("#product-slide-1-button").click(function() {
-    $("#product-slide-1").fadeOut();
-    $("#product-slide-2").delay(390).fadeIn();
-    $(".progress-bar").css("width", "40%");
-  });
-  $("#product-slide-2-button").click(function() {
-    $("#product-slide-2").fadeOut();
-    $("#product-slide-3").delay(390).fadeIn();
-    $(".progress-bar").css("width", "60%");
-  });
-  $("#product-slide-3-button").click(function() {
-    $("#product-slide-3").fadeOut();
-    $("#product-slide-4").delay(390).fadeIn();
-    $(".progress-bar").css("width", "80%");
-  });
-  $("#product-slide-4-button").click(function() {
-    $("#product-slide-4").fadeOut();
-    $("#product-slide-5").delay(390).fadeIn();
-    $(".progress-bar").css("width", "100%");
-  });
-
-
-  $("#product-slide-5-button").click(function() {
-    $("#product-slide-1").fadeOut();
-    $("#product-slide-0").delay(390).fadeIn();
-    $(".progress-bar").css("width", "0%");
-  });
-  $("#product-slide-6-button").click(function() {
-    $("#product-slide-2").fadeOut();
-    $("#product-slide-1").delay(390).fadeIn();
-    $(".progress-bar").css("width", "20%");
-  });
-  $("#product-slide-7-button").click(function() {
-    $("#product-slide-3").fadeOut();
-    $("#product-slide-2").delay(390).fadeIn();
-    $(".progress-bar").css("width", "40%");
-  });
-  $("#product-slide-8-button").click(function() {
-    $("#product-slide-4").fadeOut();
-    $("#product-slide-3").delay(390).fadeIn();
-    $(".progress-bar").css("width", "60%");
-  });
-  $("#product-slide-9-button").click(function() {
-    $("#product-slide-5").fadeOut();
-    $("#product-slide-4").delay(390).fadeIn();
-    $(".progress-bar").css("width", "80%");
-  });
-
-  //Product Slides
+  //Product Colors
   $(".product-circle").click(function() {
     $(this).parent().find('*').removeClass("active-color-black").removeClass("active-color-white");
     if ($(this).attr("id") == "color-black") {
@@ -199,6 +140,19 @@ $(window).on('load', function() {
     $("#p-backpanel-color").val($(this).attr('id'));
   });
 
+  $("#homebutton-colors div").click(function() {
+    $("#p-homebutton-color").val($(this).attr('id'));
+  });
+  $("#lockbutton-colors div").click(function() {
+    $("#p-lockbutton-color").val($(this).attr('id'));
+  });
+  $("#volumebutton-colors div").click(function() {
+    $("#p-volumebutton-color").val($(this).attr('id'));
+  });
+  $("#custombutton-colors div").click(function() {
+    $("#p-custombutton-color").val($(this).attr('id'));
+  });
+
   $('#product-slide-1-button').click(function() {
     $("#p-display-notch").val($(".p-display-notch").val());
     $("#p-display-size").val($(".p-display-size").val());
@@ -209,6 +163,44 @@ $(window).on('load', function() {
     $("#p-frame-material").val($(".p-frame-material").val());
     $("#p-frame-shape").val($(".p-frame-shape").val());
     $("#p-backpanel-material").val($(".p-backpanel-material").val());
+  });
+
+  $('#product-slide-2-button').click(function() {
+    $("#p-homebutton-include").val($(".p-homebutton-include").val());
+    $("#p-homebutton-material").val($(".p-homebutton-material").val());
+    $("#p-homebutton-shape").val($(".p-homebutton-shape").val());
+    $("#p-lockbutton-material").val($(".p-lockbutton-material").val());
+    $("#p-lockbutton-position").val($(".p-lockbutton-position").val());
+    $("#p-volumebutton-material").val($(".p-volumebutton-material").val());
+    $("#p-volumebutton-position").val($(".p-volumebutton-position").val());
+    $("#p-custombutton-include").val($(".p-custombutton-include").val());
+    $("#p-custombutton-material").val($(".p-custombutton-material").val());
+    $("#p-custombutton-position").val($(".p-custombutton-position").val());
+  });
+
+  $('#product-slide-3-button').click(function() {
+    $("#p-chargingport-type").val($(".p-chargingport-type").val());
+    $("#p-jackport-include").val($(".p-jackport-include").val());
+    $("#p-nfc-include").val($(".p-nfc-include").val());
+    $("#p-wirelesscharging-include").val($(".p-wirelesscharging-include").val());
+  });
+
+  $('#product-slide-4-button').click(function() {
+    $("#p-maincamera-megapixels").val($(".p-maincamera-megapixels").val());
+    $("#p-maincamera-type").val($(".p-maincamera-type").val());
+    $("#p-maincamera-layout").val($(".p-maincamera-layout").val());
+    $("#p-frontcamera-megapixels").val($(".p-frontcamera-megapixels").val());
+    $("#p-flash-type").val($(".p-flash-type").val());
+    $("#p-faceunlock-include").val($(".p-faceunlock-include").val());
+  });
+
+  $('.verify').click(function() {
+    $("#p-cpu-model").val($(".p-cpu-model").val());
+    $("#p-storage-option").val($(".p-storage-option").val());
+    $("#p-gpu-model").val($(".p-gpu-model").val());
+    $("#p-ram-option").val($(".p-ram-option").val());
+    $("#p-fingerprintunlock-include").val($(".fingerprintunlock-include").val());
+    $("#p-battery-option").val($(".p-battery-option").val());
   });
 
   //Comment Console Validation
@@ -225,6 +217,74 @@ $(window).on('load', function() {
     console.log("Type: " + $('#p-frame-shape').val());
     console.log("Type: " + $('#p-backpanel-material').val());
     console.log("Type: " + $('#p-backpanel-color').val());
+  });
+
+  //Product Slides
+  $("#product-slide-0-button").click(function() {
+    if ($('#p-type').val() == "") {
+      $('.note-title').text("Missing info");
+      $('.note-text').text("You need to pick a type of product first.");
+      $(".out-note").fadeIn();
+    } else {
+      $("#product-slide-0").fadeOut();
+      $("#product-slide-1").delay(390).fadeIn();
+      $(".progress-bar").css("width", "20%");
+    }
+  });
+
+  $("#product-slide-1-button").click(function() {
+    if ($('#p-display-notch').val() == "" || $('#p-display-aspectratio').val() == "" || $('#p-display-resolution').val() == "" || $('#p-display-type').val() == "" || $('#p-border-size').val() == "" || $('#p-frame-material').val() == "" || $('#p-frame-shape').val() == "" || $('#p-backpanel-material').val() == "") {
+      $('.note-title').text("Missing info");
+      $('.note-text').text("You need to fill out every field.");
+      $(".out-note").fadeIn();
+    } else {
+      $("#product-slide-1").fadeOut();
+      $("#product-slide-2").delay(390).fadeIn();
+      $(".progress-bar").css("width", "40%");
+    }
+  });
+
+  $("#product-slide-2-button").click(function() {
+    $("#product-slide-2").fadeOut();
+    $("#product-slide-3").delay(390).fadeIn();
+    $(".progress-bar").css("width", "60%");
+  });
+  $("#product-slide-3-button").click(function() {
+    $("#product-slide-3").fadeOut();
+    $("#product-slide-4").delay(390).fadeIn();
+    $(".progress-bar").css("width", "80%");
+  });
+  $("#product-slide-4-button").click(function() {
+    $("#product-slide-4").fadeOut();
+    $("#product-slide-5").delay(390).fadeIn();
+    $(".progress-bar").css("width", "100%");
+  });
+
+
+  $("#product-slide-5-button").click(function() {
+    $("#product-slide-1").fadeOut();
+    $("#product-slide-0").delay(390).fadeIn();
+    $(".progress-bar").css("width", "0%");
+  });
+  $("#product-slide-6-button").click(function() {
+    $("#product-slide-2").fadeOut();
+    $("#product-slide-1").delay(390).fadeIn();
+    $(".progress-bar").css("width", "20%");
+  });
+  $("#product-slide-7-button").click(function() {
+    $("#product-slide-3").fadeOut();
+    $("#product-slide-2").delay(390).fadeIn();
+    $(".progress-bar").css("width", "40%");
+  });
+  $("#product-slide-8-button").click(function() {
+    $("#product-slide-4").fadeOut();
+    $("#product-slide-3").delay(390).fadeIn();
+    $(".progress-bar").css("width", "60%");
+  });
+  $("#product-slide-9-button").click(function() {
+    $("#product-slide-5").fadeOut();
+    $("#product-slide-4").delay(390).fadeIn();
+    $(".progress-bar").css("width", "80%");
   });
 
   //Google

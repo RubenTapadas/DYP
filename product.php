@@ -253,7 +253,7 @@
               </div>
               <br>
               <div  class="form-group product-detail d-inline-block">
-                <select id="include-homebtn" class="form-control" required>
+                <select id="include-homebtn" class="form-control p-homebutton-include" required>
                   <option value="" selected="selected"></option>
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
@@ -261,7 +261,7 @@
                 <label class="form-control-placeholder" for="edit-streetname">Include</label>
               </div>
               <div class="form-group product-detail include-homebtn-item">
-                <select class="form-control" required>
+                <select class="form-control p-homebutton-material" required>
                   <option value="" selected="selected"></option>
                   <option value="plastic">Plastic</option>
                   <option value="aluminium">Aluminium</option>
@@ -269,7 +269,7 @@
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
               <div class="form-group product-detail include-homebtn-item">
-                <select class="form-control" required>
+                <select class="form-control p-homebutton-shape" required>
                   <option value="" selected="selected"></option>
                   <option value="circle">Circle</option>
                   <option value="square">Square</option>
@@ -278,14 +278,14 @@
               </div>
               <br>
               <h3 class="d-inline-block">Lock Button</h3>
-              <div id="homebutton-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
+              <div id="lockbutton-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
                 <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
                 <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
                 <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
               </div>
               <br>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-lockbutton-material" required>
                   <option value="" selected="selected"></option>
                   <option value="plastic">Plastic</option>
                   <option value="aluminium">Aluminium</option>
@@ -293,7 +293,7 @@
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-lockbutton-position" required>
                   <option value="" selected="selected"></option>
                   <option value="left">Left</option>
                   <option value="right">Right</option>
@@ -302,14 +302,14 @@
               </div>
               <br>
               <h3 class="d-inline-block">Volume Button</h3>
-              <div id="homebutton-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
+              <div id="volumebutton-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
                 <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
                 <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
                 <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
               </div>
               <br>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-volumebutton-material" required>
                   <option value="" selected="selected"></option>
                   <option value="plastic">Plastic</option>
                   <option value="aluminium">Aluminium</option>
@@ -317,7 +317,7 @@
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-volumebutton-position" required>
                   <option value="" selected="selected"></option>
                   <option value="left">Left</option>
                   <option value="right">Right</option>
@@ -326,14 +326,14 @@
               </div>
               <br>
               <h3 class="d-inline-block">Custom Button</h3>
-              <div id="homebutton-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
+              <div id="custombutton-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
                 <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
                 <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
                 <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
               </div>
               <br>
               <div class="form-group product-detail d-inline-block">
-                <select id="include-custombtn" class="form-control" required>
+                <select id="include-custombtn" class="form-control p-custombutton-include" required>
                   <option value="" selected="selected"></option>
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
@@ -341,7 +341,7 @@
                 <label class="form-control-placeholder" for="edit-streetname">Include</label>
               </div>
               <div class="form-group product-detail include-custombtn-item">
-                <select class="form-control" required>
+                <select class="form-control p-custombutton-material" required>
                   <option value="" selected="selected"></option>
                   <option value="plastic">Plastic</option>
                   <option value="aluminium">Aluminium</option>
@@ -349,7 +349,7 @@
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
               <div class="form-group product-detail include-custombtn-item">
-                <select class="form-control" required>
+                <select class="form-control p-custombutton-position" required>
                   <option value="" selected="selected"></option>
                   <option value="left">Left</option>
                   <option value="right">Right</option>
@@ -366,7 +366,7 @@
             <form id="product-slide-3" style="padding-top: 2.7rem !important; display:none">
               <h3 class="">Charging Port</h3>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-chargingport-type" required>
                   <option value="" selected="selected"></option>
                   <option value="mini-usb">Mini-USB</option>
                   <option value="type-c">Type-C</option>
@@ -375,7 +375,7 @@
               </div>
               <h3 class="">Jack Port</h3>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-jackport-include" required>
                   <option value="" selected="selected"></option>
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
@@ -384,7 +384,7 @@
               </div>
               <h3 class="">NFC</h3>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-nfc-include" required>
                   <option value="" selected="selected"></option>
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
@@ -393,7 +393,7 @@
               </div>
               <h3 class="">Wirless Charging</h3>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-wirelesscharging-include" required>
                   <option value="" selected="selected"></option>
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
@@ -410,7 +410,7 @@
             <form id="product-slide-4" style="padding-top: 2.7rem !important; display:none">
               <h3 class="">Main Camera</h3>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-maincamera-megapixels" required>
                   <option value="" selected="selected"></option>
                   <option value="8mp">8MP</option>
                   <option value="12mp">12MP</option>
@@ -419,7 +419,7 @@
                 <label class="form-control-placeholder" for="edit-streetname">Megapixels</label>
               </div>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-maincamera-type" required>
                   <option value="" selected="selected"></option>
                   <option value="normal">Normal</option>
                   <option value="dual">Dual</option>
@@ -427,7 +427,7 @@
                 <label class="form-control-placeholder" for="edit-streetname">Type</label>
               </div>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-maincamera-layout" required>
                   <option value="" selected="selected"></option>
                   <option value="vertical">Vertical</option>
                   <option value="horizontal">Horizontal</option>
@@ -437,7 +437,7 @@
 
               <h3 class="">Front Camera</h3>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-frontcamera-megapixels" required>
                   <option value="" selected="selected"></option>
                   <option value="8mp">8MP</option>
                   <option value="12mp">12MP</option>
@@ -448,7 +448,7 @@
 
               <h3 class="">Flash</h3>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-flash-type" required>
                   <option value="" selected="selected"></option>
                   <option value="only-back">Only Back</option>
                   <option value="both-sides">Both Sides</option>
@@ -458,7 +458,7 @@
 
               <h3 class="">Face Unlock</h3>
               <div class="form-group product-detail d-inline-block">
-                <select class="form-control" required>
+                <select class="form-control p-faceunlock-include" required>
                   <option value="" selected="selected"></option>
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
@@ -478,7 +478,7 @@
                   <div class="col-sm">
                     <h3 class="">CPU</h3>
                     <div class="form-group product-detail d-inline-block">
-                      <select class="form-control" required>
+                      <select class="form-control p-cpu-model" required>
                         <option value="" selected="selected"></option>
                         <option value="low-end">Low end</option>
                         <option value="medium">Medium</option>
@@ -488,7 +488,7 @@
                     </div>
                     <h3 class="">GPU</h3>
                     <div class="form-group product-detail d-inline-block">
-                      <select class="form-control" required>
+                      <select class="form-control p-storage-option" required>
                         <option value="" selected="selected"></option>
                         <option value="low-end">Low end</option>
                         <option value="medium">Medium</option>
@@ -498,7 +498,7 @@
                     </div>
                     <h3 class="">Fingerprint Unlock</h3>
                     <div class="form-group product-detail d-inline-block">
-                      <select class="form-control" required>
+                      <select class="form-control p-gpu-model" required>
                         <option value="" selected="selected"></option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -509,7 +509,7 @@
                   <div class="col-sm">
                     <h3 class="">Storage</h3>
                     <div class="form-group product-detail d-inline-block">
-                      <select class="form-control" required>
+                      <select class="form-control p-ram-option" required>
                         <option value="" selected="selected"></option>
                         <option value="32gb">32GB</option>
                         <option value="64gb">64GB</option>
@@ -519,7 +519,7 @@
                     </div>
                     <h3 class="">RAM</h3>
                     <div class="form-group product-detail d-inline-block">
-                      <select class="form-control" required>
+                      <select class="form-control p-fingerprintunlock-include" required>
                         <option value="" selected="selected"></option>
                         <option value="2gb">2GB</option>
                         <option value="4gb">4GB</option>
@@ -529,7 +529,7 @@
                     </div>
                     <h3 class="">Battery</h3>
                     <div class="form-group product-detail d-inline-block">
-                      <select class="form-control" required>
+                      <select class="form-control p-battery-option" required>
                         <option value="" selected="selected"></option>
                         <option value="2,000mah">2,000mAh</option>
                         <option value="3,000mah">3,000mAh</option>
@@ -560,27 +560,27 @@
       <input type="hidden" id="p-display-aspectratio" value="">
       <input type="hidden" id="p-display-resolution" value="">
       <input type="hidden" id="p-display-type" value="">
-      <input type="hidden" id="p-border-color" value="">
+      <input type="hidden" id="p-border-color" value="color-black">
       <input type="hidden" id="p-border-size" value="">
       <input type="hidden" id="p-frame-material" value="">
-      <input type="hidden" id="p-frame-color" value="">
+      <input type="hidden" id="p-frame-color" value="color-black">
       <input type="hidden" id="p-frame-shape" value="">
       <input type="hidden" id="p-backpanel-material" value="">
-      <input type="hidden" id="p-backpanel-color" value="">
+      <input type="hidden" id="p-backpanel-color" value="color-black">
 
       <input type="hidden" id="p-homebutton-include" value="">
       <input type="hidden" id="p-homebutton-material" value="">
-      <input type="hidden" id="p-homebutton-color" value="">
+      <input type="hidden" id="p-homebutton-color" value="color-black">
       <input type="hidden" id="p-homebutton-shape" value="">
       <input type="hidden" id="p-lockbutton-material" value="">
-      <input type="hidden" id="p-lockbutton-color" value="">
+      <input type="hidden" id="p-lockbutton-color" value="color-black">
       <input type="hidden" id="p-lockbutton-position" value="">
       <input type="hidden" id="p-volumebutton-material" value="">
-      <input type="hidden" id="p-volumebutton-color" value="">
+      <input type="hidden" id="p-volumebutton-color" value="color-black">
       <input type="hidden" id="p-volumebutton-position" value="">
       <input type="hidden" id="p-custombutton-include" value="">
       <input type="hidden" id="p-custombutton-material" value="">
-      <input type="hidden" id="p-custombutton-color" value="">
+      <input type="hidden" id="p-custombutton-color" value="color-black">
       <input type="hidden" id="p-custombutton-position" value="">
 
       <input type="hidden" id="p-chargingport-type" value="">
