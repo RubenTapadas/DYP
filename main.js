@@ -106,6 +106,7 @@ $(window).on('load', function() {
       $('.include-homebtn-item').css("display", "inline-block");
     } else if ($(this).val() == 'no') {
       $('.include-homebtn-item').css("display", "none");
+      $(this).closest($('#homebutton-colors').css("visibility", "hidden"));
     }
   });
   $('#include-custombtn').change(function() {
@@ -113,13 +114,8 @@ $(window).on('load', function() {
       $('.include-custombtn-item').css("display", "inline-block");
     } else if ($(this).val() == 'no') {
       $('.include-custombtn-item').css("display", "none");
+      $(this).closest($('#homebutton-colors').css("visibility", "hidden"));
     }
-  });
-
-  //Product Verification
-  $('select').on('change', function(e) {
-    var optionSelected = $("option:selected", this);
-    var valueSelected = this.value;
   });
 
   //Product Progress
@@ -203,22 +199,6 @@ $(window).on('load', function() {
     $("#p-battery-option").val($(".p-battery-option").val());
   });
 
-  //Comment Console Validation
-  $('.verify').click(function() {
-    console.log("Type: " + $('#p-display-notch').val());
-    console.log("Type: " + $('#p-display-size').val());
-    console.log("Type: " + $('#p-display-aspectratio').val());
-    console.log("Type: " + $('#p-display-resolution').val());
-    console.log("Type: " + $('#p-display-type').val());
-    console.log("Type: " + $('#p-border-color').val());
-    console.log("Type: " + $('#p-border-size').val());
-    console.log("Type: " + $('#p-frame-material').val());
-    console.log("Type: " + $('#p-frame-color').val());
-    console.log("Type: " + $('#p-frame-shape').val());
-    console.log("Type: " + $('#p-backpanel-material').val());
-    console.log("Type: " + $('#p-backpanel-color').val());
-  });
-
   //Product Slides
   $("#product-slide-0-button").click(function() {
     if ($('#p-type').val() == "") {
@@ -227,45 +207,85 @@ $(window).on('load', function() {
       $(".out-note").fadeIn();
     } else {
       $("#product-slide-0").fadeOut();
-      $("#product-slide-1").delay(390).fadeIn();
+      $("#product-slide-2").delay(390).fadeIn();
       $(".progress-bar").css("width", "20%");
+      $("#product-slider-title").text("Body");
     }
   });
 
   $("#product-slide-1-button").click(function() {
     if ($('#p-display-notch').val() == "" || $('#p-display-aspectratio').val() == "" || $('#p-display-resolution').val() == "" || $('#p-display-type').val() == "" || $('#p-border-size').val() == "" || $('#p-frame-material').val() == "" || $('#p-frame-shape').val() == "" || $('#p-backpanel-material').val() == "") {
-      $('.note-title').text("Missing info");
-      $('.note-text').text("You need to fill out every field.");
-      $(".out-note").fadeIn();
+      $("#product-slide-1").fadeOut();
+      $("#product-slide-2").delay(390).fadeIn();
+      $(".progress-bar").css("width", "40%");
+      $("#product-slider-title").text("Buttons");
     } else {
       $("#product-slide-1").fadeOut();
       $("#product-slide-2").delay(390).fadeIn();
       $(".progress-bar").css("width", "40%");
+      $("#product-slider-title").text("Buttons");
     }
   });
 
   $("#product-slide-2-button").click(function() {
-    $("#product-slide-2").fadeOut();
-    $("#product-slide-3").delay(390).fadeIn();
-    $(".progress-bar").css("width", "60%");
+    if ($('#p-homebutton-include').val() == "" || $('#p-homebutton-include').val() == "yes" || $('#p-custombutton-include').val() == "" || $('#p-custombutton-include').val() == "yes" || $('#p-lockbutton-material').val() == "" || $('#p-lockbutton-positio').val() == "" || $('#p-volumebutton-material').val() == "" || $('#p-volumebutton-position').val() == "") {
+      if ($('#p-homebutton-include').val() == "yes" && $('#p-homebutton-material').val() == "" || $('#p-homebutton-include').val() == "yes" && $('#p-homebutton-shape').val() == "" || $('#p-custombutton-include').val() == "yes" && $('#p-homebutton-material').val() == "" || $('#p-custombutton-include').val() == "yes" && $('#p-custombutton-position').val() == "") {
+        $('.note-title').text("Missing info");
+        $('.note-text').text("You need to fill out every field.");
+        $(".out-note").fadeIn();
+      } else {
+        $("#product-slide-2").fadeOut();
+        $("#product-slide-3").delay(390).fadeIn();
+        $(".progress-bar").css("width", "60%");
+        $("#product-slider-title").text("Connection");
+      }
+    } else {
+      $("#product-slide-2").fadeOut();
+      $("#product-slide-3").delay(390).fadeIn();
+      $(".progress-bar").css("width", "60%");
+      $("#product-slider-title").text("Connection");
+    }
   });
+
   $("#product-slide-3-button").click(function() {
-    $("#product-slide-3").fadeOut();
-    $("#product-slide-4").delay(390).fadeIn();
-    $(".progress-bar").css("width", "80%");
+    if ($('#p-chargingport-type').val() == "" || $('#p-jackport-include').val() == "" || $('#p-nfc-include').val() == "" || $('#p-wirelesscharging-include').val() == "") {
+      $('.note-title').text("Missing info");
+      $('.note-text').text("You need to fill out every field.");
+      $(".out-note").fadeIn();
+    } else {
+      $("#product-slide-3").fadeOut();
+      $("#product-slide-4").delay(390).fadeIn();
+      $(".progress-bar").css("width", "80%");
+      $("#product-slider-title").text("Camera");
+    }
   });
+
   $("#product-slide-4-button").click(function() {
-    $("#product-slide-4").fadeOut();
-    $("#product-slide-5").delay(390).fadeIn();
-    $(".progress-bar").css("width", "100%");
+    if ($('#p-maincamera-megapixels').val() == "" || $('#p-maincamera-type').val() == "" || $('#p-maincamera-layout').val() == "" || $('#p-frontcamera-megapixels').val() == "" || $('#p-flash-type').val() == "" || $('#p-faceunlock-include').val() == "") {
+      $('.note-title').text("Missing info");
+      $('.note-text').text("You need to fill out every field.");
+      $(".out-note").fadeIn();
+    } else {
+      $("#product-slide-4").fadeOut();
+      $("#product-slide-5").delay(390).fadeIn();
+      $(".progress-bar").css("width", "100%");
+      $("#product-slider-title").text("Components");
+    }
   });
 
 
   $("#product-slide-5-button").click(function() {
-    $("#product-slide-1").fadeOut();
-    $("#product-slide-0").delay(390).fadeIn();
-    $(".progress-bar").css("width", "0%");
+    if ($('#p-cpu-model').val() == "" || $('#p-storage-option').val() == "" || $('#p-gpu-model').val() == "" || $('#p-ram-option').val() == "" || $('#p-fingerprintunlock-include').val() == "" || $('#p-battery-option').val() == "") {
+      $('.note-title').text("Missing info");
+      $('.note-text').text("You need to fill out every field.");
+      $(".out-note").fadeIn();
+    } else {
+      $("#product-slide-5").fadeOut();
+      $("#product-slide-5").delay(390).fadeIn();
+    }
   });
+
+
   $("#product-slide-6-button").click(function() {
     $("#product-slide-2").fadeOut();
     $("#product-slide-1").delay(390).fadeIn();

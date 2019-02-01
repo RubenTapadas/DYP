@@ -81,10 +81,10 @@
           <ul class="navbar-nav ml-auto">
 
             <li class="nav-item dropdown">
-              <a class="nav-link pr-4" href="product.php">Design Your Product</a>
+              <a class="nav-link pr-4" href="product.php">Design your product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Info</a>
+              <a class="nav-link" href="parts.php">Buy parts</a>
             </li>
           </ul>
         </div>
@@ -104,7 +104,7 @@
                 <span id="product-price">0</span><span style="font-size:28px;" class="fas fa-euro-sign py-1">
               </div>
             </div>
-            <h1>Body</h1>
+            <h1 id="product-slider-title">Product</h1>
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 0%; background-color:#151515" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
