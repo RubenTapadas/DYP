@@ -307,6 +307,29 @@ $(window).on('load', function() {
     $(".progress-bar").css("width", "80%");
   });
 
+
+  //Change Part Store
+  $(".part-body").click(function() {
+    $(".part-camera,.part-buttons,.part-connection-components").css("border-bottom", "0px solid #151515");
+    $(this).css("border-bottom", "10px solid #151515");
+  });
+
+  $(".part-buttons").click(function() {
+    $(".part-body,.part-camera,.part-connection-components").css("border-bottom", "0px solid #151515");
+    $(this).css("border-bottom", "10px solid #151515");
+  });
+
+  $(".part-camera").click(function() {
+    $(".part-body,.part-buttons,.part-connection-components").css("border-bottom", "0px solid #151515");
+    $(this).css("border-bottom", "10px solid #151515");
+  });
+
+  $(".part-connection-components").click(function() {
+    $(".part-body,.part-buttons,.part-camera").css("border-bottom", "0px solid #151515");
+    $(this).css("border-bottom", "10px solid #151515");
+  });
+
+
   //Google
   /* function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();

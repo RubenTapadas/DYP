@@ -461,3 +461,45 @@ form h3 {
 .form-control-placeholder {
   pointer-events: none;
 }
+
+.part-type {
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.part-pick {
+  height: 500px;
+}
+
+.part-body {
+  border-bottom: 10px solid #151515;
+}
+
+.part-item, .part-item-buy {
+  height: 40px;
+  font-size: 26px;
+}
+
+.part-item {
+  background-color: #151515;
+  color: #ffffff;
+}
+
+.part-item-buy {
+  text-align: center;
+  background-color: #ffffff;
+  cursor:pointer;
+}
+
+.clean{
+  background-color: transparent;
+  color: #ffffff;
+  border:none;
+  display:inline-block;
+}
+
+.part-name{
+
+}
