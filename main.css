@@ -36,6 +36,11 @@ body {
 }
 
 /* navbar */
+.navbar{
+
+  border-bottom: 2px solid #151515 !important;
+}
+
 .navbar-expand-md .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
@@ -490,16 +495,21 @@ form h3 {
 .part-item-buy {
   text-align: center;
   background-color: #ffffff;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.clean{
+.clean {
   background-color: transparent;
   color: #ffffff;
-  border:none;
-  display:inline-block;
+  border: none;
+  display: inline-block;
 }
 
-.part-name{
+.part-price {
+  color: green;
+}
 
+.part-price-sign {
+  color: green;
+  font-size: 20px;
 }

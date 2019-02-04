@@ -329,6 +329,13 @@ $(window).on('load', function() {
     $(this).css("border-bottom", "10px solid #151515");
   });
 
+  //Cart test
+  var total = 0;
+  $(".part-price").each(function() {
+    total += Number($(this).text());
+  });
+  $("#cart-total").text(total.toPrecision(3));
+
 
   //Google
   /* function onSignIn(googleUser) {

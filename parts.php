@@ -59,15 +59,17 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link user_no" href="login.php">Login/Register</a>
-              <div class="user_yes">
-                <a class="float-left" href="user.php">
-                  <div class="user-mini float-left" style="background-image: url(img/profiles/<?php echo  $image; ?>);"></div>
-                </a>
-                <a class="nav-link float-left ml-3" href="user.php">
-                  <?php echo  $firstname; ?>
-                  <?php echo  $lastname; ?></a>
-                <a class="nav-link float-left logout ml-1" href="login.php">(logout)</a>
-              </div>
+              <span style="font-size:28px; cursor:pointer" class="fas fa-shopping-cart ml-4 pt-1">
+                <div class="user_yes">
+                  <a class="float-left" href="user.php">
+                    <div class="user-mini float-left" style="background-image: url(img/profiles/<?php echo  $image; ?>);"></div>
+                  </a>
+                  <a class="nav-link float-left ml-3" href="user.php">
+                    <?php echo  $firstname; ?>
+                    <?php echo  $lastname; ?></a>
+                  <a class="nav-link float-left logout ml-1" href="login.php">(logout)</a>
+
+                </div>
             </li>
           </ul>
         </div>
@@ -129,28 +131,42 @@
 
       <div class="mt-5 part-pick">
         <div class="row">
-          <div class="col-4 pr-0">
-            <div class="shade pl-3 part-item">
-              <input type="text" id="part-name" class="clean" readonly value="Product">
-              <input type="text" id="part-price" class="clean" readonly value="0.86">
+          <div class="col-3 pr-0">
+            <div class="shade pl-2 part-item">
+              <input type="text" id="part-id" style="display:none" class="clean float-left" readonly value="Product id">
+              <span class="pl-2">Product</span>
+            </div>
+          </div>
+          <div class="col-1 pl-0 pr-0">
+            <div class="shade pl-2 part-item">
+              <span class="part-price">0.86</span><span class="fas fa-euro-sign part-price-sign">
             </div>
           </div>
           <div class="col-2 pl-0">
-            <div class="shade px-3 part-item-buy">
-              Add to cart
+            <div class="shade px-3 part-item-buy">Add to cart</div>
+          </div>
+
+
+
+          <div class="col-3 pr-0">
+            <div class="shade pl-2 part-item">
+              <input type="text" id="part-id" style="display:none" class="clean float-left" readonly value="Product id">
+              <span class="pl-2">Product</span>
             </div>
           </div>
-          <div class="col-4 pr-0">
-            <div class="shade pl-3 part-item">
-              <input type="text" id="edit-password" class="clean" readonly value="Product">
+          <div class="col-1 pl-0 pr-0">
+            <div class="shade pl-2 part-item">
+              <span class="part-price">1.00</span><span class="fas fa-euro-sign part-price-sign">
             </div>
           </div>
           <div class="col-2 pl-0">
-            <div class="shade px-3 part-item-buy">
-              Add to cart
-            </div>
+            <div class="shade px-3 part-item-buy">Add to cart</div>
           </div>
         </div>
+      </div>
+
+      <div class="cart">
+        <span>Total: </span><span id="cart-total">0</span>
       </div>
 
 
