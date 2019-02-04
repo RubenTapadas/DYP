@@ -336,6 +336,24 @@ $(window).on('load', function() {
   });
   $("#cart-total").text(total.toPrecision(3));
 
+  //Cart Display
+  var cart_height = $(".cart-info").height();
+  var cart_show = false;
+  cart_height *= -1;
+  $(".cart-info").css("margin-top", cart_height);
+  $(".cart-outer").click(function() {
+    console.log("ta");
+    if (cart_show == true) {
+      var cart_height = $(".cart-info").height();
+      cart_height *= -1;
+      $(".cart-info").css("margin-top", cart_height);
+      cart_show = false;
+    } else if (cart_show == false) {
+      $(".cart-info").css("visibility", "visible");
+      $(".cart-info").css("margin-top", "0px");
+      cart_show = true;
+    }
+  });
 
   //Google
   /* function onSignIn(googleUser) {

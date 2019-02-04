@@ -513,3 +513,25 @@ form h3 {
   color: green;
   font-size: 20px;
 }
+
+.cart-info{
+  position:absolute;
+  height:500px;
+  width:200px;
+  background-color:#ffffff;
+  margin-left:80px;
+  z-index:1;
+  visibility: hidden;
+}
+
+.cart-outer{
+  position:absolute;
+  height:1000px;
+  width:300px;
+  overflow:hidden;
+  margin-top:10px;
+}
+
+.transition{
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
