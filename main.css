@@ -522,6 +522,8 @@ form h3 {
   margin-left:80px;
   z-index:1;
   visibility: hidden;
+  border: 2px solid #151515;
+  border-top:none;
 }
 
 .cart-outer{
@@ -533,5 +535,5 @@ form h3 {
 }
 
 .transition{
-  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  transition: all 0.5s cubic-bezier(.25, .8, .25, 1);
 }

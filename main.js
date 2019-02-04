@@ -339,19 +339,40 @@ $(window).on('load', function() {
   //Cart Display
   var cart_height = $(".cart-info").height();
   var cart_show = false;
+  console.log(cart_show);
   cart_height *= -1;
   $(".cart-info").css("margin-top", cart_height);
-  $(".cart-outer").click(function() {
-    console.log("ta");
+  $(".cart-outer-icon").click(function() {
     if (cart_show == true) {
       var cart_height = $(".cart-info").height();
+      cart_height += 5;
       cart_height *= -1;
       $(".cart-info").css("margin-top", cart_height);
       cart_show = false;
+      console.log("now here");
     } else if (cart_show == false) {
+      console.log("here bitch");
       $(".cart-info").css("visibility", "visible");
       $(".cart-info").css("margin-top", "0px");
       cart_show = true;
+      console.log(cart_show);
+    }
+  });
+
+  $(document).mouseup(function(e) {
+    if (cart_show == true) {
+      var container = $(".cart-outer-icon");
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        var container2 = $(".cart-info");
+
+        if (!container2.is(e.target) && container2.has(e.target).length === 0) {
+          var cart_height = $(".cart-info").height();
+          cart_height += 5;
+          cart_height *= -1;
+          $(".cart-info").css("margin-top", cart_height);
+          cart_show = false;
+        }
+      }
     }
   });
 

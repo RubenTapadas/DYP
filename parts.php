@@ -59,11 +59,10 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link user_no" href="login.php">Login/Register</a>
-              <div class="cart-outer" style="cursor:pointer; display:inline-block; margin-top:-1px; margin-left:30px; width:auto;">
+              <div class="cart-outer-icon" style="cursor:pointer; display:inline-block; margin-top:-1px; margin-left:30px; width:auto;">
                 <span style="font-size:28px; cursor:pointer;" class="fas fa-shopping-cart pt-1"></span>
-
               </div>
-              <div class="cart-outer"><div class="cart-info transition"></div></div>
+              <div class="cart-outer"><div class="cart-info shade transition"></div></div>
               <div class="user_yes">
                 <a class="float-left" href="user.php">
                   <div class="user-mini float-left" style="background-image: url(img/profiles/<?php echo  $image; ?>);"></div>
