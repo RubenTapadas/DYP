@@ -187,15 +187,6 @@
                 <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
               </div>
               <br>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control p-border-size" required>
-                  <option value="" selected="selected"></option>
-                  <option value="small">Small</option>
-                  <option value="big">Big</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Size</label>
-              </div>
-              <br>
               <h3 class="d-inline-block">Frame</h3>
               <div id="frame-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
                 <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
@@ -488,7 +479,7 @@
                     </div>
                     <h3 class="">GPU</h3>
                     <div class="form-group product-detail d-inline-block">
-                      <select class="form-control p-storage-option" required>
+                      <select class="form-control p-gpu-model" required>
                         <option value="" selected="selected"></option>
                         <option value="low-end">Low end</option>
                         <option value="medium">Medium</option>
@@ -498,7 +489,7 @@
                     </div>
                     <h3 class="">Fingerprint Unlock</h3>
                     <div class="form-group product-detail d-inline-block">
-                      <select class="form-control p-gpu-model" required>
+                      <select class="form-control p-fingerprintunlock-include" required>
                         <option value="" selected="selected"></option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -509,7 +500,7 @@
                   <div class="col-sm">
                     <h3 class="">Storage</h3>
                     <div class="form-group product-detail d-inline-block">
-                      <select class="form-control p-ram-option" required>
+                      <select class="form-control p-storage-option" required>
                         <option value="" selected="selected"></option>
                         <option value="32gb">32GB</option>
                         <option value="64gb">64GB</option>
@@ -519,7 +510,7 @@
                     </div>
                     <h3 class="">RAM</h3>
                     <div class="form-group product-detail d-inline-block">
-                      <select class="form-control p-fingerprintunlock-include" required>
+                      <select class="form-control p-ram-option" required>
                         <option value="" selected="selected"></option>
                         <option value="2gb">2GB</option>
                         <option value="4gb">4GB</option>
@@ -561,7 +552,6 @@
       <input type="hidden" id="p-display-resolution" value="">
       <input type="hidden" id="p-display-type" value="">
       <input type="hidden" id="p-border-color" value="color-black">
-      <input type="hidden" id="p-border-size" value="">
       <input type="hidden" id="p-frame-material" value="">
       <input type="hidden" id="p-frame-color" value="color-black">
       <input type="hidden" id="p-frame-shape" value="">

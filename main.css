@@ -581,9 +581,25 @@ form h3 {
 }
 
 .cart-close {
-cursor: pointer;
+  cursor: pointer;
 }
 
-#part-pick-buttons, #part-pick-camera, #part-pick-connectioncomponents{
-  display:none;
+#part-pick-buttons, #part-pick-camera, #part-pick-connectioncomponents {
+  display: none;
+}
+
+.purchase-outer {
+  height: 500px;
+}
+
+.purchase-slot {
+  font-size: 25px;
+  height: 40px;
+}
+
+.purchase-price {
+  font-size: 19px;
+  padding-bottom: 1px;
+  margin-left: -9px;
+  margin-right: 16px;
 }

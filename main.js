@@ -195,7 +195,7 @@ $(window).on('load', function() {
     $("#p-storage-option").val($(".p-storage-option").val());
     $("#p-gpu-model").val($(".p-gpu-model").val());
     $("#p-ram-option").val($(".p-ram-option").val());
-    $("#p-fingerprintunlock-include").val($(".fingerprintunlock-include").val());
+    $("#p-fingerprintunlock-include").val($(".p-fingerprintunlock-include").val());
     $("#p-battery-option").val($(".p-battery-option").val());
   });
 
@@ -207,7 +207,7 @@ $(window).on('load', function() {
       $(".out-note").fadeIn();
     } else {
       $("#product-slide-0").fadeOut();
-      $("#product-slide-2").delay(390).fadeIn();
+      $("#product-slide-5").delay(390).fadeIn();
       $(".progress-bar").css("width", "20%");
       $("#product-slider-title").text("Body");
     }
@@ -215,10 +215,9 @@ $(window).on('load', function() {
 
   $("#product-slide-1-button").click(function() {
     if ($('#p-display-notch').val() == "" || $('#p-display-aspectratio').val() == "" || $('#p-display-resolution').val() == "" || $('#p-display-type').val() == "" || $('#p-border-size').val() == "" || $('#p-frame-material').val() == "" || $('#p-frame-shape').val() == "" || $('#p-backpanel-material').val() == "") {
-      $("#product-slide-1").fadeOut();
-      $("#product-slide-2").delay(390).fadeIn();
-      $(".progress-bar").css("width", "40%");
-      $("#product-slider-title").text("Buttons");
+      $('.note-title').text("Missing info");
+      $('.note-text').text("You need to fill out every field.");
+      $(".out-note").fadeIn();
     } else {
       $("#product-slide-1").fadeOut();
       $("#product-slide-2").delay(390).fadeIn();
@@ -274,14 +273,15 @@ $(window).on('load', function() {
   });
 
 
-  $("#product-slide-5-button").click(function() {
+  $(".verify").click(function() {
     if ($('#p-cpu-model').val() == "" || $('#p-storage-option').val() == "" || $('#p-gpu-model').val() == "" || $('#p-ram-option').val() == "" || $('#p-fingerprintunlock-include').val() == "" || $('#p-battery-option').val() == "") {
       $('.note-title').text("Missing info");
       $('.note-text').text("You need to fill out every field.");
       $(".out-note").fadeIn();
     } else {
-      $("#product-slide-5").fadeOut();
-      $("#product-slide-5").delay(390).fadeIn();
+      $('.note-title').text("No Missing info");
+      $('.note-text').text("You need to fill out every field.");
+      $(".out-note").fadeIn();
     }
   });
 
