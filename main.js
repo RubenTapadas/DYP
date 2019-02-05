@@ -329,33 +329,59 @@ $(window).on('load', function() {
     $(this).css("border-bottom", "10px solid #151515");
   });
 
-  //Cart test
+  //Cart quantity
+  $(".cart-right").click(function() {
+    var quantity = parseInt($(this).siblings(".cart-quantity").text());
+    quantity += 1;
+    $(this).siblings(".cart-quantity").text(quantity);
+  });
+
+  $(".cart-left").click(function() {
+    var quantity = parseInt($(this).siblings(".cart-quantity").text());
+    quantity -= 1;
+    if (quantity > 0) {
+      $(this).siblings(".cart-quantity").text(quantity);
+    } else {
+      $(this).siblings(".cart-quantity").text(0);
+      $(this).parents(".cart-product-slot").fadeOut();
+    }
+  });
+  $(".cart-close").click(function() {
+    $(this).parents(".cart-product-slot").fadeOut();
+  });
+
+  //Cart Total
   var total = 0;
-  $(".part-price").each(function() {
+  $(".cart-product-slot:first").css("border-top", "none");
+  $(".cart-product-price").each(function() {
     total += Number($(this).text());
   });
-  $("#cart-total").text(total.toPrecision(3));
+  if (total != 0) {
+    $(".show-sign-euro").css("display", "inline !important");
+    $("#cart-total").text(total.toFixed(2));
+  } else {
+    $(".show-sign-euro").css("display", "none !important");
+    $("#cart-total").text("No items");
+  }
 
   //Cart Display
-  var cart_height = $(".cart-info").height();
   var cart_show = false;
-  console.log(cart_show);
+  var cart_height = $(".cart-info").height();
+  $(".cart-product-count").each(function() {
+    cart_height += 30;
+  });
+  $(".cart-info").height(cart_height);
+  cart_height += 5;
   cart_height *= -1;
   $(".cart-info").css("margin-top", cart_height);
   $(".cart-outer-icon").click(function() {
     if (cart_show == true) {
-      var cart_height = $(".cart-info").height();
-      cart_height += 5;
-      cart_height *= -1;
       $(".cart-info").css("margin-top", cart_height);
       cart_show = false;
-      console.log("now here");
     } else if (cart_show == false) {
-      console.log("here bitch");
       $(".cart-info").css("visibility", "visible");
       $(".cart-info").css("margin-top", "0px");
       cart_show = true;
-      console.log(cart_show);
     }
   });
 
@@ -375,6 +401,36 @@ $(window).on('load', function() {
       }
     }
   });
+
+  //Change products
+  $(".part-body").click(function() {
+    $("#part-pick-buttons").fadeOut();
+    $("#part-pick-camera").fadeOut();
+    $("#part-pick-connectioncomponents").fadeOut();
+    $("#part-pick-body").delay(390).fadeIn();
+  });
+
+  $(".part-buttons").click(function() {
+    $("#part-pick-body").fadeOut();
+    $("#part-pick-camera").fadeOut();
+    $("#part-pick-connectioncomponents").fadeOut();
+    $("#part-pick-buttons").delay(390).fadeIn();
+  });
+
+  $(".part-camera").click(function() {
+    $("#part-pick-buttons").fadeOut();
+    $("#part-pick-body").fadeOut();
+    $("#part-pick-connectioncomponents").fadeOut();
+    $("#part-pick-camera").delay(390).fadeIn();
+  });
+
+  $(".part-connection-components").click(function() {
+    $("#part-pick-buttons").fadeOut();
+    $("#part-pick-camera").fadeOut();
+    $("#part-pick-body").fadeOut();
+    $("#part-pick-connectioncomponents").delay(390).fadeIn();
+  });
+
 
   //Google
   /* function onSignIn(googleUser) {
