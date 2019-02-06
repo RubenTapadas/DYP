@@ -603,3 +603,23 @@ form h3 {
   margin-left: -9px;
   margin-right: 16px;
 }
+
+.cola-title {
+  background-color: #ffffff;
+  font-size: 20px;
+  padding: 5px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.cola-text {
+  background-color: #ffffff;
+  font-size: 20px;
+  padding: 5px;
+  padding-left: 10px;
+  margin-top:-20px;
+}
+
+p.question-content {
+  display: none;
+}

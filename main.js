@@ -431,6 +431,10 @@ $(window).on('load', function() {
     $("#part-pick-connectioncomponents").delay(390).fadeIn();
   });
 
+  //Collapse
+  $('.question-expand').click(function(){
+      $(this).siblings($('.question-content')).slideToggle('slow');
+  });
 
   //Google
   /* function onSignIn(googleUser) {
