@@ -604,39 +604,60 @@ form h3 {
   margin-right: 16px;
 }
 
-.btn-link{
-  color:#151515;
-  text-decoration:none;
+.btn-link {
+  color: #151515;
+  text-decoration: none;
 }
 
-.btn-link:hover{
-  color:#151515;
-  text-decoration:none;
+.btn-link:hover {
+  color: #151515;
+  text-decoration: none;
 }
 
-.btn-link:focus{
-  color:#a52b2b;
-  text-decoration:none;
+.btn-link:focus {
+  color: #a52b2b;
+  text-decoration: none;
 }
 
-.card{
-  border-radius:0;
+.card {
+  border-radius: 0;
 }
 
-.card-header{
+.card-header {
   padding: 5px;
-  border-bottom:0px;
-  background-color:#ffffff;
+  border-bottom: 0px;
+  background-color: #ffffff;
 }
 
-.card-header-bottom{
-border-bottom: 2px solid #151515;
+.card-header-bottom {
+  border-bottom: 2px solid #151515;
 }
 
-.btn-primary{
-  border-radius:0.15rem;;
+.btn-primary {
+  border-radius: 0.15rem;
+  ;
 }
 
-.progress{
+.progress {
   border-radius: .20rem;
+}
+
+/* Login */
+@media only screen and (max-width: 530px) {
+  .responsive-movedown {
+    display:inline !important;
+  }
+
+  .responsive-removeleft {
+    margin-left: 0.5rem !important;
+    margin-bottom: 30px;
+  }
+}
+
+/* Footer */
+
+@media only screen and (max-width: 360px) {
+  .responsive-br{
+    display:block;
+  }
 }

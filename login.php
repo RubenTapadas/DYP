@@ -95,8 +95,8 @@
 
 
     <div class="container">
-      <div class="row">
-        <div class="col light py-2 px-4 shade mr-2" style="height: 290px;">
+      <div class="row responsive-movedown">
+        <div class="col light py-2 px-4 shade mr-2 responsive-removeleft" style="height: 290px;">
           <h1 class="light_text font-weight-bold pb-4">Login</h1>
           <form method="post" name="login">
             <div class="form-group">
@@ -201,7 +201,7 @@
           </div>
         </div>
       </div>
-      <div class="footer-copyright text-center py-2">© 2019 Copyright:
+      <div class="footer-copyright text-center py-2"><span class="responsive-br">© 2019 Copyright:</span>
         <a href="https://www.linkedin.com/in/rubentapadas/" target="_blank"> Ruben Tapadas</a>
         &
         <a href="https://www.linkedin.com/in/hugoolmo/" target="_blank"> Hugo Olmo</a>

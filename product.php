@@ -104,39 +104,13 @@
                 <span id="product-price">0</span><span style="font-size:28px;" class="fas fa-euro-sign py-1">
               </div>
             </div>
-            <h1 id="product-slider-title">Product</h1>
+            <h1 id="product-slider-title">Body</h1>
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 0%; background-color:#151515" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
 
-            <form id="product-slide-0" style="padding-top: 2.7rem !important;">
-              <div class="container" style="margin-top: -43px;padding-bottom: 43px;">
-                <div class="row">
-                  <div class="col-sm">
-                    <div id="product-phone" class="pt-5 pb-3 product-type">
-                      <div style="margin:0 auto;width:62.5px">
-                        <span style="font-size:100px;" class="fas fa-mobile-alt"></span>
-                      </div>
-                      <p style="font-size:33px;text-align: center;">Smartphone</p>
-                    </div>
-                  </div>
-                  <div class="col-sm">
-                    <div id="product-tablet" class="pt-5 pb-3 product-type">
-                      <div style="margin:0 auto;width:87.5px">
-                        <span style="font-size:100px;" class="fas fa-tablet-alt"></span>
-                      </div>
-                      <p style="font-size:33px;text-align: center;">Tablet</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <div>
-                <button type="button" id="product-slide-0-button" class="btn btn-primary float-right mt-2">Next</button>
-              </div>
-
-            </form>
-            <form id="product-slide-1" style="padding-top: 2.7rem !important;display:none">
+            <form id="product-slide-1" style="padding-top: 2.7rem !important; display:none;">
               <h3 class="">Display</h3>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control p-display-notch" required>
@@ -359,7 +333,7 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control p-chargingport-type" required>
                   <option value="" selected="selected"></option>
-                  <option value="mini-usb">Mini-USB</option>
+                  <option value="micro-usb">Micro-USB</option>
                   <option value="type-c">Type-C</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Type</label>
@@ -539,13 +513,19 @@
               </div>
             </form>
 
+            <form id="product-slide-5" style="padding-top: 2.7rem !important; ">
+
+              <div>
+                <button type="button" id="product-another" class="btn btn-primary float-left mt-2">Previous</button>
+                <button type="button" id="product-checkout" class="btn btn-primary float-right mt-2 verify">Finish</button>
+              </div>
+            </form>
+
           </div>
         </div>
       </div>
     </section>
     <section>
-      <input type="hidden" id="p-type" value="">
-
       <input type="hidden" id="p-display-notch" value="">
       <input type="hidden" id="p-display-size" value="">
       <input type="hidden" id="p-display-aspectratio" value="">

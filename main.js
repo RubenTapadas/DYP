@@ -202,19 +202,6 @@ $(window).on('load', function() {
   });
 
   //Product Slides
-  $("#product-slide-0-button").click(function() {
-    if ($('#p-type').val() == "") {
-      $('.note-title').text("Missing info");
-      $('.note-text').text("You need to pick a type of product first.");
-      $(".out-note").fadeIn();
-    } else {
-      $("#product-slide-0").fadeOut();
-      $("#product-slide-1").delay(390).fadeIn();
-      $(".progress-bar").css("width", "20%");
-      $("#product-slider-title").text("Body");
-    }
-  });
-
   $("#product-slide-1-button").click(function() {
     if ($('#p-display-notch').val() == "" || $('#p-display-aspectratio').val() == "" || $('#p-display-resolution').val() == "" || $('#p-display-type').val() == "" || $('#p-border-size').val() == "" || $('#p-frame-material').val() == "" || $('#p-frame-shape').val() == "" || $('#p-backpanel-material').val() == "") {
       $('.note-title').text("Missing info");
@@ -223,7 +210,7 @@ $(window).on('load', function() {
     } else {
       $("#product-slide-1").fadeOut();
       $("#product-slide-2").delay(390).fadeIn();
-      $(".progress-bar").css("width", "40%");
+      $(".progress-bar").css("width", "20%");
       $("#product-slider-title").text("Buttons");
     }
   });
@@ -237,7 +224,7 @@ $(window).on('load', function() {
     } else {
       $("#product-slide-2").fadeOut();
       $("#product-slide-3").delay(390).fadeIn();
-      $(".progress-bar").css("width", "60%");
+      $(".progress-bar").css("width", "40%");
       $("#product-slider-title").text("Connection");
     }
   });
@@ -250,7 +237,7 @@ $(window).on('load', function() {
     } else {
       $("#product-slide-3").fadeOut();
       $("#product-slide-4").delay(390).fadeIn();
-      $(".progress-bar").css("width", "80%");
+      $(".progress-bar").css("width", "60%");
       $("#product-slider-title").text("Camera");
     }
   });
@@ -263,7 +250,7 @@ $(window).on('load', function() {
     } else {
       $("#product-slide-4").fadeOut();
       $("#product-slide-5").delay(390).fadeIn();
-      $(".progress-bar").css("width", "100%");
+      $(".progress-bar").css("width", "80%");
       $("#product-slider-title").text("Components");
     }
   });
@@ -275,9 +262,7 @@ $(window).on('load', function() {
       $('.note-text').text("You need to fill out every field.");
       $(".out-note").fadeIn();
     } else {
-      $('.note-title').text("No Missing info");
-      $('.note-text').text("You need to fill out every field.");
-      $(".out-note").fadeIn();
+      $(".progress-bar").css("width", "100%");
     }
   });
 
