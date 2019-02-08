@@ -105,7 +105,7 @@
         </div>
       </div>
 
-      <nav class="navbar navbar-expand-sm bg-light" style="padding-left:170px;">
+      <nav class="navbar navbar-expand-sm bg-light" style="padding-left:170px; border:0 !important;">
 
         <!-- Links -->
         <ul class="navbar-nav">
@@ -458,7 +458,7 @@
 
       <div class="user-profile" id="user3">
         <h1><span class="fas fa-shopping-cart pr-2"></span>Purchases</h1>
-        <form class="p-4 mb-4 shade light pointer" id="go-productdetails2">
+        <form class="p-4 mb-4 shade light pointer form-purchase" id="go-productdetails2">
           <div class="slot-purchase">
             <div class="row">
               <div class="col-2" id="purchases-image"></div>
@@ -528,69 +528,7 @@
             </div>
           </div>
         </form>
-        <form class="p-4 shade light pointer" id="go-productdetails">
-          <div class="slot-purchase">
-            <div class="row">
-              <div class="col-2" id="purchases-image"></div>
-              <div class="col-10">
-                <h3 class="font-weight-bold">Name of the product</h3>
-                <div class="specs">
-                  <div class="row specs-half align-items-center">
-                    <div class="col-4 align-middle">
-                      <div class="spec-icon d-inline-block mr-2 slot-1"></div>
-                      <div class="d-inline-block">
-                        <span>Size</span>
-                        <p>Name of product</p>
-                      </div>
-                    </div>
-                    <div class="col-4 align-middle">
-                      <div class="spec-icon d-inline-block mr-2 slot-2"></div>
-                      <div class="d-inline-block">
-                        <span>Ram</span>
-                        <p>Name of product</p>
-                      </div>
-                    </div>
-                    <div class="col-4 align-middle">
-                      <div class="spec-icon d-inline-block mr-2 slot-3"></div>
-                      <div class="d-inline-block">
-                        <span>Storage</span>
-                        <p>Name of product</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row specs-half align-items-center">
-                    <div class="col-4 align-middle">
-                      <div class="spec-icon d-inline-block mr-2 slot-4"></div>
-                      <div class="d-inline-block">
-                        <span>Battery</span>
-                        <p>Name of product</p>
-                      </div>
-                    </div>
-                    <div class="col-4 align-middle">
-                      <div class="spec-icon d-inline-block mr-2 slot-5"></div>
-                      <div class="d-inline-block">
-                        <span>Processor</span>
-                        <p>Name of product</p>
-                      </div>
-                    </div>
-                    <div class="col-4 align-middle">
-                      <div class="spec-icon d-inline-block mr-2 slot-6"></div>
-                      <div class="d-inline-block">
-                        <span>More</span>
-                        <p>More info about the product</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
-        <div class="pt-3"></div>
-        <div class="values">
-          <input id="p-type" type="text" value="">
-          <input id="p-display-material" type="text" value="">
-        </div>
+        
       </div>
 
 

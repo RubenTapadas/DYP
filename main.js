@@ -104,6 +104,7 @@ $(window).on('load', function() {
   $('#include-homebtn').change(function() {
     if ($(this).val() == 'yes') {
       $('.include-homebtn-item').css("display", "inline-block");
+      $(this).closest($('#homebutton-colors').css("visibility", "visible"));
     } else if ($(this).val() == 'no') {
       $('.include-homebtn-item').css("display", "none");
       $(this).closest($('#homebutton-colors').css("visibility", "hidden"));
@@ -112,9 +113,10 @@ $(window).on('load', function() {
   $('#include-custombtn').change(function() {
     if ($(this).val() == 'yes') {
       $('.include-custombtn-item').css("display", "inline-block");
+      $('.custominclude').css("visibility", "visible");
     } else if ($(this).val() == 'no') {
       $('.include-custombtn-item').css("display", "none");
-      $(this).closest($('#homebutton-colors').css("visibility", "hidden"));
+      $('.custominclude').css("visibility", "hidden");
     }
   });
 
@@ -207,7 +209,7 @@ $(window).on('load', function() {
       $(".out-note").fadeIn();
     } else {
       $("#product-slide-0").fadeOut();
-      $("#product-slide-5").delay(390).fadeIn();
+      $("#product-slide-1").delay(390).fadeIn();
       $(".progress-bar").css("width", "20%");
       $("#product-slider-title").text("Body");
     }
@@ -227,17 +229,11 @@ $(window).on('load', function() {
   });
 
   $("#product-slide-2-button").click(function() {
-    if ($('#p-homebutton-include').val() == "" || $('#p-homebutton-include').val() == "yes" || $('#p-custombutton-include').val() == "" || $('#p-custombutton-include').val() == "yes" || $('#p-lockbutton-material').val() == "" || $('#p-lockbutton-positio').val() == "" || $('#p-volumebutton-material').val() == "" || $('#p-volumebutton-position').val() == "") {
-      if ($('#p-homebutton-include').val() == "yes" && $('#p-homebutton-material').val() == "" || $('#p-homebutton-include').val() == "yes" && $('#p-homebutton-shape').val() == "" || $('#p-custombutton-include').val() == "yes" && $('#p-homebutton-material').val() == "" || $('#p-custombutton-include').val() == "yes" && $('#p-custombutton-position').val() == "") {
+    if ($('#p-homebutton-include').val() == "yes" && $('#p-homebutton-material').val() == ""|| $('#p-homebutton-include').val() == "yes" && $('#p-homebutton-shape').val() == ""|| $('#p-custombutton-include').val() == "yes" && $('#p-homebutton-material').val() == ""|| $('#p-custombutton-include').val() == "yes" && $('#p-custombutton-position').val() == ""|| $('#p-homebutton-include').val() == "" || $('#p-custombutton-include').val() == ""|| $('#p-lockbutton-material').val() == ""|| $('#p-lockbutton-positio').val() == ""|| $('#p-volumebutton-material').val() == ""|| $('#p-volumebutton-position').val() == "") {
+
         $('.note-title').text("Missing info");
         $('.note-text').text("You need to fill out every field.");
         $(".out-note").fadeIn();
-      } else {
-        $("#product-slide-2").fadeOut();
-        $("#product-slide-3").delay(390).fadeIn();
-        $(".progress-bar").css("width", "60%");
-        $("#product-slider-title").text("Connection");
-      }
     } else {
       $("#product-slide-2").fadeOut();
       $("#product-slide-3").delay(390).fadeIn();
@@ -432,8 +428,13 @@ $(window).on('load', function() {
   });
 
   //Collapse
-  $('.question-expand').click(function(){
-      $(this).siblings($('.question-content')).slideToggle('slow');
+  $('.btn-link').click(function(){
+      $(this).parent('.card-header').addClass('.card-header-bottom');
+  });
+
+  //Item description
+  $('.form-purchase').click(function(){
+      $(this).find(".specs").fadeOut();
   });
 
   //Google

@@ -317,7 +317,7 @@
               </div>
               <br>
               <h3 class="d-inline-block">Custom Button</h3>
-              <div id="custombutton-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
+              <div id="custombutton-colors" class="d-inline-block custominclude" style="height: 30px;margin-left: 5px;">
                 <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
                 <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
                 <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
