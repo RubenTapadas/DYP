@@ -446,6 +446,10 @@ label {
   height: 20px;
 }
 
+.product-finish{
+  cursor:pointer;
+}
+
 .active-color-black {
   border-bottom: 6px solid #151515;
 }
@@ -642,6 +646,17 @@ form h3 {
   border-radius: .20rem;
 }
 
+.product-input{
+  width:500px;
+  max-width: 100%;
+}
+
+.part-division{
+  display: flex;
+width: 50%;
+margin-bottom: 10px;
+}
+
 /* Login */
 @media only screen and (max-width: 530px) {
   .responsive-movedown {
@@ -655,9 +670,37 @@ form h3 {
 }
 
 /* Footer */
-
 @media only screen and (max-width: 360px) {
   .responsive-br{
     display:block;
+  }
+}
+
+/* Product */
+@media only screen and (max-width: 790px) {
+  .product-box{
+    flex: 0 0 50.333%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .product-box{
+    flex: 0 0 74.333%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .product-box{
+    flex: 0 0 100.333%;
+    max-width: 100%;
+  }
+}
+
+/* Parts Division */
+@media only screen and (max-width: 1200px) {
+  .part-division{
+  width: 100%;
   }
 }

@@ -104,13 +104,23 @@
                 <span id="product-price">0</span><span style="font-size:28px;" class="fas fa-euro-sign py-1">
               </div>
             </div>
-            <h1 id="product-slider-title">Body</h1>
+            <h1 id="product-slider-title">Name</h1>
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 0%; background-color:#151515" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
 
+            <form id="product-slide-0" style="padding-top: 2.7rem !important;">
+              <div class="">
+                <h3>Name your phone</h3>
+                <input type="text" id="product-name" class="form-control product-input" required>
+              </div>
+              <div>
+                <button type="button" id="product-slide-0-button" class="btn btn-primary float-right mt-2">Next</button>
+              </div>
+            </form>
 
-            <form id="product-slide-1" style="padding-top: 2.7rem !important; display:none;">
+
+            <form id="product-slide-1" style="padding-top: 2.7rem !important;display:none;">
               <h3 class="">Display</h3>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control p-display-notch" required>
@@ -217,7 +227,7 @@
                 <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
               </div>
               <br>
-              <div  class="form-group product-detail d-inline-block">
+              <div class="form-group product-detail d-inline-block">
                 <select id="include-homebtn" class="form-control p-homebutton-include" required>
                   <option value="" selected="selected"></option>
                   <option value="yes">Yes</option>
@@ -509,16 +519,32 @@
 
               <div>
                 <button type="button" id="product-slide-9-button" class="btn btn-primary float-left mt-2">Previous</button>
-                <button type="button" id="product-slide-5-button" class="btn btn-primary float-right mt-2 verify">Finish</button>
+                <button type="button" id="product-slide-5-button" class="btn btn-primary float-right mt-2 verify">Add to cart</button>
               </div>
             </form>
 
-            <form id="product-slide-5" style="padding-top: 2.7rem !important; ">
-
-              <div>
-                <button type="button" id="product-another" class="btn btn-primary float-left mt-2">Previous</button>
-                <button type="button" id="product-checkout" class="btn btn-primary float-right mt-2 verify">Finish</button>
+            <form id="product-slide-6" style="padding-top: 2.7rem !important; display:none;">
+              <div class="container" style="margin-top: -43px;padding-bottom: 43px;">
+                <div class="row">
+                  <div class="col-sm">
+                    <div class="pt-5 pb-3 product-finish product-another">
+                      <div style="margin:0 auto;width:62.5px">
+                        <span style="font-size:100px;" class="fas fa-mobile-alt"></span>
+                      </div>
+                      <p style="font-size:29px;text-align: center;">Design another phone</p>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <div class="pt-5 pb-3 product-finish product-checkout">
+                      <div style="margin:0 auto;width:113.5px">
+                        <span style="font-size:100px;" class="fas fa-shopping-cart "></span>
+                      </div>
+                      <p style="font-size:29px;text-align: center;">Checkout</p>
+                    </div>
+                  </div>
+                </div>
               </div>
+
             </form>
 
           </div>

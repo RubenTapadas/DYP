@@ -46,7 +46,37 @@ $(window).on('load', function() {
     var register_password = $('#register-password').val();
     var register_password2 = $('#register-password2').val();
 
-    if (register_firstname == "" || register_firstname == null) {} else if (register_lastname == "" || register_lastname == null) {} else if (register_email == "" || register_email == null) {} else if (!testEmail.test(register_email)) {} else if (register_password == "" || register_password == null) {} else if (register_password2 == "" || register_password2 == null) {} else if (register_password2 != register_password) {} else {
+    var specialChars = "<>@!#$%^&*()_+[]{}?:;|'\"\\,./~`-="
+    var check = function(string){
+        for(i = 0; i < specialChars.length;i++){
+            if(string.indexOf(specialChars[i]) > -1){
+                return true
+            }
+        }
+        return false;
+    }
+
+    if (register_firstname == "" || register_lastname == "" || register_email == "" || register_password == "" || register_password2 == "") {
+      $('.note-title').text("Missing info");
+      $('.note-text').text("You need to fill out every field.");
+      $(".out-note").fadeIn();
+    } else if (!testEmail.test(register_email)) {
+      $('.note-title').text("Invalid info");
+      $('.note-text').text("Your email is not in a correct format.");
+      $(".out-note").fadeIn();
+    } else if (1 == 0) {
+      $('.note-title').text("Invalid info");
+      $('.note-text').text("That email is already being used by another account.");
+      $(".out-note").fadeIn();
+    } else if (check(register_password) == false) {
+      $('.note-title').text("Invalid info");
+      $('.note-text').text("Your password needs to contain 8 or more characters with a mix of letters, numbers & symbols.");
+      $(".out-note").fadeIn();
+    } else if (register_password2 != register_password) {
+      $('.note-title').text("Invalid info");
+      $('.note-text').text("Your password and confirm password do not match.");
+      $(".out-note").fadeIn();
+    } else {
       $.ajax({
         url: "./php/register.php",
         type: "post",
@@ -58,6 +88,7 @@ $(window).on('load', function() {
         },
         success: function(data) {
           var dataParsed = JSON.parse(data);
+            window.location.href = "http://localhost/DYP/home.php";
         }
       });
     }
@@ -68,7 +99,11 @@ $(window).on('load', function() {
     var login_email = $.trim($('#login-email').val());
     var login_password = $.trim($('#login-password').val());
 
-    if (login_email == "" || login_email == null) {} else if (!testEmail.test(login_email)) {} else if (login_password == "" || login_password == null) {} else {}
+    if (login_email == "" || login_password == "") {
+      $('.note-title').text("Missing info");
+      $('.note-text').text("You need to fill out every field.");
+      $(".out-note").fadeIn();
+    } else {}
   });
 
   //Change Pages
@@ -202,6 +237,19 @@ $(window).on('load', function() {
   });
 
   //Product Slides
+  $("#product-slide-0-button").click(function() {
+    if ($('#product-name').val() == "") {
+      $('.note-title').text("Missing info");
+      $('.note-text').text("You need to write a name for your phone.");
+      $(".out-note").fadeIn();
+    } else {
+      $("#product-slide-0").fadeOut();
+      $("#product-slide-1").delay(390).fadeIn();
+      $(".progress-bar").css("width", "20%");
+      $("#product-slider-title").value("Body");
+    }
+  });
+
   $("#product-slide-1-button").click(function() {
     if ($('#p-display-notch').val() == "" || $('#p-display-aspectratio').val() == "" || $('#p-display-resolution').val() == "" || $('#p-display-type').val() == "" || $('#p-border-size').val() == "" || $('#p-frame-material').val() == "" || $('#p-frame-shape').val() == "" || $('#p-backpanel-material').val() == "") {
       $('.note-title').text("Missing info");
@@ -210,21 +258,21 @@ $(window).on('load', function() {
     } else {
       $("#product-slide-1").fadeOut();
       $("#product-slide-2").delay(390).fadeIn();
-      $(".progress-bar").css("width", "20%");
+      $(".progress-bar").css("width", "40%");
       $("#product-slider-title").text("Buttons");
     }
   });
 
   $("#product-slide-2-button").click(function() {
-    if ($('#p-homebutton-include').val() == "yes" && $('#p-homebutton-material').val() == ""|| $('#p-homebutton-include').val() == "yes" && $('#p-homebutton-shape').val() == ""|| $('#p-custombutton-include').val() == "yes" && $('#p-homebutton-material').val() == ""|| $('#p-custombutton-include').val() == "yes" && $('#p-custombutton-position').val() == ""|| $('#p-homebutton-include').val() == "" || $('#p-custombutton-include').val() == ""|| $('#p-lockbutton-material').val() == ""|| $('#p-lockbutton-positio').val() == ""|| $('#p-volumebutton-material').val() == ""|| $('#p-volumebutton-position').val() == "") {
+    if ($('#p-homebutton-include').val() == "yes" && $('#p-homebutton-material').val() == "" || $('#p-homebutton-include').val() == "yes" && $('#p-homebutton-shape').val() == "" || $('#p-custombutton-include').val() == "yes" && $('#p-homebutton-material').val() == "" || $('#p-custombutton-include').val() == "yes" && $('#p-custombutton-position').val() == "" || $('#p-homebutton-include').val() == "" || $('#p-custombutton-include').val() == "" || $('#p-lockbutton-material').val() == "" || $('#p-lockbutton-positio').val() == "" || $('#p-volumebutton-material').val() == "" || $('#p-volumebutton-position').val() == "") {
 
-        $('.note-title').text("Missing info");
-        $('.note-text').text("You need to fill out every field.");
-        $(".out-note").fadeIn();
+      $('.note-title').text("Missing info");
+      $('.note-text').text("You need to fill out every field.");
+      $(".out-note").fadeIn();
     } else {
       $("#product-slide-2").fadeOut();
       $("#product-slide-3").delay(390).fadeIn();
-      $(".progress-bar").css("width", "40%");
+      $(".progress-bar").css("width", "60%");
       $("#product-slider-title").text("Connection");
     }
   });
@@ -237,7 +285,7 @@ $(window).on('load', function() {
     } else {
       $("#product-slide-3").fadeOut();
       $("#product-slide-4").delay(390).fadeIn();
-      $(".progress-bar").css("width", "60%");
+      $(".progress-bar").css("width", "80%");
       $("#product-slider-title").text("Camera");
     }
   });
@@ -250,7 +298,7 @@ $(window).on('load', function() {
     } else {
       $("#product-slide-4").fadeOut();
       $("#product-slide-5").delay(390).fadeIn();
-      $(".progress-bar").css("width", "80%");
+      $(".progress-bar").css("width", "100%");
       $("#product-slider-title").text("Components");
     }
   });
@@ -262,30 +310,42 @@ $(window).on('load', function() {
       $('.note-text').text("You need to fill out every field.");
       $(".out-note").fadeIn();
     } else {
+      $("#product-slide-5").fadeOut();
+      $("#product-slide-6").delay(390).fadeIn();
       $(".progress-bar").css("width", "100%");
+      $("#product-slider-title").text("Checkout");
     }
   });
 
-
+  $("#product-slide-5-button").click(function() {
+    $("#product-slide-1").fadeOut();
+    $("#product-slide-0").delay(390).fadeIn();
+    $(".progress-bar").css("width", "0%");
+    $("#product-slider-title").value("Name");
+  });
   $("#product-slide-6-button").click(function() {
     $("#product-slide-2").fadeOut();
     $("#product-slide-1").delay(390).fadeIn();
     $(".progress-bar").css("width", "20%");
+    $("#product-slider-title").value("Body");
   });
   $("#product-slide-7-button").click(function() {
     $("#product-slide-3").fadeOut();
     $("#product-slide-2").delay(390).fadeIn();
     $(".progress-bar").css("width", "40%");
+    $("#product-slider-title").value("Buttons");
   });
   $("#product-slide-8-button").click(function() {
     $("#product-slide-4").fadeOut();
     $("#product-slide-3").delay(390).fadeIn();
     $(".progress-bar").css("width", "60%");
+    $("#product-slider-title").value("Connection");
   });
   $("#product-slide-9-button").click(function() {
     $("#product-slide-5").fadeOut();
     $("#product-slide-4").delay(390).fadeIn();
     $(".progress-bar").css("width", "80%");
+    $("#product-slider-title").value("Camera");
   });
 
 
@@ -383,6 +443,15 @@ $(window).on('load', function() {
     }
   });
 
+  //Product Checkout
+  $(".product-another").click(function() {
+    window.location.href = "http://localhost/DYP/product.php";
+  });
+
+  $(".product-checkout").click(function() {
+    window.location.href = "http://localhost/DYP/purchase.php";
+  });
+
   //Change products
   $(".part-body").click(function() {
     $("#part-pick-buttons").fadeOut();
@@ -413,13 +482,13 @@ $(window).on('load', function() {
   });
 
   //Collapse
-  $('.btn-link').click(function(){
-      $(this).parent('.card-header').addClass('.card-header-bottom');
+  $('.btn-link').click(function() {
+    $(this).parent('.card-header').addClass('.card-header-bottom');
   });
 
   //Item description
-  $('.form-purchase').click(function(){
-      $(this).find(".specs").fadeOut();
+  $('.form-purchase').click(function() {
+    $(this).find(".specs").fadeOut();
   });
 
   //Google

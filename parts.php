@@ -151,19 +151,37 @@
 
       <div id="part-pick-body" class="mt-5 part-pick">
         <div class="row">
-          <div class="product-show col-3 pr-0">
-            <div class="shade pl-2 part-item">
-              <input type="text" id="part-id" style="display:none" class="clean float-left" readonly value="Product id">
-              <span class="pl-2">Product</span>
+          <div class="part-division">
+            <div class="product-show col-6 pr-0">
+              <div class="shade pl-2 part-item">
+                <input type="text" id="part-id" style="display:none" class="clean float-left" readonly value="Product id">
+                <span class="pl-2">Product</span>
+              </div>
+            </div>
+            <div class="col-2 pl-0 pr-0">
+              <div class="shade pl-2 part-item">
+                <span class="part-price">0.86</span><span class="fas fa-euro-sign part-price-sign">
+              </div>
+            </div>
+            <div class="col-4 pl-0">
+              <div class="shade px-3 part-item-buy">Add to cart</div>
             </div>
           </div>
-          <div class="col-1 pl-0 pr-0">
-            <div class="shade pl-2 part-item">
-              <span class="part-price">0.86</span><span class="fas fa-euro-sign part-price-sign">
+          <div class="part-division">
+            <div class="product-show col-6 pr-0">
+              <div class="shade pl-2 part-item">
+                <input type="text" id="part-id" style="display:none" class="clean float-left" readonly value="Product id">
+                <span class="pl-2">Product</span>
+              </div>
             </div>
-          </div>
-          <div class="col-2 pl-0">
-            <div class="shade px-3 part-item-buy">Add to cart</div>
+            <div class="col-2 pl-0 pr-0">
+              <div class="shade pl-2 part-item">
+                <span class="part-price">0.86</span><span class="fas fa-euro-sign part-price-sign">
+              </div>
+            </div>
+            <div class="col-4 pl-0">
+              <div class="shade px-3 part-item-buy">Add to cart</div>
+            </div>
           </div>
         </div>
       </div>

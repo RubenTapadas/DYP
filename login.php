@@ -19,7 +19,7 @@
       if($rows==1){
         while($row = mysqli_fetch_array($result)) {
           $_SESSION['id'] = $row['id_user'];
-        } header("Location: user.php");
+        } header("Location: home.php");
         } else{
           echo "<div class='form'>
           <h3>Username/password is incorrect.</h3>
@@ -45,8 +45,8 @@
   <div class="footer-compensate">
     <div class="out-note">
       <div class="note">
-        <h2>Note example</h2>
-        <p>Note description, more words to see if its responsive.</p>
+        <h2 class="note-title">Note example</h2>
+        <p class="note-text">Note description, more words to see if its responsive.</p>
       </div>
     </div>
 
@@ -107,7 +107,7 @@
               <input type="password" name="password" id="login-password" class="form-control" required>
               <label class="form-control-placeholder" for="login-password">Password</label>
             </div>
-            <button name="submit" type="submit" value="Login" class="btn btn-primary">Submit</button>
+            <button name="submit" type="submit" value="Login" id="login" class="btn btn-primary">Submit</button>
           </form>
           <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div>
         <a class="no_textdecoration" href="#"><small class="text_highlight form-text text-muted mt-2">Forgot Username?</small></a>
