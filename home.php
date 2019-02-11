@@ -146,37 +146,33 @@
           </div>
           <hr class="clearfix w-100 d-md-none pb-3">
           <div class="col-md-3 mb-md-0 mb-3">
-            <h5 class="text-uppercase">Links</h5>
+            <h5 class="text-uppercase">Other pages</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="#!">
-                  <?php echo  $firstname; ?></a>
+                <a href="faq.php">FAQ</a>
               </li>
               <li>
-                <a href="#!">Link 2</a>
+                <a href="fixit.php">Fix it</a>
               </li>
               <li>
-                <a href="#!">Link 3</a>
-              </li>
-              <li>
-                <a href="#!">Link 4</a>
+                <a href="return.php">Return Policy</a>
               </li>
             </ul>
           </div>
           <div class="col-md-3 mb-md-0 mb-3">
-            <h5 class="text-uppercase">Links</h5>
+            <h5 class="text-uppercase">Contancs</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="#!">Link 1</a>
+                Phone: <a href="tel:+351278991">(+351) 923 278 991</a>
               </li>
               <li>
-                <a href="#!">Link 2</a>
+                Email: <a href="mailto:dyp.support@gmail.com">dyp.support@gmail.com</a>
               </li>
               <li>
-                <a href="#!">Link 3</a>
+                <span style="vertical-align: top;">Social Media: </span> <a href="#!"><span style="font-size:25px;"class="fab fa-facebook-square  "></span></a><span>   </span><a href="#!"><span style="font-size:25px;"class="fab fa-youtube"></span></a>
               </li>
-              <li>
-                <a href="#!">Link 4</a>
+              <li >
+
               </li>
             </ul>
           </div>
@@ -195,6 +191,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="main.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

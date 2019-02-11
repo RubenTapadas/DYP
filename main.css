@@ -126,7 +126,7 @@ body {
   width: 100%;
   height: 200px;
   position: absolute;
-  top: calc(50% - 100px);
+  top: 300px;
   background-color: #ffffff;
   color: #151515;
   padding: 40px 200px;
@@ -609,7 +609,7 @@ form h3 {
 }
 
 .btn-link {
-  color: #151515;
+  color: #a52b2b;
   text-decoration: none;
 }
 
@@ -625,6 +625,10 @@ form h3 {
 
 .card {
   border-radius: 0;
+}
+
+.collapsed{
+  color: #151515 !important;
 }
 
 .card-header {
