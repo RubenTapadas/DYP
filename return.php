@@ -21,7 +21,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Return Policy</title>
+  <title>Return and Refund Policy</title>
   <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
@@ -94,21 +94,25 @@
 
     <div class="container">
 
-      <h1>Questions</h1>
+      <h1>Return and Refund</h1>
+
+      <p>There are different return options depending on how mutch time has passed after the phone is received.<br>
+        To do any of the options please contact us (contacts in footer of page).
+      </p>
 
       <div id="accordion">
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                Does DYP have a physical store?
+                Until 7 days after
               </button>
             </h5>
           </div>
 
           <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
-              No, we only have an online presence.
+              If there is any quality problem, you can send us the phone back and we will refund you.
             </div>
           </div>
         </div>
@@ -116,14 +120,14 @@
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                My phone is broken what should i do?
+                Until 15 days after
               </button>
             </h5>
           </div>
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
-              If you know the problem you could buy replacement parts in <a href="parts.php">Buy Parts</a>.<br>
-              But if you dont know the problem or want us to fix it for a small fee, you can send us the phone and we will repair your phone, all the information you shoud need is in <a href="#">Fix it</a>.
+              If there is any quality problem, you can send us the phone back and we will send a new one.<br>
+              You only need to pay the shipping cost for sending.
             </div>
           </div>
         </div>
@@ -131,14 +135,15 @@
           <div class="card-header" id="headingThree">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                I received my phone but it isent working or its broken, what should i do?
+                Until 15-30 days after
               </button>
             </h5>
           </div>
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
             <div class="card-body">
-              Every DYP phone comes with a 2 year warranty, if in the rare acourency of your phone coming with problems from factory you can check our <a href="#">Return Policy</a>.
-              </div>
+              We'll provide a free repair service.<br>
+              You only need to pay the shipping cost for sending.
+            </div>
           </div>
         </div>
       </div>

@@ -122,8 +122,8 @@
           </div>
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
-              If you know the problem you could buy replacement parts in <a href="parts.php">Buy Parts</a>.<br>
-              But if you dont know the problem or want us to fix it for a small fee, you can send us the phone and we will repair your phone, all the information you shoud need is in <a href="#">Fix it</a>.
+              If you know the problem you could buy replacement parts in <a href="parts.php">Buy Parts</a>, but if you dont you can contact us and we can help you (contacts in footer of page).<br>
+              If you need help in replacing the parts we have a <a href="#">Youtube channel</a> with step to step tutorials.
             </div>
           </div>
         </div>

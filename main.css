@@ -528,6 +528,7 @@ form h3 {
   border: 2px solid #151515;
   border-top: none;
   font-size: 20px;
+  height: auto;
 }
 
 .cart-outer {
@@ -559,6 +560,7 @@ form h3 {
   padding-bottom: 1px;
   padding-left: 13px;
   color: #ffffff;
+  margin-top: -2px;
 }
 
 .a-clean {
@@ -574,7 +576,7 @@ form h3 {
 }
 
 .cart-product-slot {
-  border-top: 2px solid #151515;
+  border-bottom: 2px solid #151515;
   margin-right: 10px;
 }
 
@@ -593,7 +595,7 @@ form h3 {
 }
 
 .purchase-outer {
-  height: 500px;
+  height: auto;
 }
 
 .purchase-slot {
@@ -659,6 +661,14 @@ form h3 {
   display: flex;
 width: 50%;
 margin-bottom: 10px;
+}
+
+.card-body a{
+  color:#a52b2b;
+}
+
+.card-body a:hover{
+  text-decoration: none;
 }
 
 /* Login */

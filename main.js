@@ -373,13 +373,29 @@ $(window).on('load', function() {
   //Cart quantity
   $(".cart-right").click(function() {
     var quantity = parseInt($(this).siblings(".cart-quantity").text());
+    var quantity_original = parseFloat($(this).parent().siblings(".cart-quantity-original").val());
+    var quantity_after = quantity_original + parseFloat($(this).parent().siblings(".cart-product-price").text());
+    var total_text = quantity_original + parseFloat($("#cart-total").text());
     quantity += 1;
     $(this).siblings(".cart-quantity").text(quantity);
+    $(this).parent().siblings(".cart-product-price").text(quantity_after.toFixed(2));
+    $("#cart-total").text(total_text.toFixed(2));
   });
+
+  //original:  #cart-quantity-original
+  //after quantity: .cart-product-pric
+  //total: #cart-total
+
 
   $(".cart-left").click(function() {
     var quantity = parseInt($(this).siblings(".cart-quantity").text());
+    var quantity_original = parseFloat($(this).parent().siblings(".cart-quantity-original").val());
+    var quantity_after =  parseFloat($(this).parent().siblings(".cart-product-price").text()) - quantity_original;
+    var total_text = parseFloat($("#cart-total").text()) - quantity_original;
     quantity -= 1;
+    $(this).siblings(".cart-quantity").text(quantity);
+    $(this).parent().siblings(".cart-product-price").text(quantity_after.toFixed(2));
+    $("#cart-total").text(total_text.toFixed(2));
     if (quantity > 0) {
       $(this).siblings(".cart-quantity").text(quantity);
     } else {
@@ -390,6 +406,8 @@ $(window).on('load', function() {
   $(".cart-close").click(function() {
     $(this).parents(".cart-product-slot").fadeOut();
   });
+
+
 
   //Cart Total
   var total = 0;
@@ -408,10 +426,6 @@ $(window).on('load', function() {
   //Cart Display
   var cart_show = false;
   var cart_height = $(".cart-info").height();
-  $(".cart-product-count").each(function() {
-    cart_height += 30;
-  });
-  $(".cart-info").height(cart_height);
   cart_height += 5;
   cart_height *= -1;
   $(".cart-info").css("margin-top", cart_height);

@@ -152,10 +152,7 @@
                 <a href="faq.php">FAQ</a>
               </li>
               <li>
-                <a href="fixit.php">Fix it</a>
-              </li>
-              <li>
-                <a href="return.php">Return Policy</a>
+                <a href="return.php">Return and Refund Policy</a>
               </li>
             </ul>
           </div>
