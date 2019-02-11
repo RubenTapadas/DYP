@@ -155,6 +155,11 @@ $(window).on('load', function() {
     }
   });
 
+  //Product Cost
+  $('#product-slide-5-button').click(function() {
+    console.log($(".p-display-notch").children(":selected").attr("id"));
+  });
+
   //Product Progress
   $('#product-phone').click(function() {
     $('#p-type').val("phone");
@@ -246,7 +251,7 @@ $(window).on('load', function() {
       $("#product-slide-0").fadeOut();
       $("#product-slide-1").delay(390).fadeIn();
       $(".progress-bar").css("width", "20%");
-      $("#product-slider-title").value("Body");
+      $("#product-slider-title").val("Body");
     }
   });
 
@@ -321,31 +326,31 @@ $(window).on('load', function() {
     $("#product-slide-1").fadeOut();
     $("#product-slide-0").delay(390).fadeIn();
     $(".progress-bar").css("width", "0%");
-    $("#product-slider-title").value("Name");
+    $("#product-slider-title").val("Name");
   });
   $("#product-slide-6-button").click(function() {
     $("#product-slide-2").fadeOut();
     $("#product-slide-1").delay(390).fadeIn();
     $(".progress-bar").css("width", "20%");
-    $("#product-slider-title").value("Body");
+    $("#product-slider-title").val("Body");
   });
   $("#product-slide-7-button").click(function() {
     $("#product-slide-3").fadeOut();
     $("#product-slide-2").delay(390).fadeIn();
     $(".progress-bar").css("width", "40%");
-    $("#product-slider-title").value("Buttons");
+    $("#product-slider-title").val("Buttons");
   });
   $("#product-slide-8-button").click(function() {
     $("#product-slide-4").fadeOut();
     $("#product-slide-3").delay(390).fadeIn();
     $(".progress-bar").css("width", "60%");
-    $("#product-slider-title").value("Connection");
+    $("#product-slider-title").val("Connection");
   });
   $("#product-slide-9-button").click(function() {
     $("#product-slide-5").fadeOut();
     $("#product-slide-4").delay(390).fadeIn();
     $(".progress-bar").css("width", "80%");
-    $("#product-slider-title").value("Camera");
+    $("#product-slider-title").val("Camera");
   });
 
 

@@ -125,8 +125,8 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control p-display-notch" required>
                   <option value="" selected="selected"></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
+                  <option id="333" value="yes">Yes</option>
+                  <option id="0" value="no">No</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Notch</label>
               </div>
@@ -519,7 +519,7 @@
 
               <div>
                 <button type="button" id="product-slide-9-button" class="btn btn-primary float-left mt-2">Previous</button>
-                <button type="button" id="product-slide-5-button" class="btn btn-primary float-right mt-2 verify">Add to cart</button>
+                <button type="button" id="product-slide-10-button" class="btn btn-primary float-right mt-2 verify">Add to cart</button>
               </div>
             </form>
 

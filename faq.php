@@ -2,7 +2,6 @@
   session_start();
   if(isset($_SESSION["id"])){
     $id = intval($_SESSION['id']);
-
     $connection = mysqli_connect('localhost', 'root', '', 'dyp');
     $q = "SELECT * FROM user WHERE id_user = '$id'";
     $result = mysqli_query($connection, $q);
@@ -21,7 +20,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>FAQ</title>
+  <title>Parts</title>
   <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
@@ -59,6 +58,34 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link user_no" href="login.php">Login/Register</a>
+              <div class="cart-outer-icon" style="cursor:pointer; display:inline-block; margin-top:-1px; margin-left:30px; width:auto;">
+                <span style="font-size:28px; cursor:pointer;" class="fas fa-shopping-cart pt-1"></span>
+              </div>
+              <div class="cart-outer">
+                <div class="cart-info shade transition pl-2">
+                  <div class="cart-product-slot transition">
+                    <input type="hidden" class="cart-quantity-original" value="100.01">
+                    <div class="cart-product-icon"><span class="fas fa-mobile-alt"></span></div><span> </span><span class="cart-product-count">Body</span><span> </span><span class="cart-product-price">100.01</span><span class="fas fa-euro-sign cart-price"></span>
+                    <div class="float-right">
+                      <div class="cart-left d-inline-block"><span class="fas fa-caret-left"></span></div> <span class="cart-quantity">1</span>
+                      <div class="cart-right d-inline-block"><span class="fas fa-caret-right"></span></div>
+                      <div class="cart-close d-inline-block"><span class="ml-3 fas fa-times"></span></div>
+                    </div><br />
+                  </div>
+                  <div class="cart-product-slot transition">
+                    <input type="hidden" class="cart-quantity-original" value="0.41">
+                    <div class="cart-product-icon"><span class="fas fa-microchip fa-rotate-90"></span></div><span> </span><span class="cart-product-count">Component</span><span> </span><span class="cart-product-price">0.82</span><span class="fas fa-euro-sign cart-price"></span>
+                    <div class="float-right">
+                      <div class="cart-left d-inline-block"><span class="fas fa-caret-left"></span></div> <span class="cart-quantity">2</span>
+                      <div class="cart-right d-inline-block"><span class="fas fa-caret-right"></span></div>
+                      <div class="cart-close d-inline-block"><span class="ml-3 fas fa-times"></span></div>
+                    </div><br />
+                  </div>
+                  <div class="cart-total-outer">
+                    <span class="mt-2">Total: </span><span id="cart-total">No items</span><span class="fas fa-euro-sign cart-price show-sign-euro"></span><a class="a-clean" href="purchase.php">Purchase</a>
+                  </div>
+                </div>
+              </div>
               <div class="user_yes">
                 <a class="float-left" href="user.php">
                   <div class="user-mini float-left" style="background-image: url(img/profiles/<?php echo  $image; ?>);"></div>
@@ -93,56 +120,86 @@
     </nav>
 
     <div class="container">
-
-      <h1>Questions</h1>
-
-      <div id="accordion">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                Does DYP have a physical store?
-              </button>
-            </h5>
-          </div>
-
-          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              No, we only have an online presence.
+      <div class="row pt-5">
+        <div class="col-sm">
+          <div class="part-body shade part-type light pt-3">
+            <div style="height:80px">
+              <h4 class="pt-3">Body</h4>
             </div>
+            <span class="fas fa-mobile-alt   purchase-icon mt-3" style="height:70px"></span>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                My phone is broken what should i do?
-              </button>
-            </h5>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
-              If you know the problem you could buy replacement parts in <a href="parts.php">Buy Parts</a>, but if you dont you can contact us and we can help you (contacts in footer of page).<br>
-              If you need help in replacing the parts we have a <a href="#">Youtube channel</a> with step to step tutorials.
+        <div class="col-sm">
+          <div class="part-buttons shade part-type light pt-3">
+            <div style="height:80px">
+              <h4 class="pt-3">Buttons</h4>
             </div>
+            <span class="fas fa-mobile  purchase-icon mt-3" style="height:70px"></span>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                I received my phone but it isent working or its broken, what should i do?
-              </button>
-            </h5>
+        <div class="col-sm">
+          <div class="part-camera shade part-type light pt-3">
+            <div style="height:80px">
+              <h4 class="pt-3">Camera</h4>
+            </div>
+            <span class="fas fa-video   purchase-icon mt-3" style="height:70px"></span>
           </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-              Every DYP phone comes with a 2 year warranty, if in the rare acourency of your phone coming with problems from factory you can check our <a href="#">Return Policy</a>.
-              </div>
+        </div>
+        <div class="col-sm">
+          <div class="part-connection-components shade part-type light pt-3">
+            <div style="height:80px">
+              <h4>Connection & Components</h4>
+            </div>
+            <span class="fas fa-microchip purchase-icon fa-rotate-90 mt-3" style="height:70px"></span>
           </div>
         </div>
       </div>
 
+      <div id="part-pick-body" class="mt-5 part-pick">
+        <div class="row">
+          <div class="part-division">
+            <div class="product-show col-6 pr-0">
+              <div class="shade pl-2 part-item">
+                <input type="text" id="part-id" style="display:none" class="clean float-left" readonly value="Product id">
+                <span class="pl-2">Product</span>
+              </div>
+            </div>
+            <div class="col-2 pl-0 pr-0">
+              <div class="shade pl-2 part-item">
+                <span class="part-price">0.86</span><span class="fas fa-euro-sign part-price-sign">
+              </div>
+            </div>
+            <div class="col-4 pl-0">
+              <div class="shade px-3 part-item-buy">Add to cart</div>
+            </div>
+          </div>
+          <div class="part-division">
+            <div class="product-show col-6 pr-0">
+              <div class="shade pl-2 part-item">
+                <input type="text" id="part-id" style="display:none" class="clean float-left" readonly value="Product id">
+                <span class="pl-2">Product</span>
+              </div>
+            </div>
+            <div class="col-2 pl-0 pr-0">
+              <div class="shade pl-2 part-item">
+                <span class="part-price">0.86</span><span class="fas fa-euro-sign part-price-sign">
+              </div>
+            </div>
+            <div class="col-4 pl-0">
+              <div class="shade px-3 part-item-buy">Add to cart</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="part-pick-buttons" class="mt-5 part-pick">
+        Buttons
+      </div>
+      <div id="part-pick-camera" class="mt-5 part-pick">
+        Camera
+      </div>
+      <div id="part-pick-connectioncomponents" class="mt-5 part-pick">
+        Connection & Components
+      </div>
 
       <footer class="page-footer font-small mt-5 fixed-bottom dark-text">
         <div class="container text-center text-md-left">

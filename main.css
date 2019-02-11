@@ -446,8 +446,8 @@ label {
   height: 20px;
 }
 
-.product-finish{
-  cursor:pointer;
+.product-finish {
+  cursor: pointer;
 }
 
 .active-color-black {
@@ -554,6 +554,12 @@ form h3 {
   text-align: center;
 }
 
+.cart-outer-icon {
+  position: absolute !important;
+  margin-left: -40px !important;
+  margin-top: 3px !important;
+}
+
 .cart-total-outer {
   background-color: #151515;
   margin-left: -10px;
@@ -629,7 +635,7 @@ form h3 {
   border-radius: 0;
 }
 
-.collapsed{
+.collapsed {
   color: #151515 !important;
 }
 
@@ -652,29 +658,29 @@ form h3 {
   border-radius: .20rem;
 }
 
-.product-input{
-  width:500px;
+.product-input {
+  width: 500px;
   max-width: 100%;
 }
 
-.part-division{
+.part-division {
   display: flex;
-width: 50%;
-margin-bottom: 10px;
+  width: 50%;
+  margin-bottom: 10px;
 }
 
-.card-body a{
-  color:#a52b2b;
+.card-body a {
+  color: #a52b2b;
 }
 
-.card-body a:hover{
+.card-body a:hover {
   text-decoration: none;
 }
 
 /* Login */
 @media only screen and (max-width: 530px) {
   .responsive-movedown {
-    display:inline !important;
+    display: inline !important;
   }
 
   .responsive-removeleft {
@@ -685,28 +691,28 @@ margin-bottom: 10px;
 
 /* Footer */
 @media only screen and (max-width: 360px) {
-  .responsive-br{
-    display:block;
+  .responsive-br {
+    display: block;
   }
 }
 
 /* Product */
 @media only screen and (max-width: 790px) {
-  .product-box{
+  .product-box {
     flex: 0 0 50.333%;
     max-width: 100%;
   }
 }
 
 @media only screen and (max-width: 530px) {
-  .product-box{
+  .product-box {
     flex: 0 0 74.333%;
     max-width: 100%;
   }
 }
 
 @media only screen and (max-width: 380px) {
-  .product-box{
+  .product-box {
     flex: 0 0 100.333%;
     max-width: 100%;
   }
@@ -714,7 +720,7 @@ margin-bottom: 10px;
 
 /* Parts Division */
 @media only screen and (max-width: 1200px) {
-  .part-division{
-  width: 100%;
+  .part-division {
+    width: 100%;
   }
 }
