@@ -21,7 +21,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Home</title>
+  <title>Checkout</title>
   <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
@@ -93,7 +93,7 @@
     </nav>
 
     <div class="container">
-      <h1>Purchase</h1>
+      <h1>Checkout</h1>
       <div class="shade light purchase-outer px-4 pt-2">
         <div class="purchase-slot">
           <div class="float-left">
