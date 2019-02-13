@@ -77,7 +77,7 @@
             <div class="cart-outer-icon" style="cursor:pointer; display:inline-block; margin-top:-1px; margin-left:30px; width:auto;">
               <span style="font-size:28px; cursor:pointer;" class="fas fa-shopping-cart pt-1"></span>
             </div>
-            <div class="cart-outer">
+            <div class="cart-outer" style="margin-top:42px;">
               <div class="cart-info shade transition pl-2">
                 <div class="cart-product-slot transition">
                   <input type="hidden" class="cart-quantity-original" value="100.01">

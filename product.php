@@ -125,41 +125,42 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control p-display-notch" required>
                   <option value="" selected="selected"></option>
-                  <option id="333" value="yes">Yes</option>
-                  <option id="0" value="no">No</option>
+                  <option class="25" value="yes">Yes</option>
+                  <option class="0" value="no">No</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Notch</label>
               </div>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control p-display-size" required>
                   <option value="" selected="selected"></option>
-                  <option value="5'">5'</option>
-                  <option value="5.5'">5.5'</option>
-                  <option value="6'">6'</option>
+                  <option class="35" value="5'">5'</option>
+                  <option class="45" value="5.5'">5.5'</option>
+                  <option class="55" value="6'">6'</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Size</label>
               </div>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control p-display-aspectratio" required>
                   <option value="" selected="selected"></option>
-                  <option value="18:6">18:6</option>
-                  <option value="18:9">18:9</option>
+                  <option class="45" value="18:6">18:6</option>
+                  <option class="65" value="18:9">18:9</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Aspect ratio</label>
               </div>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control p-display-resolution" required>
                   <option value="" selected="selected"></option>
-                  <option value="720p">720p</option>
-                  <option value="1080p">1080p</option>
+                  <option class="10" value="720p">720p</option>
+                  <option class="15" value="1080p">1080p</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Resolution</label>
               </div>
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control p-display-type" required>
                   <option value="" selected="selected"></option>
-                  <option value="lcd">LCD</option>
-                  <option value="amoled">AMOLED</option>
+                  <option class="30" value="lcd">LCD</option>
+                  <option class="50" value="lcd">OLED</option>
+                  <option class="85" value="amoled">AMOLED</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Type</label>
               </div>
@@ -181,18 +182,11 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control p-frame-material" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Plastic</option>
-                  <option value="aluminium">Aluminium</option>
+                  <option class="4.99" value="plastic">Plastic</option>
+                  <option class="9.99" value="aluminium">Aluminium</option>
+                  <option class="14.99" value="stainless steel">Steinless Steel</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
-              </div>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control p-frame-shape" required>
-                  <option value="" selected="selected"></option>
-                  <option value="rectangular">Rectangular</option>
-                  <option value="rounded">Rounded</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Shape</label>
               </div>
               <br>
               <h3 class="d-inline-block">Back Panel</h3>
@@ -205,8 +199,10 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control p-backpanel-material" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Plastic</option>
-                  <option value="aluminium">Aluminium</option>
+                  <option class="4.99" value="plastic">Plastic</option>
+                  <option class="9.99" value="aluminium">Aluminium</option>
+                  <option class="14.99" value="stainless steel">Steinless Steel</option>
+                  <option class="14.99" value="glass">Glass</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
@@ -230,8 +226,8 @@
               <div class="form-group product-detail d-inline-block">
                 <select id="include-homebtn" class="form-control p-homebutton-include" required>
                   <option value="" selected="selected"></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
+                  <option class="2.99" value="yes">Yes</option>
+                  <option class="0" value="no">No</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Include</label>
               </div>

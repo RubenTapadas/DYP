@@ -537,6 +537,7 @@ form h3 {
   width: 500px;
   overflow: hidden;
   margin-top: 10px;
+  margin-left: -500px;
 }
 
 .transition {
@@ -722,5 +723,42 @@ form h3 {
 @media only screen and (max-width: 1200px) {
   .part-division {
     width: 100%;
+  }
+}
+
+/* Cart */
+@media only screen and (max-width: 751px) {
+  .cart-info {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 751px) {
+  .cart-outer-icon {
+    margin-left: -100px !important;
+  }
+}
+
+@media only screen and (min-width: 953px) {
+  .cart-outer-icon {
+    margin-left: -108px !important;
+  }
+}
+
+@media only screen and (max-width: 953px) {
+  .cart-outer {
+    margin-left: -324px;
+  }
+}
+
+@media only screen and (min-width: 977px) {
+  .cart-outer-icon {
+    margin-left: -210px !important;
+  }
+}
+
+@media only screen and (min-width: 1193px) {
+  .cart-outer-icon {
+    margin-left: -290px !important;
   }
 }

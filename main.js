@@ -47,13 +47,13 @@ $(window).on('load', function() {
     var register_password2 = $('#register-password2').val();
 
     var specialChars = "<>@!#$%^&*()_+[]{}?:;|'\"\\,./~`-="
-    var check = function(string){
-        for(i = 0; i < specialChars.length;i++){
-            if(string.indexOf(specialChars[i]) > -1){
-                return true
-            }
+    var check = function(string) {
+      for (i = 0; i < specialChars.length; i++) {
+        if (string.indexOf(specialChars[i]) > -1) {
+          return true
         }
-        return false;
+      }
+      return false;
     }
 
     if (register_firstname == "" || register_lastname == "" || register_email == "" || register_password == "" || register_password2 == "") {
@@ -88,7 +88,7 @@ $(window).on('load', function() {
         },
         success: function(data) {
           var dataParsed = JSON.parse(data);
-            window.location.href = "http://localhost/DYP/home.php";
+          window.location.href = "http://localhost/DYP/home.php";
         }
       });
     }
@@ -241,6 +241,78 @@ $(window).on('load', function() {
     $("#p-battery-option").val($(".p-battery-option").val());
   });
 
+  //Product Cost
+  var display_notch = 0;
+  var display_size = 0;
+  var display_aspectratio = 0;
+  var display_resolution = 0;
+  var display_type = 0;
+
+  var frame_material = 0;
+
+  var backpanel_material = 0;
+
+
+
+
+  $('select').on('change', '', function(e) {
+    var cost_current = Number($("product-price").text());
+    var cost = $(this).find('option:selected').attr('class');
+    var part = $(this).attr('class').split(' ')[1];
+    cost = Number($(this).find('option:selected').attr('class'));
+    if (part == "p-display-notch") {
+      if (cost == undefined) {
+        display_notch = 0;
+      } else {
+        display_notch = cost;
+      }
+    } else if (part == "p-display-size") {
+      if (cost == undefined) {
+        display_size = 0;
+      } else {
+        display_size = cost;
+      }
+    } else if (part == "p-display-aspectratio") {
+      if (cost == undefined) {
+        display_aspectratio = 0;
+      } else {
+        display_aspectratio = cost;
+      }
+    } else if (part == "p-display-resolution") {
+      if (cost == undefined) {
+        display_resolution = 0;
+      } else {
+        display_resolution = cost;
+      }
+    } else if (part == "p-display-type") {
+      if (cost == undefined) {
+        display_type = 0;
+      } else {
+        display_type = cost;
+      }
+    } else if (part == "p-frame-material") {
+      if (cost == undefined) {
+        frame_material = 0;
+      } else {
+        frame_material = cost;
+      }
+    } else if (part == "p-backpanel-material") {
+      if (cost == undefined) {
+        backpanel_material = 0;
+      } else {
+        backpanel_material = cost;
+      }
+    }
+    cost_current = display_notch +
+      display_size +
+      display_aspectratio +
+      display_resolution +
+      display_type +
+      frame_material +
+      backpanel_material;
+    $("#product-price").text(cost_current);
+  });
+
   //Product Slides
   $("#product-slide-0-button").click(function() {
     if ($('#product-name').val() == "") {
@@ -387,15 +459,10 @@ $(window).on('load', function() {
     $("#cart-total").text(total_text.toFixed(2));
   });
 
-  //original:  #cart-quantity-original
-  //after quantity: .cart-product-pric
-  //total: #cart-total
-
-
   $(".cart-left").click(function() {
     var quantity = parseInt($(this).siblings(".cart-quantity").text());
     var quantity_original = parseFloat($(this).parent().siblings(".cart-quantity-original").val());
-    var quantity_after =  parseFloat($(this).parent().siblings(".cart-product-price").text()) - quantity_original;
+    var quantity_after = parseFloat($(this).parent().siblings(".cart-product-price").text()) - quantity_original;
     var total_text = parseFloat($("#cart-total").text()) - quantity_original;
     quantity -= 1;
     $(this).siblings(".cart-quantity").text(quantity);
@@ -508,6 +575,12 @@ $(window).on('load', function() {
   //Item description
   $('.form-purchase').click(function() {
     $(this).find(".specs").fadeOut();
+  });
+
+  $(".cart-outer-icon").click(function() {
+    if ($(window).width() < 751) {
+      window.location.href = "http://localhost/DYP/purchase.php";
+    }
   });
 
   //Google
