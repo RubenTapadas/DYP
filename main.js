@@ -242,6 +242,26 @@ $(window).on('load', function() {
   });
 
   //Product Cost
+  function animate_count($el, duration, prefix, postfix, is_decimal) {
+    prefix = prefix || '';
+    postfix = postfix || '';
+    is_decimal = is_decimal || false;
+
+    var text = $el.text().replace(/[^0-9]/g, '')
+
+    jQuery({
+      counter: 0
+    }).animate({
+      counter: parseInt(text)
+    }, {
+      duration: 1250,
+      easing: 'swing',
+      step: function() {
+        text = is_decimal ? Math.ceil(this.counter) / 100 : Math.ceil(this.counter);
+        $el.text(prefix + text + postfix);
+      }
+    });
+  }
   var display_notch = 0;
   var display_size = 0;
   var display_aspectratio = 0;
@@ -256,61 +276,68 @@ $(window).on('load', function() {
 
 
   $('select').on('change', '', function(e) {
-    var cost_current = Number($("product-price").text());
     var cost = $(this).find('option:selected').attr('class');
     var part = $(this).attr('class').split(' ')[1];
-    cost = Number($(this).find('option:selected').attr('class'));
+    var old_cost_current = display_notch + display_size + display_aspectratio + display_resolution + display_type + frame_material + backpanel_material;
     if (part == "p-display-notch") {
       if (cost == undefined) {
         display_notch = 0;
       } else {
-        display_notch = cost;
+        display_notch = Number(cost);
       }
     } else if (part == "p-display-size") {
       if (cost == undefined) {
         display_size = 0;
       } else {
-        display_size = cost;
+        display_size = Number(cost);
       }
     } else if (part == "p-display-aspectratio") {
       if (cost == undefined) {
         display_aspectratio = 0;
       } else {
-        display_aspectratio = cost;
+        display_aspectratio = Number(cost);
       }
     } else if (part == "p-display-resolution") {
       if (cost == undefined) {
         display_resolution = 0;
       } else {
-        display_resolution = cost;
+        display_resolution = Number(cost);
       }
     } else if (part == "p-display-type") {
       if (cost == undefined) {
         display_type = 0;
       } else {
-        display_type = cost;
+        display_type = Number(cost);
       }
     } else if (part == "p-frame-material") {
       if (cost == undefined) {
         frame_material = 0;
       } else {
-        frame_material = cost;
+        frame_material = Number(cost);
       }
     } else if (part == "p-backpanel-material") {
       if (cost == undefined) {
         backpanel_material = 0;
       } else {
-        backpanel_material = cost;
+        backpanel_material = Number(cost);
       }
     }
-    cost_current = display_notch +
-      display_size +
-      display_aspectratio +
-      display_resolution +
-      display_type +
-      frame_material +
-      backpanel_material;
-    $("#product-price").text(cost_current);
+    var cost_current = display_notch + display_size + display_aspectratio + display_resolution + display_type + frame_material + backpanel_material;
+    $("#product-price").text(cost_current.toFixed(2));
+    $({
+      numberValue: old_cost_current.toFixed(2)
+    }).animate({
+      numberValue: cost_current.toFixed(2)
+    }, {
+      duration: 1100,
+      easing: 'swing',
+      progress: function() {
+        $("#product-price").text(Math.ceil(this.numberValue * 100) / 100);
+      }
+
+    });
+
+
   });
 
   //Product Slides
