@@ -166,7 +166,7 @@
                 Email: <a href="mailto:dyp.support@gmail.com">dyp.support@gmail.com</a>
               </li>
               <li>
-                <span style="vertical-align: top;">Social Media: </span> <a href="#!"><span style="font-size:25px;"class="fab fa-facebook-square  "></span></a><span>   </span><a href="#!"><span style="font-size:25px;"class="fab fa-youtube"></span></a>
+                <span style="vertical-align: top;">Social Media: </span> <a href="https://www.facebook.com/designyourproduct" target="_blank"><span style="font-size:25px;"class="fab fa-facebook-square  "></span></a><span>   </span><a href="https://www.youtube.com/channel/UC9LMTBDElZNmBA9HheL0fIg" target="_blank"><span style="font-size:25px;"class="fab fa-youtube"></span></a>
               </li>
               <li >
 

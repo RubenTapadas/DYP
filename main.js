@@ -324,18 +324,18 @@ $(window).on('load', function() {
     }
     var cost_current = display_notch + display_size + display_aspectratio + display_resolution + display_type + frame_material + backpanel_material;
     $("#product-price").text(cost_current.toFixed(2));
-    $({
-      numberValue: old_cost_current.toFixed(2)
-    }).animate({
-      numberValue: cost_current.toFixed(2)
-    }, {
-      duration: 1100,
-      easing: 'swing',
-      progress: function() {
-        $("#product-price").text(Math.ceil(this.numberValue * 100) / 100);
-      }
+    //$({
+    //  numberValue: old_cost_current.toFixed(2)
+    //}).animate({
+    //  numberValue: cost_current.toFixed(2)
+    //}, {
+    //  duration: 1100,
+    //  easing: 'swing',
+    //  progress: function() {
+    //    $("#product-price").text(Math.ceil(this.numberValue * 100) / 100);
+    //  }
 
-    });
+    //});
 
 
   });

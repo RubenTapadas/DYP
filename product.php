@@ -234,8 +234,8 @@
               <div class="form-group product-detail include-homebtn-item">
                 <select class="form-control p-homebutton-material" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Plastic</option>
-                  <option value="aluminium">Aluminium</option>
+                  <option class="0" value="plastic">Plastic</option>
+                  <option class="4.99" value="aluminium">Aluminium</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
@@ -258,8 +258,9 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control p-lockbutton-material" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Plastic</option>
-                  <option value="aluminium">Aluminium</option>
+                  <option class="0" value="plastic">Plastic</option>
+                  <option class="1.99" value="aluminium">Aluminium</option>
+                  <option class="2.99" value="stainless steel">Stainless Steel</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
@@ -282,8 +283,9 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control p-volumebutton-material" required>
                   <option value="" selected="selected"></option>
-                  <option value="plastic">Plastic</option>
-                  <option value="aluminium">Aluminium</option>
+                  <option class="4.99" value="plastic">Plastic</option>
+                  <option class="9.99" value="aluminium">Aluminium</option>
+                  <option class="14.99" value="stainless steel">Stainless Steel</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>

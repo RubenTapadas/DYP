@@ -123,7 +123,7 @@
     </nav>
 
     <div class="container">
-      <div class="row pt-5">
+      <div class="row pt-5 original-selector">
         <div class="col-sm">
           <div class="part-body shade part-type light pt-3">
             <div style="height:80px">
@@ -150,6 +150,42 @@
         </div>
         <div class="col-sm">
           <div class="part-connection-components shade part-type light pt-3">
+            <div style="height:80px">
+              <h4>Connection & Components</h4>
+            </div>
+            <span class="fas fa-microchip purchase-icon fa-rotate-90 mt-3" style="height:70px"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-5 secondary-selector">
+        <div class="col-sm">
+          <div class="part-body shade part-type light pt-3" style="margin:0 auto">
+            <div style="height:80px">
+              <h4 class="pt-3">Body</h4>
+            </div>
+            <span class="fas fa-mobile-alt   purchase-icon mt-3" style="height:70px"></span>
+          </div>
+        </div>
+        <div class="col-sm selector-margin">
+          <div class="part-buttons shade part-type light pt-3" style="margin:0 auto">
+            <div style="height:80px">
+              <h4 class="pt-3">Buttons</h4>
+            </div>
+            <span class="fas fa-mobile  purchase-icon mt-3" style="height:70px"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-5 secondary-selector">
+        <div class="col-sm">
+          <div class="part-camera shade part-type light pt-3" style="margin:0 auto">
+            <div style="height:80px">
+              <h4 class="pt-3">Camera</h4>
+            </div>
+            <span class="fas fa-video   purchase-icon mt-3" style="height:70px"></span>
+          </div>
+        </div>
+        <div class="col-sm selector-margin">
+          <div class="part-connection-components shade part-type light pt-3" style="margin:0 auto">
             <div style="height:80px">
               <h4>Connection & Components</h4>
             </div>

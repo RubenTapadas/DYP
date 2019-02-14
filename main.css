@@ -751,14 +751,34 @@ form h3 {
   }
 }
 
-@media only screen and (min-width: 977px) {
+@media only screen and (min-width: 1000px) {
   .cart-outer-icon {
     margin-left: -210px !important;
   }
 }
 
-@media only screen and (min-width: 1193px) {
+@media only screen and (min-width: 1200px) {
   .cart-outer-icon {
     margin-left: -290px !important;
+  }
+}
+
+/*Selector*/
+
+@media only screen and (max-width: 1200px) {
+  .original-selector {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .secondary-selector {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .selector-margin {
+    margin-top: 50px;
   }
 }
