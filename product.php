@@ -95,7 +95,28 @@
       <div class="container">
         <div class="row">
           <div class="col-4 product-box">
-            <div class="product-phone">
+            <div class="phone-front">
+              <div class="product-phone product-phone-blank"></div>
+              <div class="product-phone product-phone-buttons-left"></div>
+              <div class="product-phone hide-something product-phone-buttons-right"></div>
+              <div class="product-phone product-phone-frame"></div>
+              <div class="product-phone product-phone-display"></div>
+              <div class="product-phone hide-something product-phone-homebutton"></div>
+            </div>
+            <div class="phone-back hide-something">
+              <div class="product-phone product-phone-blank"></div>
+              <div class="product-phone product-phone-buttons-left-back"></div>
+              <div class="product-phone hide-something product-phone-buttons-right-back"></div>
+              <div class="product-phone product-phone-frame-back"></div>
+              <div class="product-phone product-phone-back"></div>
+              <div class="product-phone product-phone-camera"></div>
+              <div class="product-phone product-phone-unlock"></div>
+            </div>
+            <div class="phone-side">
+              <div class="row">
+                <div class="col-sm side-button phone-front-btn">Front</div>
+                <div class="col-sm side-button phone-back-btn">Back</div>
+              </div>
             </div>
           </div>
           <div class="col pb-5">
@@ -142,7 +163,7 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control p-display-aspectratio" required>
                   <option value="" selected="selected"></option>
-                  <option class="45" value="18:6">18:6</option>
+                  <option class="45" value="16:9">16:9</option>
                   <option class="65" value="18:9">18:9</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Aspect ratio</label>
@@ -184,7 +205,7 @@
                   <option value="" selected="selected"></option>
                   <option class="4.99" value="plastic">Plastic</option>
                   <option class="9.99" value="aluminium">Aluminium</option>
-                  <option class="14.99" value="stainless steel">Steinless Steel</option>
+                  <option class="14.99" value="stainless steel">Stainless Steel</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
@@ -216,36 +237,38 @@
 
 
             <form id="product-slide-2" style="padding-top: 2.7rem !important;display:none">
-              <h3 class="d-inline-block">Home Button</h3>
-              <div id="homebutton-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
-                <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
-                <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
-                <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
-              </div>
-              <br>
-              <div class="form-group product-detail d-inline-block">
-                <select id="include-homebtn" class="form-control p-homebutton-include" required>
-                  <option value="" selected="selected"></option>
-                  <option class="2.99" value="yes">Yes</option>
-                  <option class="0" value="no">No</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Include</label>
-              </div>
-              <div class="form-group product-detail include-homebtn-item">
-                <select class="form-control p-homebutton-material" required>
-                  <option value="" selected="selected"></option>
-                  <option class="0" value="plastic">Plastic</option>
-                  <option class="4.99" value="aluminium">Aluminium</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Material</label>
-              </div>
-              <div class="form-group product-detail include-homebtn-item">
-                <select class="form-control p-homebutton-shape" required>
-                  <option value="" selected="selected"></option>
-                  <option value="circle">Circle</option>
-                  <option value="square">Square</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Shape</label>
+              <div class="hide-button">
+                <h3 class="d-inline-block">Home Button</h3>
+                <div id="homebutton-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
+                  <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
+                  <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
+                  <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
+                </div>
+                <br>
+                <div class="form-group product-detail d-inline-block">
+                  <select id="include-homebtn" class="form-control p-homebutton-include" required>
+                    <option value="" selected="selected"></option>
+                    <option class="2.99" value="yes">Yes</option>
+                    <option class="0" value="no">No</option>
+                  </select>
+                  <label class="form-control-placeholder" for="edit-streetname">Include</label>
+                </div>
+                <div class="form-group product-detail include-homebtn-item">
+                  <select class="form-control p-homebutton-material" required>
+                    <option value="" selected="selected"></option>
+                    <option class="0" value="plastic">Plastic</option>
+                    <option class="4.99" value="aluminium">Aluminium</option>
+                  </select>
+                  <label class="form-control-placeholder" for="edit-streetname">Material</label>
+                </div>
+                <div class="form-group product-detail include-homebtn-item">
+                  <select class="form-control p-homebutton-shape" required>
+                    <option value="" selected="selected"></option>
+                    <option value="circle">Circle</option>
+                    <option value="square">Square</option>
+                  </select>
+                  <label class="form-control-placeholder" for="edit-streetname">Shape</label>
+                </div>
               </div>
               <br>
               <h3 class="d-inline-block">Lock Button</h3>
@@ -264,14 +287,6 @@
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control p-lockbutton-position" required>
-                  <option value="" selected="selected"></option>
-                  <option value="left">Left</option>
-                  <option value="right">Right</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Position</label>
-              </div>
               <br>
               <h3 class="d-inline-block">Volume Button</h3>
               <div id="volumebutton-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
@@ -288,14 +303,6 @@
                   <option class="14.99" value="stainless steel">Stainless Steel</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
-              </div>
-              <div class="form-group product-detail d-inline-block">
-                <select class="form-control p-volumebutton-position" required>
-                  <option value="" selected="selected"></option>
-                  <option value="left">Left</option>
-                  <option value="right">Right</option>
-                </select>
-                <label class="form-control-placeholder" for="edit-streetname">Position</label>
               </div>
               <br>
               <h3 class="d-inline-block">Custom Button</h3>
@@ -321,15 +328,16 @@
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
               </div>
+              <br>
+              <h3 class="">Main Buttons Orientation</h3>
               <div class="form-group product-detail include-custombtn-item">
-                <select class="form-control p-custombutton-position" required>
+                <select class="form-control p-side" required>
                   <option value="" selected="selected"></option>
                   <option value="left">Left</option>
                   <option value="right">Right</option>
                 </select>
-                <label class="form-control-placeholder" for="edit-streetname">Position</label>
+                <label class="form-control-placeholder" for="edit-streetname">Side</label>
               </div>
-
               <div>
                 <button type="button" id="product-slide-6-button" class="btn btn-primary float-left mt-2">Previous</button>
                 <button type="button" id="product-slide-2-button" class="btn btn-primary float-right mt-2">Next</button>
@@ -423,8 +431,8 @@
               <div class="form-group product-detail d-inline-block">
                 <select class="form-control p-flash-type" required>
                   <option value="" selected="selected"></option>
-                  <option value="only-back">Only Back</option>
-                  <option value="both-sides">Both Sides</option>
+                  <option value="only back">Only Back</option>
+                  <option value="both sides">Both Sides</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Type</label>
               </div>
@@ -568,14 +576,13 @@
       <input type="hidden" id="p-homebutton-shape" value="">
       <input type="hidden" id="p-lockbutton-material" value="">
       <input type="hidden" id="p-lockbutton-color" value="color-black">
-      <input type="hidden" id="p-lockbutton-position" value="">
       <input type="hidden" id="p-volumebutton-material" value="">
       <input type="hidden" id="p-volumebutton-color" value="color-black">
-      <input type="hidden" id="p-volumebutton-position" value="">
       <input type="hidden" id="p-custombutton-include" value="">
       <input type="hidden" id="p-custombutton-material" value="">
       <input type="hidden" id="p-custombutton-color" value="color-black">
-      <input type="hidden" id="p-custombutton-position" value="">
+      <input type="hidden" id="p-side" value="">
+
 
       <input type="hidden" id="p-chargingport-type" value="">
       <input type="hidden" id="p-jackport-include" value="">

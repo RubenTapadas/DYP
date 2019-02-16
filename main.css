@@ -411,11 +411,90 @@ label {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: url(img/decoy.png) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover !important;
+  margin-top: -500px;
+}
+
+.product-phone-blank {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: url(img/shadow.png) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.side-button{
+  text-align: center;
+  background-color: #151515;
+  color: #ffffff;
+  margin: 0px 10px;
+  padding:5px;
+  cursor:pointer;
+  border-radius: 0.15rem;
+}
+
+.product-phone-display {
+  background: url(img/smart/18.9_notch.png) center center no-repeat;
+}
+.product-phone-back {
+  background: url(img/smart/back.png) center center no-repeat;
+}
+
+.product-phone-frame {
+  background: url(img/smart/frame_jack.png) center center no-repeat;
+}
+
+.product-phone-frame-back {
+  background: url(img/smart/back_frame_jack.png) center center no-repeat;
+}
+
+.product-phone-homebutton {
+  background: url(img/smart/home_button_square.png) center center no-repeat;
+}
+
+.product-phone-camera {
+  background: url(img/smart/camera_vertical.png) center center no-repeat;
+}
+
+.product-phone-unlock {
+  background: url(img/smart/finguer.png) center center no-repeat;
+}
+
+.product-phone-buttons-left, .product-phone-buttons-right-back {
+  background: url(img/smart/back_volume_lock_right.png) center center no-repeat;
+  margin-left: -213px;
+  z-index: -2;
+}
+
+.product-phone-buttons-right-back {
+  margin-left: -215px;
+}
+
+.product-phone-buttons-right, .product-phone-buttons-left-back {
+  background: url(img/smart/back_volume_lock_right.png) center center no-repeat;
+  margin-left: 203px;
+  transform: rotatey(180deg);
+  z-index: -3;
+}
+
+.product-phone-buttons-left-back {
+  margin-left: 201px;
+}
+
+.hide-something {
+  display: none !important;
+}
+
+.phone-front, .phone-back {
+  width: 100%;
+  height: 100%;
 }
 
 .product-box {
@@ -764,7 +843,6 @@ form h3 {
 }
 
 /*Selector*/
-
 @media only screen and (max-width: 1200px) {
   .original-selector {
     display: none;

@@ -154,6 +154,15 @@ $(window).on('load', function() {
       $('.custominclude').css("visibility", "hidden");
     }
   });
+  $('.p-display-aspectratio').on('change', '', function(e) {
+    if ($(this).val() == "16:9") {
+      $('.p-display-notch').parent().addClass("hide-something");
+      $('.hide-button').removeClass("hide-something");
+    } else if ($(this).val() == "18:9") {
+      $('.p-display-notch').parent().removeClass("hide-something");
+      $('.hide-button').addClass("hide-something");
+    }
+  });
 
   //Product Cost
   $('#product-slide-5-button').click(function() {
@@ -199,7 +208,6 @@ $(window).on('load', function() {
     $("#p-display-type").val($(".p-display-type").val());
     $("#p-border-size").val($(".p-border-size").val());
     $("#p-frame-material").val($(".p-frame-material").val());
-    $("#p-frame-shape").val($(".p-frame-shape").val());
     $("#p-backpanel-material").val($(".p-backpanel-material").val());
   });
 
@@ -208,12 +216,10 @@ $(window).on('load', function() {
     $("#p-homebutton-material").val($(".p-homebutton-material").val());
     $("#p-homebutton-shape").val($(".p-homebutton-shape").val());
     $("#p-lockbutton-material").val($(".p-lockbutton-material").val());
-    $("#p-lockbutton-position").val($(".p-lockbutton-position").val());
     $("#p-volumebutton-material").val($(".p-volumebutton-material").val());
-    $("#p-volumebutton-position").val($(".p-volumebutton-position").val());
     $("#p-custombutton-include").val($(".p-custombutton-include").val());
     $("#p-custombutton-material").val($(".p-custombutton-material").val());
-    $("#p-custombutton-position").val($(".p-custombutton-position").val());
+    $("#p-side").val($(".p-side").val());
   });
 
   $('#product-slide-3-button').click(function() {
@@ -340,6 +346,17 @@ $(window).on('load', function() {
 
   });
 
+  //Product side
+  $(".phone-back-btn").click(function() {
+    $(".phone-front").addClass("hide-something");
+    $(".phone-back").removeClass("hide-something");
+  });
+
+  $(".phone-front-btn").click(function() {
+    $(".phone-back").addClass("hide-something");
+    $(".phone-front").removeClass("hide-something");
+  });
+
   //Product Slides
   $("#product-slide-0-button").click(function() {
     if ($('#product-name').val() == "") {
@@ -350,12 +367,12 @@ $(window).on('load', function() {
       $("#product-slide-0").fadeOut();
       $("#product-slide-1").delay(390).fadeIn();
       $(".progress-bar").css("width", "20%");
-      $("#product-slider-title").val("Body");
+      $("#product-slider-title").text("Body");
     }
   });
 
   $("#product-slide-1-button").click(function() {
-    if ($('#p-display-notch').val() == "" || $('#p-display-aspectratio').val() == "" || $('#p-display-resolution').val() == "" || $('#p-display-type').val() == "" || $('#p-border-size').val() == "" || $('#p-frame-material').val() == "" || $('#p-frame-shape').val() == "" || $('#p-backpanel-material').val() == "") {
+    if ($('#p-display-notch').val() == "" && $('#p-display-aspectratio').val() == "18:9" || $('#p-display-notch').val() == "" && $('#p-display-aspectratio').val() == "" || $('#p-display-aspectratio').val() == "" || $('#p-display-resolution').val() == "" || $('#p-display-type').val() == "" || $('#p-border-size').val() == "" || $('#p-frame-material').val() == "" || $('#p-backpanel-material').val() == "") {
       $('.note-title').text("Missing info");
       $('.note-text').text("You need to fill out every field.");
       $(".out-note").fadeIn();
@@ -368,7 +385,7 @@ $(window).on('load', function() {
   });
 
   $("#product-slide-2-button").click(function() {
-    if ($('#p-homebutton-include').val() == "yes" && $('#p-homebutton-material').val() == "" || $('#p-homebutton-include').val() == "yes" && $('#p-homebutton-shape').val() == "" || $('#p-custombutton-include').val() == "yes" && $('#p-homebutton-material').val() == "" || $('#p-custombutton-include').val() == "yes" && $('#p-custombutton-position').val() == "" || $('#p-homebutton-include').val() == "" || $('#p-custombutton-include').val() == "" || $('#p-lockbutton-material').val() == "" || $('#p-lockbutton-positio').val() == "" || $('#p-volumebutton-material').val() == "" || $('#p-volumebutton-position').val() == "") {
+    if ($('#p-homebutton-include').val() == "yes" && $('#p-homebutton-material').val() == "" || $('#p-homebutton-include').val() == "yes" && $('#p-homebutton-shape').val() == "" || $('#p-custombutton-include').val() == "yes" && $('#p-custombutton-material').val() == "" || $('#p-homebutton-include').val() == "" && $('#p-display-aspectratio').val() == "16:9" || $('#p-custombutton-include').val() == "" || $('#p-lockbutton-material').val() == "" || $('#p-lockbutton-positio').val() == "" || $('#p-volumebutton-material').val() == "" || $('#p-side').val() == "") {
 
       $('.note-title').text("Missing info");
       $('.note-text').text("You need to fill out every field.");
@@ -425,31 +442,31 @@ $(window).on('load', function() {
     $("#product-slide-1").fadeOut();
     $("#product-slide-0").delay(390).fadeIn();
     $(".progress-bar").css("width", "0%");
-    $("#product-slider-title").val("Name");
+    $("#product-slider-title").text("Name");
   });
   $("#product-slide-6-button").click(function() {
     $("#product-slide-2").fadeOut();
     $("#product-slide-1").delay(390).fadeIn();
     $(".progress-bar").css("width", "20%");
-    $("#product-slider-title").val("Body");
+    $("#product-slider-title").text("Body");
   });
   $("#product-slide-7-button").click(function() {
     $("#product-slide-3").fadeOut();
     $("#product-slide-2").delay(390).fadeIn();
     $(".progress-bar").css("width", "40%");
-    $("#product-slider-title").val("Buttons");
+    $("#product-slider-title").text("Buttons");
   });
   $("#product-slide-8-button").click(function() {
     $("#product-slide-4").fadeOut();
     $("#product-slide-3").delay(390).fadeIn();
     $(".progress-bar").css("width", "60%");
-    $("#product-slider-title").val("Connection");
+    $("#product-slider-title").text("Connection");
   });
   $("#product-slide-9-button").click(function() {
     $("#product-slide-5").fadeOut();
     $("#product-slide-4").delay(390).fadeIn();
     $(".progress-bar").css("width", "80%");
-    $("#product-slider-title").val("Camera");
+    $("#product-slider-title").text("Camera");
   });
 
 
@@ -610,6 +627,134 @@ $(window).on('load', function() {
     }
   });
 
+  //Buttons side
+  $('.p-side').on('change', '', function(e) {
+    if ($(this).val() == "right") {
+      $('.product-phone-buttons-left').addClass("hide-something");
+      $('.product-phone-buttons-right').removeClass("hide-something");
+      $('.product-phone-buttons-left-back').addClass("hide-something");
+      $('.product-phone-buttons-right-back').removeClass("hide-something");
+    }
+    else if ($(this).val() == "left") {
+      $('.product-phone-buttons-right').addClass("hide-something");
+      $('.product-phone-buttons-left').removeClass("hide-something");
+      $('.product-phone-buttons-right-back').addClass("hide-something");
+      $('.product-phone-buttons-left-back').removeClass("hide-something");
+    }
+  });
+
+  //Product image
+  var button = "left";
+  var buttonhome = "no";
+  var buttonhomeshape = "square";
+  var buttoncustom = "no";
+  var display = "18:9";
+  var flash = "no";
+  var camera = "vertical";
+  var notch = "yes";
+  $('.p-display-notch').on('change', '', function(e) {
+    if ($(this).val() == "yes") {
+      notch = "yes";
+      if (flash == "no") {
+        $('.product-phone-display').css("background", "url(img/smart/18.9_notch.png) center center no-repeat");
+      } else if (flash == "yes") {
+        $('.product-phone-display').css("background", "url(img/smart/18.9_notch_flash.png) center center no-repeat");
+      }
+    } else if ($(this).val() == "no") {
+      notch = "no";
+      if (flash == "no") {
+        $('.product-phone-display').css("background", "url(img/smart/18.9.png) center center no-repeat");
+      } else if (flash == "yes") {
+        $('.product-phone-display').css("background", "url(img/smart/18.9_flash.png) center center no-repeat");
+      }
+    }
+  });
+
+  $('.p-display-aspectratio').on('change', '', function(e) {
+    if ($(this).val() == "16:9") {
+      display = "16:9";
+      $('.product-phone-homebutton').removeClass("hide-something");
+      if (flash == "no") {
+        $('.product-phone-display').css("background", "url(img/smart/16.9.png) center center no-repeat");
+      } else if (flash == "yes") {
+        $('.product-phone-display').css("background", "url(img/smart/16.9_flash.png) center center no-repeat");
+      }
+    } else if ($(this).val() == "18:9") {
+      display = "18:9";
+      $('.product-phone-homebutton').addClass("hide-something");
+      if (notch == "no") {
+        if (flash == "no") {
+          $('.product-phone-display').css("background", "url(img/smart/18.9.png) center center no-repeat");
+        } else if (flash == "yes") {
+          $('.product-phone-display').css("background", "url(img/smart/18.9_flash.png) center center no-repeat");
+        }
+      } else if (notch == "yes") {
+        if (flash == "no") {
+          $('.product-phone-display').css("background", "url(img/smart/18.9_notch.png) center center no-repeat");
+        } else if (flash == "yes") {
+          $('.product-phone-display').css("background", "url(img/smart/18.9_notch_flash.png) center center no-repeat");
+        }
+      }
+    }
+  });
+
+  $('.p-homebutton-include').on('change', '', function(e) {
+    if ($(this).val() == "yes") {
+      buttonhome = "yes";
+      $('.product-phone-homebutton').removeClass('hide-something');
+    } else if ($(this).val() == "no") {
+      buttonhome = "no";
+      $('.product-phone-homebutton').addClass('hide-something');
+    }
+  });
+
+  $('.p-homebutton-shape').on('change', '', function(e) {
+    if ($(this).val() == "square") {
+      buttonhomeshape = "square";
+      $('.product-phone-homebutton').css("background", "url(img/smart/home_button_square.png) center center no-repeat");
+    } else if ($(this).val() == "circle") {
+      buttonhomeshape = "circle";
+      $('.product-phone-homebutton').css("background", "url(img/smart/home_buttton_circle.png) center center no-repeat");
+    }
+  });
+
+  $('.p-maincamera-layout').on('change', '', function(e) {
+    if ($(this).val() == "vertical") {
+      buttonhomeshape = "vertical";
+      $('.product-phone-camera').css("background", "url(img/smart/camera_vertical.png) center center no-repeat");
+    } else if ($(this).val() == "horizontal") {
+      buttonhomeshape = "horizontal";
+      $('.product-phone-camera').css("background", "url(img/smart/camera_horizontal.png) center center no-repeat");
+    }
+  });
+
+  $('.p-flash-type').on('change', '', function(e) {
+    if ($(this).val() == "both sides") {
+      flash = "yes";
+      if (display == "18:9") {
+        if (notch == "no") {
+          console.log("here");
+          $('.product-phone-display').css("background", "url(img/smart/18.9_flash.png) center center no-repeat");
+        } else if (notch == "yes") {
+          $('.product-phone-display').css("background", "url(img/smart/18.9_notch_flash.png) center center no-repeat");
+        }
+      } else if (display == "16:9") {
+        $('.product-phone-display').css("background", "url(img/smart/16.9_flash.png) center center no-repeat");
+      }
+    } else if ($(this).val() == "only back") {
+      console.log("here2");
+      flash = "no";
+      if (display == "18:9") {
+        if (notch == "no") {
+          $('.product-phone-display').css("background", "url(img/smart/18.9.png) center center no-repeat");
+        } else if (notch == "yes") {
+          $('.product-phone-display').css("background", "url(img/smart/18.9_notch.png) center center no-repeat");
+        }
+      } else if (display == "16:9") {
+        $('.product-phone-display').css("background", "url(img/smart/16.9.png) center center no-repeat");
+      }
+    }
+  });
   //Google
   /* function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
