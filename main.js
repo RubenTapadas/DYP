@@ -634,8 +634,7 @@ $(window).on('load', function() {
       $('.product-phone-buttons-right').removeClass("hide-something");
       $('.product-phone-buttons-left-back').addClass("hide-something");
       $('.product-phone-buttons-right-back').removeClass("hide-something");
-    }
-    else if ($(this).val() == "left") {
+    } else if ($(this).val() == "left") {
       $('.product-phone-buttons-right').addClass("hide-something");
       $('.product-phone-buttons-left').removeClass("hide-something");
       $('.product-phone-buttons-right-back').addClass("hide-something");
@@ -644,59 +643,190 @@ $(window).on('load', function() {
   });
 
   //Product image
-  var button = "left";
-  var buttonhome = "no";
-  var buttonhomeshape = "square";
-  var buttoncustom = "no";
-  var display = "18:9";
-  var flash = "no";
-  var camera = "vertical";
-  var notch = "yes";
-  $('.p-display-notch').on('change', '', function(e) {
-    if ($(this).val() == "yes") {
-      notch = "yes";
-      if (flash == "no") {
-        $('.product-phone-display').css("background", "url(img/smart/18.9_notch.png) center center no-repeat");
-      } else if (flash == "yes") {
-        $('.product-phone-display').css("background", "url(img/smart/18.9_notch_flash.png) center center no-repeat");
-      }
-    } else if ($(this).val() == "no") {
-      notch = "no";
-      if (flash == "no") {
-        $('.product-phone-display').css("background", "url(img/smart/18.9.png) center center no-repeat");
-      } else if (flash == "yes") {
-        $('.product-phone-display').css("background", "url(img/smart/18.9_flash.png) center center no-repeat");
-      }
+  var color_black = "???";
+  var color_white = "Branco.png) center center no-repeat";
+  var color_red = "Vermelho.png) center center no-repeat";
+  var color_yellow = "Amarelo.png) center center no-repeat";
+  var color_blue = "Azul.png) center center no-repeat";
+  var color_orange = "Laranja.png) center center no-repeat";
+  var color_pink = "Rosa.png) center center no-repeat";
+  var color_purple = "Roxo.png) center center no-repeat";
+  var color_green = "Verde.png) center center no-repeat";
+
+  ////Back
+  var back_current_color = "Branco.png) center center no-repeat";
+  var back_current_material = "url(img/Smart-Colors/Back/Plástico/";
+
+  var back_plastic = "url(img/Smart-Colors/Back/Plástico/";
+  var back_aluminium = "url(img/Smart-Colors/Back/Aluminio/";
+  var back_steel = "url(img/Smart-Colors/Back/Steel/";
+  var back_glass = "url(img/Smart-Colors/Back/Vidro/";
+
+
+  $(".backpanel-colors").click(function() {
+    if ($(this).hasClass("color_black")) {
+      back_current_color = color_black;
+    } else if ($(this).hasClass("color_white")) {
+      back_current_color = color_white;
+    } else if ($(this).hasClass("color_red")) {
+      back_current_color = color_red;
+    } else if ($(this).hasClass("color_yellow")) {
+      back_current_color = color_yellow;
+    } else if ($(this).hasClass("color_blue")) {
+      back_current_color = color_blue;
+    } else if ($(this).hasClass("color_orange")) {
+      back_current_color = color_orange;
+    } else if ($(this).hasClass("color_pink")) {
+      back_current_color = color_pink;
+    } else if ($(this).hasClass("color_purple")) {
+      back_current_color = color_purple;
+    } else if ($(this).hasClass("color_green")) {
+      back_current_color = color_green;
     }
+    $('.product-phone-back').css("background", back_current_material + back_current_color);
   });
+
+  $('.p-backpanel-material').on('change', '', function(e) {
+    if ($(this).val() == "plastic") {
+      back_current_material = back_plastic;
+    } else if ($(this).val() == "aluminium") {
+      back_current_material = back_aluminium;
+    } else if ($(this).val() == "stainless steel") {
+      back_current_material = back_steel;
+    } else if ($(this).val() == "glass") {
+      back_current_material = back_glass;
+    }
+    $('.product-phone-back').css("background", back_current_material + back_current_color);
+  });
+
+  ////Screen
+  var screen_current_ratio = "url(img/Smart-Colors/Screen/18.9";
+  var screen_current_notch = "_notch";
+  var screen_current_flash = "/normal/";
+  var screen_current_color = "Branco.png) center center no-repeat";
+
+  var screen_ratio_169 = "url(img/Smart-Colors/Screen/16.9";
+  var screen_ratio_189 = "url(img/Smart-Colors/Screen/18.9";
+
+  var screen_notch_yes = "_notch";
+  var screen_notch_no = "";
+
+  var screen_flash_no = "/normal/";
+  var screen_flash_yes = "/flash/";
 
   $('.p-display-aspectratio').on('change', '', function(e) {
     if ($(this).val() == "16:9") {
-      display = "16:9";
-      $('.product-phone-homebutton').removeClass("hide-something");
-      if (flash == "no") {
-        $('.product-phone-display').css("background", "url(img/smart/16.9.png) center center no-repeat");
-      } else if (flash == "yes") {
-        $('.product-phone-display').css("background", "url(img/smart/16.9_flash.png) center center no-repeat");
-      }
+      $('.hide-button').removeClass('hide-something');
+      screen_current_notch = screen_notch_no;
+      screen_current_ratio = screen_ratio_169;
     } else if ($(this).val() == "18:9") {
-      display = "18:9";
-      $('.product-phone-homebutton').addClass("hide-something");
-      if (notch == "no") {
-        if (flash == "no") {
-          $('.product-phone-display').css("background", "url(img/smart/18.9.png) center center no-repeat");
-        } else if (flash == "yes") {
-          $('.product-phone-display').css("background", "url(img/smart/18.9_flash.png) center center no-repeat");
-        }
-      } else if (notch == "yes") {
-        if (flash == "no") {
-          $('.product-phone-display').css("background", "url(img/smart/18.9_notch.png) center center no-repeat");
-        } else if (flash == "yes") {
-          $('.product-phone-display').css("background", "url(img/smart/18.9_notch_flash.png) center center no-repeat");
-        }
-      }
+      $('.hide-button').addClass('hide-something');
+      $('.product-phone-homebutton').addClass('hide-something');
+      screen_current_ratio = screen_ratio_189;
     }
+    $('.product-phone-display').css("background", screen_current_ratio + screen_current_notch + screen_current_flash + screen_current_color);
   });
+
+  $('.p-display-notch').on('change', '', function(e) {
+    if ($(this).val() == "yes") {
+      screen_current_notch = screen_notch_yes;
+    } else if ($(this).val() == "no") {
+      screen_current_notch = screen_notch_no;
+    }
+    $('.product-phone-display').css("background", screen_current_ratio + screen_current_notch + screen_current_flash + screen_current_color);
+  });
+
+  $(".border-colors").click(function() {
+    if ($(this).hasClass("color_black")) {
+      screen_current_color = color_black;
+    } else if ($(this).hasClass("color_white")) {
+      screen_current_color = color_white;
+    } else if ($(this).hasClass("color_red")) {
+      screen_current_color = color_red;
+    } else if ($(this).hasClass("color_yellow")) {
+      screen_current_color = color_yellow;
+    } else if ($(this).hasClass("color_blue")) {
+      screen_current_color = color_blue;
+    } else if ($(this).hasClass("color_orange")) {
+      screen_current_color = color_orange;
+    } else if ($(this).hasClass("color_pink")) {
+      screen_current_color = color_pink;
+    } else if ($(this).hasClass("color_purple")) {
+      screen_current_color = color_purple;
+    } else if ($(this).hasClass("color_green")) {
+      screen_current_color = color_green;
+    }
+    $('.product-phone-display').css("background", screen_current_ratio + screen_current_notch + screen_current_flash + screen_current_color);
+  });
+
+$('.p-flash-type').on('change', '', function(e) {
+if ($(this).val() == "both sides") {
+  screen_current_flash = screen_flash_yes;
+  $('.product-phone-display').css("background", screen_current_ratio + screen_current_notch + screen_current_flash + screen_current_color);
+}
+else if ($(this).val() == "only back") {
+  screen_current_flash = screen_flash_no;
+  $('.product-phone-display').css("background", screen_current_ratio + screen_current_notch + screen_current_flash + screen_current_color);
+}
+  });
+
+
+  ////Frame
+  var frame_current_color = "Branco.png) center center no-repeat";
+  var frame_current_material = "url(img/Smart-Colors/Frame/Plástico/";
+
+  var frame_plastic = "url(img/Smart-Colors/Frame/Plástico/";
+  var frame_aluminium = "url(img/Smart-Colors/Frame/Aluminio/";
+  var frame_steel = "url(img/Smart-Colors/Frame/Steel/";
+
+  $(".frame-colors").click(function() {
+    if ($(this).hasClass("color_black")) {
+      frame_current_color = color_black;
+    } else if ($(this).hasClass("color_white")) {
+      frame_current_color = color_white;
+    } else if ($(this).hasClass("color_red")) {
+      frame_current_color = color_red;
+    } else if ($(this).hasClass("color_yellow")) {
+      frame_current_color = color_yellow;
+    } else if ($(this).hasClass("color_blue")) {
+      frame_current_color = color_blue;
+    } else if ($(this).hasClass("color_orange")) {
+      frame_current_color = color_orange;
+    } else if ($(this).hasClass("color_pink")) {
+      frame_current_color = color_pink;
+    } else if ($(this).hasClass("color_purple")) {
+      frame_current_color = color_purple;
+    } else if ($(this).hasClass("color_green")) {
+      frame_current_color = color_green;
+    }
+    $('.product-phone-frame').css("background", frame_current_material + frame_current_color);
+    $('.product-phone-frame-back').css("background", frame_current_material + frame_current_color);
+  });
+
+  $('.p-frame-material').on('change', '', function(e) {
+    if ($(this).val() == "plastic") {
+      $(".product-phone-frame").css("margin-left", "2.5px");
+      $(".product-phone-frame-back").css("margin-left", "0px");
+      frame_current_material = frame_plastic;
+    } else if ($(this).val() == "aluminium") {
+      $(".product-phone-frame").css("margin-left", "-11.5px");
+      $(".product-phone-frame-back").css("margin-left", "-14px");
+      frame_current_material = frame_aluminium;
+    } else if ($(this).val() == "stainless steel") {
+      $(".product-phone-frame").css("margin-left", "2.5px");
+      $(".product-phone-frame-back").css("margin-left", "0px");
+      frame_current_material = frame_steel;
+    }
+    $('.product-phone-frame').css("background", frame_current_material + frame_current_color);
+    $('.product-phone-frame-back').css("background", frame_current_material + frame_current_color);
+  });
+
+
+
+  ////Home Button
+  var buttonhome = "no";
+  var buttonhomeshape = "square";
+  var buttoncustom = "no";
 
   $('.p-homebutton-include').on('change', '', function(e) {
     if ($(this).val() == "yes") {
@@ -718,6 +848,9 @@ $(window).on('load', function() {
     }
   });
 
+  ////Camera
+  var camera = "vertical";
+
   $('.p-maincamera-layout').on('change', '', function(e) {
     if ($(this).val() == "vertical") {
       buttonhomeshape = "vertical";
@@ -727,34 +860,55 @@ $(window).on('load', function() {
       $('.product-phone-camera').css("background", "url(img/smart/camera_horizontal.png) center center no-repeat");
     }
   });
+  //Product Material
+  //var back_material = "plastic";
+  //var back_color = "black";
 
-  $('.p-flash-type').on('change', '', function(e) {
-    if ($(this).val() == "both sides") {
-      flash = "yes";
-      if (display == "18:9") {
-        if (notch == "no") {
-          console.log("here");
-          $('.product-phone-display').css("background", "url(img/smart/18.9_flash.png) center center no-repeat");
-        } else if (notch == "yes") {
-          $('.product-phone-display').css("background", "url(img/smart/18.9_notch_flash.png) center center no-repeat");
-        }
-      } else if (display == "16:9") {
-        $('.product-phone-display').css("background", "url(img/smart/16.9_flash.png) center center no-repeat");
-      }
-    } else if ($(this).val() == "only back") {
-      console.log("here2");
-      flash = "no";
-      if (display == "18:9") {
-        if (notch == "no") {
-          $('.product-phone-display').css("background", "url(img/smart/18.9.png) center center no-repeat");
-        } else if (notch == "yes") {
-          $('.product-phone-display').css("background", "url(img/smart/18.9_notch.png) center center no-repeat");
-        }
-      } else if (display == "16:9") {
-        $('.product-phone-display').css("background", "url(img/smart/16.9.png) center center no-repeat");
-      }
-    }
-  });
+  // $('.p-backpanel-material').on('change', '', function(e) {
+  //   if ($(this).val() == "plastic") {
+  //     back_material = plastic;
+  //     if (back_color == "white") {
+  //       $('.product-phone-back').css("background", "url(img/Smart-Colors/Plástico/Branco.png) center center no-repeat");
+  //     } else if (back_color == "yellow") {
+  //       $('.product-phone-back').css("background", "url(img/Smart-Colors/Plástico/Amarelo.png) center center no-repeat");
+  //     } else if (back_color == "blue") {
+  //       $('.product-phone-back').css("background", "url(img/Smart-Colors/Plástico/Azul.png) center center no-repeat");
+  //     } else if (back_color == "orange") {
+  //       $('.product-phone-back').css("background", "url(img/Smart-Colors/Plástico/Laranja.png) center center no-repeat");
+  //     } else if (back_color == "pink") {
+  //       $('.product-phone-back').css("background", "url(img/Smart-Colors/Plástico/Rosa.png) center center no-repeat");
+  //     } else if (back_color == "purple") {
+  //       $('.product-phone-back').css("background", "url(img/Smart-Colors/Plástico/Roxo.png) center center no-repeat");
+  //     } else if (back_color == "green") {
+  //       $('.product-phone-back').css("background", "url(img/Smart-Colors/Plástico/Verde.png) center center no-repeat");
+  //     } else if (back_color == "red") {
+  //       $('.product-phone-back').css("background", "url(img/Smart-Colors/Plástico/Vermelho.png) center center no-repeat");
+  //     }
+  //   } else if ($(this).val() == "aluminium") {
+  //     back_material = "plastic";
+  //     if (back_color == "white") {
+  //       $('.product-phone-back').css("background", "url(img/Smart-Colors/Plástico/Branco.png) center center no-repeat");
+  //     } else if (back_color == "yellow") {
+  //       $('.product-phone-back').css("background", "url(img/Smart-Colors/Plástico/Amarelo.png) center center no-repeat");
+  //     } else if (back_color == "blue") {
+  //       $('.product-phone-back').css("background", "url(img/Smart-Colors/Plástico/Azul.png) center center no-repeat");
+  //     } else if (back_color == "orange") {
+  //       $('.product-phone-back').css("background", "url(img/Smart-Colors/Plástico/Laranja.png) center center no-repeat");
+  //     } else if (back_color == "pink") {
+  //       $('.product-phone-back').css("background", "url(img/Smart-Colors/Plástico/Rosa.png) center center no-repeat");
+  //     } else if (back_color == "purple") {
+  //       $('.product-phone-back').css("background", "url(img/Smart-Colors/Plástico/Roxo.png) center center no-repeat");
+  //     } else if (back_color == "green") {
+  //       $('.product-phone-back').css("background", "url(img/Smart-Colors/Plástico/Verde.png) center center no-repeat");
+  //     } else if (back_color == "red") {
+  //       $('.product-phone-back').css("background", "url(img/Smart-Colors/Plástico/Vermelho.png) center center no-repeat");
+  //     }
+  //   }
+  // });
+
+
+
+
   //Google
   /* function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();

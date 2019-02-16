@@ -449,6 +449,7 @@ label {
 
 .product-phone-frame {
   background: url(img/smart/frame_jack.png) center center no-repeat;
+  margin-left: 2.5px;
 }
 
 .product-phone-frame-back {

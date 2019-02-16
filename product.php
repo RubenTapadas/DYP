@@ -188,16 +188,28 @@
               <br>
               <h3 class="d-inline-block">Border</h3>
               <div id="border-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
-                <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
-                <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
-                <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
+                <div id="color-black" class="border-colors color_black product-circle active-color-white" style="background-color:#151515"></div>
+                <div id="color-white" class="border-colors color_white product-circle" style="background-color:#ffffff"></div>
+                <div id="color-red" class="border-colors color_red product-circle" style="background-color:#a52b2b"></div>
+                <div id="color-red" class="border-colors color_yellow product-circle" style="background-color:#f1c40f"></div>
+                <div id="color-red" class="border-colors color_blue product-circle" style="background-color:#3498db"></div>
+                <div id="color-red" class="border-colors color_orange product-circle" style="background-color:#e67e22"></div>
+                <div id="color-red" class="border-colors color_pink product-circle" style="background-color:#fd79a8"></div>
+                <div id="color-red" class="border-colors color_purple product-circle" style="background-color:#8e44ad"></div>
+                <div id="color-red" class="border-colors color_green product-circle" style="background-color:#2ecc71"></div>
               </div>
               <br>
               <h3 class="d-inline-block">Frame</h3>
               <div id="frame-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
-                <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
-                <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
-                <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
+                <div id="color-black" class="frame-colors color_black product-circle active-color-white" style="background-color:#151515"></div>
+                <div id="color-white" class="frame-colors color_white product-circle" style="background-color:#ffffff"></div>
+                <div id="color-red" class="frame-colors color_red product-circle" style="background-color:#a52b2b"></div>
+                <div id="color-red" class="frame-colors color_yellow product-circle" style="background-color:#f1c40f"></div>
+                <div id="color-red" class="frame-colors color_blue product-circle" style="background-color:#3498db"></div>
+                <div id="color-red" class="frame-colors color_orange product-circle" style="background-color:#e67e22"></div>
+                <div id="color-red" class="frame-colors color_pink product-circle" style="background-color:#fd79a8"></div>
+                <div id="color-red" class="frame-colors color_purple product-circle" style="background-color:#8e44ad"></div>
+                <div id="color-red" class="frame-colors color_green product-circle" style="background-color:#2ecc71"></div>
               </div>
               <br>
               <div class="form-group product-detail d-inline-block">
@@ -212,9 +224,15 @@
               <br>
               <h3 class="d-inline-block">Back Panel</h3>
               <div id="backpanel-colors" class="d-inline-block" style="height: 30px;margin-left: 5px;">
-                <div id="color-black" class="product-circle active-color-white" style="background-color:#151515"></div>
-                <div id="color-white" class="product-circle" style="background-color:#ffffff"></div>
-                <div id="color-red" class="product-circle" style="background-color:#a52b2b"></div>
+                <div id="color-black" class="backpanel-colors color_black product-circle active-color-white" style="background-color:#151515"></div>
+                <div id="color-white" class="backpanel-colors color_white product-circle" style="background-color:#ffffff"></div>
+                <div id="color-red" class="backpanel-colors color_red product-circle" style="background-color:#a52b2b"></div>
+                <div id="color-red" class="backpanel-colors color_yellow product-circle" style="background-color:#f1c40f"></div>
+                <div id="color-red" class="backpanel-colors color_blue product-circle" style="background-color:#3498db"></div>
+                <div id="color-red" class="backpanel-colors color_orange product-circle" style="background-color:#e67e22"></div>
+                <div id="color-red" class="backpanel-colors color_pink product-circle" style="background-color:#fd79a8"></div>
+                <div id="color-red" class="backpanel-colors color_purple product-circle" style="background-color:#8e44ad"></div>
+                <div id="color-red" class="backpanel-colors color_green product-circle" style="background-color:#2ecc71"></div>
               </div>
               <br>
               <div class="form-group product-detail d-inline-block">
@@ -222,7 +240,7 @@
                   <option value="" selected="selected"></option>
                   <option class="4.99" value="plastic">Plastic</option>
                   <option class="9.99" value="aluminium">Aluminium</option>
-                  <option class="14.99" value="stainless steel">Steinless Steel</option>
+                  <option class="14.99" value="stainless steel">Stainless Steel</option>
                   <option class="14.99" value="glass">Glass</option>
                 </select>
                 <label class="form-control-placeholder" for="edit-streetname">Material</label>
