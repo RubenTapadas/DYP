@@ -156,7 +156,7 @@
     </div>
 
 
-    <footer class="page-footer font-small mt-5 dark-text">
+    <footer class="page-footer font-small mt-5 fixed-bottom dark-text">
       <div class="container text-center text-md-left">
         <div class="row pb-2">
           <div class="col-md-6 mt-md-0 mt-3">
@@ -166,42 +166,36 @@
           </div>
           <hr class="clearfix w-100 d-md-none pb-3">
           <div class="col-md-3 mb-md-0 mb-3">
-            <h5 class="text-uppercase">Links</h5>
+            <h5 class="text-uppercase">Other pages</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="#!">Link 1</a>
+                <a href="faq.php">FAQ</a>
               </li>
               <li>
-                <a href="#!">Link 2</a>
-              </li>
-              <li>
-                <a href="#!">Link 3</a>
-              </li>
-              <li>
-                <a href="#!">Link 4</a>
+                <a href="return.php">Return and Refund Policy</a>
               </li>
             </ul>
           </div>
           <div class="col-md-3 mb-md-0 mb-3">
-            <h5 class="text-uppercase">Links</h5>
+            <h5 class="text-uppercase">Contancs</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="#!">Link 1</a>
+                Phone: <a href="tel:+351278991">(+351) 923 278 991</a>
               </li>
               <li>
-                <a href="#!">Link 2</a>
+                Email: <a href="mailto:dyp.support@gmail.com">dyp.support@gmail.com</a>
               </li>
               <li>
-                <a href="#!">Link 3</a>
+                <span style="vertical-align: top;">Social Media: </span> <a href="https://www.facebook.com/designyourproduct" target="_blank"><span style="font-size:25px;"class="fab fa-facebook-square  "></span></a><span>   </span><a href="https://www.youtube.com/channel/UC9LMTBDElZNmBA9HheL0fIg" target="_blank"><span style="font-size:25px;"class="fab fa-youtube"></span></a>
               </li>
-              <li>
-                <a href="#!">Link 4</a>
+              <li >
+
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="footer-copyright text-center py-2"><span class="responsive-br">© 2019 Copyright:</span>
+      <div class="footer-copyright text-center py-2">© 2019 Copyright:
         <a href="https://www.linkedin.com/in/rubentapadas/" target="_blank"> Ruben Tapadas</a>
         &
         <a href="https://www.linkedin.com/in/hugoolmo/" target="_blank"> Hugo Olmo</a>

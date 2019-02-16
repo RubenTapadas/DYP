@@ -120,147 +120,109 @@
     </nav>
 
     <div class="container">
-      <div class="row pt-5">
-        <div class="col-sm">
-          <div class="part-body shade part-type light pt-3">
-            <div style="height:80px">
-              <h4 class="pt-3">Body</h4>
-            </div>
-            <span class="fas fa-mobile-alt   purchase-icon mt-3" style="height:70px"></span>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="part-buttons shade part-type light pt-3">
-            <div style="height:80px">
-              <h4 class="pt-3">Buttons</h4>
-            </div>
-            <span class="fas fa-mobile  purchase-icon mt-3" style="height:70px"></span>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="part-camera shade part-type light pt-3">
-            <div style="height:80px">
-              <h4 class="pt-3">Camera</h4>
-            </div>
-            <span class="fas fa-video   purchase-icon mt-3" style="height:70px"></span>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="part-connection-components shade part-type light pt-3">
-            <div style="height:80px">
-              <h4>Connection & Components</h4>
-            </div>
-            <span class="fas fa-microchip purchase-icon fa-rotate-90 mt-3" style="height:70px"></span>
-          </div>
-        </div>
-      </div>
+      <h1>Questions</h1>
 
-      <div id="part-pick-body" class="mt-5 part-pick">
-        <div class="row">
-          <div class="part-division">
-            <div class="product-show col-6 pr-0">
-              <div class="shade pl-2 part-item">
-                <input type="text" id="part-id" style="display:none" class="clean float-left" readonly value="Product id">
-                <span class="pl-2">Product</span>
-              </div>
-            </div>
-            <div class="col-2 pl-0 pr-0">
-              <div class="shade pl-2 part-item">
-                <span class="part-price">0.86</span><span class="fas fa-euro-sign part-price-sign">
-              </div>
-            </div>
-            <div class="col-4 pl-0">
-              <div class="shade px-3 part-item-buy">Add to cart</div>
-            </div>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Does DYP have a physical store?
+              </button>
+            </h5>
           </div>
-          <div class="part-division">
-            <div class="product-show col-6 pr-0">
-              <div class="shade pl-2 part-item">
-                <input type="text" id="part-id" style="display:none" class="clean float-left" readonly value="Product id">
-                <span class="pl-2">Product</span>
-              </div>
-            </div>
-            <div class="col-2 pl-0 pr-0">
-              <div class="shade pl-2 part-item">
-                <span class="part-price">0.86</span><span class="fas fa-euro-sign part-price-sign">
-              </div>
-            </div>
-            <div class="col-4 pl-0">
-              <div class="shade px-3 part-item-buy">Add to cart</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="part-pick-buttons" class="mt-5 part-pick">
-        Buttons
-      </div>
-      <div id="part-pick-camera" class="mt-5 part-pick">
-        Camera
-      </div>
-      <div id="part-pick-connectioncomponents" class="mt-5 part-pick">
-        Connection & Components
-      </div>
 
-      <footer class="page-footer font-small mt-5 fixed-bottom dark-text">
-        <div class="container text-center text-md-left">
-          <div class="row pb-2">
-            <div class="col-md-6 mt-md-0 mt-3">
-              <h5 class="text-uppercase">DYP</h5>
-              <span>Design Your Product.</span>
-              <p>Because the best product for you is the one you create.</p>
-            </div>
-            <hr class="clearfix w-100 d-md-none pb-3">
-            <div class="col-md-3 mb-md-0 mb-3">
-              <h5 class="text-uppercase">Links</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!">
-                    <?php echo  $firstname; ?></a>
-                </li>
-                <li>
-                  <a href="#!">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!">Link 4</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-3 mb-md-0 mb-3">
-              <h5 class="text-uppercase">Links</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!">Link 4</a>
-                </li>
-              </ul>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              No, we only have an online presence.
             </div>
           </div>
         </div>
-        <div class="footer-copyright text-center py-2">© 2019 Copyright:
-          <a href="https://www.linkedin.com/in/rubentapadas/" target="_blank"> Ruben Tapadas</a>
-          &
-          <a href="https://www.linkedin.com/in/hugoolmo/" target="_blank"> Hugo Olmo</a>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                My phone is broken what should i do?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              If you know the problem you could buy replacement parts in <a href="parts.php">Buy Parts</a>, but if you dont you can contact us and we can help you (contacts in footer of page).<br>
+              If you need help in replacing the parts we have a <a href="#">Youtube channel</a> with step to step tutorials.
+            </div>
+          </div>
         </div>
-      </footer>
-    </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                I received my phone but it isent working or its broken, what should i do?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              Every DYP phone comes with a 2 year warranty, if in the rare acourency of your phone coming with problems from factory you can check our <a href="#">Return Policy</a>.
+            </div>
+          </div>
+        </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
+
+        <footer class="page-footer font-small mt-5 fixed-bottom dark-text">
+          <div class="container text-center text-md-left">
+            <div class="row pb-2">
+              <div class="col-md-6 mt-md-0 mt-3">
+                <h5 class="text-uppercase">DYP</h5>
+                <span>Design Your Product.</span>
+                <p>Because the best product for you is the one you create.</p>
+              </div>
+              <hr class="clearfix w-100 d-md-none pb-3">
+              <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="text-uppercase">Other pages</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="faq.php">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="return.php">Return and Refund Policy</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="text-uppercase">Contancs</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    Phone: <a href="tel:+351278991">(+351) 923 278 991</a>
+                  </li>
+                  <li>
+                    Email: <a href="mailto:dyp.support@gmail.com">dyp.support@gmail.com</a>
+                  </li>
+                  <li>
+                    <span style="vertical-align: top;">Social Media: </span> <a href="https://www.facebook.com/designyourproduct" target="_blank"><span style="font-size:25px;"class="fab fa-facebook-square  "></span></a><span>   </span><a href="https://www.youtube.com/channel/UC9LMTBDElZNmBA9HheL0fIg" target="_blank"><span style="font-size:25px;"class="fab fa-youtube"></span></a>
+                  </li>
+                  <li >
+
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright text-center py-2">© 2019 Copyright:
+            <a href="https://www.linkedin.com/in/rubentapadas/" target="_blank"> Ruben Tapadas</a>
+            &
+            <a href="https://www.linkedin.com/in/hugoolmo/" target="_blank"> Hugo Olmo</a>
+          </div>
+        </footer>
+      </div>
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="main.js"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
 </body>
 
 </html>
