@@ -458,12 +458,15 @@
 
       <div class="user-profile" id="user3">
         <h1><span class="fas fa-shopping-cart pr-2"></span>Purchases</h1>
-        <form class="p-4 mb-4 shade light pointer form-purchase" id="go-productdetails2">
+        <form class="p-4 mb-4 shade light pointer form-purchase" id="go-productdetails2" style="overflow: hidden; ">
           <div class="slot-purchase">
             <div class="row">
               <div class="col-2" id="purchases-image"></div>
               <div class="col-10">
                 <h3 class="font-weight-bold">Name of the product</h3>
+                <div class="specs-total transition">
+                  hi
+                </div>
                 <div class="specs">
                   <div class="row specs-half align-items-center">
                     <div class="col-4 align-middle purchased-colum">
@@ -523,6 +526,7 @@
                       </div>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
