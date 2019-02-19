@@ -123,11 +123,18 @@
       <div class="slot">Something here</div>
     </div>
 
-    <h2 class="light_text font-weight-bold text-center pt-5">Design Your Product</h2>
     <div class="container pt-0">
-      <div class="row">
-        <div class="col-sm pr-1">
-          <div class="slot">Design your Smartphone</div>
+      <div class="row mt-4">
+        <div class="col-sm pr-1 ">
+          <div class="shade row" style="background-color: #ffffff;width: 100%;margin-left: 0.15rem;cursor: pointer; ">
+
+            <div class="col-sm">
+              <div class="slot-home-1"></div>
+            </div>
+            <div class="col-sm">
+              <div class=""><span class="slot-home-1-text">Design <br>Your <br>Smartphone</span> </div>
+            </div>
+          </div>
         </div>
         <div class="col-sm pl-1">
           <div class="slot">Design your Tablet</div>
@@ -166,9 +173,10 @@
                 Email: <a href="mailto:dyp.support@gmail.com">dyp.support@gmail.com</a>
               </li>
               <li>
-                <span style="vertical-align: top;">Social Media: </span> <a href="https://www.facebook.com/designyourproduct" target="_blank"><span style="font-size:25px;"class="fab fa-facebook-square  "></span></a><span>   </span><a href="https://www.youtube.com/channel/UC9LMTBDElZNmBA9HheL0fIg" target="_blank"><span style="font-size:25px;"class="fab fa-youtube"></span></a>
+                <span style="vertical-align: top;">Social Media: </span> <a href="https://www.facebook.com/designyourproduct" target="_blank"><span style="font-size:25px;" class="fab fa-facebook-square  "></span></a><span> </span><a href="https://www.youtube.com/channel/UC9LMTBDElZNmBA9HheL0fIg"
+                  target="_blank"><span style="font-size:25px;" class="fab fa-youtube"></span></a>
               </li>
-              <li >
+              <li>
 
               </li>
             </ul>

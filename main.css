@@ -110,6 +110,24 @@ body {
   background-image: url(https://picsum.photos/1920/300/?random);
 }
 
+.slot-home-1 {
+  height: 250px;
+  text-align: center;
+  padding-top: 165px;
+  text-shadow: 0 0 10px #555, 0 0 5px #333;
+  background-repeat: no-repeat;
+  background-image: url("img/Smart.gif");
+  background-size: 274%;
+  background-position: center top;
+}
+
+.slot-home-1-text {
+  position: absolute;
+  margin-top: 33px;
+  text-align: center;
+  font-size: 39px;
+}
+
 .out-note, .out-note-pass {
   top: 0;
   left: 0;
@@ -325,8 +343,8 @@ label {
 
 .specs-total {
   height: 186px;
-  background-color:#151515;
-  position:absolute;
+  background-color: #151515;
+  position: absolute;
 }
 
 .specs-half {
@@ -436,19 +454,20 @@ label {
   background-size: cover;
 }
 
-.side-button{
+.side-button {
   text-align: center;
   background-color: #151515;
   color: #ffffff;
   margin: 0px 10px;
-  padding:5px;
-  cursor:pointer;
+  padding: 5px;
+  cursor: pointer;
   border-radius: 0.15rem;
 }
 
 .product-phone-display {
   background: url(img/smart/18.9_notch.png) center center no-repeat;
 }
+
 .product-phone-back {
   background: url(img/smart/back.png) center center no-repeat;
 }
