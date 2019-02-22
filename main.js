@@ -94,6 +94,7 @@ $(window).on('load', function() {
     }
   });
 
+
   //Login
   $("#login").click(function() {
     var login_email = $.trim($('#login-email').val());
@@ -132,6 +133,7 @@ $(window).on('load', function() {
       $(this).addClass("active-color-black");
     }
   });
+
 
 
 
