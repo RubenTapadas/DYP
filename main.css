@@ -783,6 +783,12 @@ form h3 {
   text-decoration: none;
 }
 
+input:focus {outline:none;}
+
+.readyhide-userimage2{
+ display:none
+}
+
 /* Login */
 @media only screen and (max-width: 530px) {
   .responsive-movedown {
@@ -891,5 +897,20 @@ form h3 {
 @media only screen and (max-width: 600px) {
   .carousel-indicators {
     bottom: -10px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .readyhide-homeimage1 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .readyhide-userimage {
+    display: none;
+  }
+  .readyhide-userimage2 {
+    display: inherit;
   }
 }

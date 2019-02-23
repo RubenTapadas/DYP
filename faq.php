@@ -58,49 +58,51 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link user_no" href="login.php">Login/Register</a>
-              <div class="cart-outer-icon" style="cursor:pointer; display:inline-block; margin-top:-1px; margin-left:30px; width:auto;">
-                <span style="font-size:28px; cursor:pointer;" class="fas fa-shopping-cart pt-1"></span>
-              </div>
-              <div class="cart-outer">
-                <div class="cart-info shade transition pl-2">
-                  <div class="cart-product-slot transition">
-                    <input type="hidden" class="cart-quantity-original" value="100.01">
-                    <div class="cart-product-icon"><span class="fas fa-mobile-alt"></span></div><span> </span><span class="cart-product-count">Body</span><span> </span><span class="cart-product-price">100.01</span><span class="fas fa-euro-sign cart-price"></span>
-                    <div class="float-right">
-                      <div class="cart-left d-inline-block"><span class="fas fa-caret-left"></span></div> <span class="cart-quantity">1</span>
-                      <div class="cart-right d-inline-block"><span class="fas fa-caret-right"></span></div>
-                      <div class="cart-close d-inline-block"><span class="ml-3 fas fa-times"></span></div>
-                    </div><br />
-                  </div>
-                  <div class="cart-product-slot transition">
-                    <input type="hidden" class="cart-quantity-original" value="0.41">
-                    <div class="cart-product-icon"><span class="fas fa-microchip fa-rotate-90"></span></div><span> </span><span class="cart-product-count">Component</span><span> </span><span class="cart-product-price">0.82</span><span class="fas fa-euro-sign cart-price"></span>
-                    <div class="float-right">
-                      <div class="cart-left d-inline-block"><span class="fas fa-caret-left"></span></div> <span class="cart-quantity">2</span>
-                      <div class="cart-right d-inline-block"><span class="fas fa-caret-right"></span></div>
-                      <div class="cart-close d-inline-block"><span class="ml-3 fas fa-times"></span></div>
-                    </div><br />
-                  </div>
-                  <div class="cart-total-outer">
-                    <span class="mt-2">Total: </span><span id="cart-total">No items</span><span class="fas fa-euro-sign cart-price show-sign-euro"></span><a class="a-clean" href="purchase.php">Purchase</a>
-                  </div>
-                </div>
-              </div>
+
               <div class="user_yes">
                 <a class="float-left" href="user.php">
                   <div class="user-mini float-left" style="background-image: url(img/profiles/<?php echo  $image; ?>);"></div>
                 </a>
                 <a class="nav-link float-left ml-3" href="user.php">
-                  <?php echo  $firstname; ?>
-                  <?php echo  $lastname; ?></a>
+                  <?php echo  $firstname; ?></a>
                 <a class="nav-link float-left logout ml-1" href="login.php">(logout)</a>
 
               </div>
             </li>
           </ul>
         </div>
-        <div class="mx-auto order-0">
-          <a class="navbar-brand mx-auto" href="home.php"><img src="img/logo.svg" alt="DYP logo" /></a>
+        <div class="mx-auto order-0 ">
+          <div class="user_yes mt-0">
+            <div class="cart-outer-icon" style="cursor:pointer; display:inline-block; margin-top:-1px; margin-left:30px; width:auto;">
+              <span style="font-size:28px; cursor:pointer;" class="fas fa-shopping-cart pt-1"></span>
+            </div>
+            <div class="cart-outer" style="margin-top:42px;">
+              <div class="cart-info shade transition pl-2">
+                <div class="cart-product-slot transition">
+                  <input type="hidden" class="cart-quantity-original" value="100.01">
+                  <div class="cart-product-icon"><span class="fas fa-mobile-alt"></span></div><span> </span><span class="cart-product-count">Body</span><span> </span><span class="cart-product-price">100.01</span><span class="fas fa-euro-sign cart-price"></span>
+                  <div class="float-right">
+                    <div class="cart-left d-inline-block"><span class="fas fa-caret-left"></span></div> <span class="cart-quantity">1</span>
+                    <div class="cart-right d-inline-block"><span class="fas fa-caret-right"></span></div>
+                    <div class="cart-close d-inline-block"><span class="ml-3 fas fa-times"></span></div>
+                  </div><br />
+                </div>
+                <div class="cart-product-slot transition">
+                  <input type="hidden" class="cart-quantity-original" value="0.41">
+                  <div class="cart-product-icon"><span class="fas fa-microchip fa-rotate-90"></span></div><span> </span><span class="cart-product-count">Component</span><span> </span><span class="cart-product-price">0.82</span><span class="fas fa-euro-sign cart-price"></span>
+                  <div class="float-right">
+                    <div class="cart-left d-inline-block"><span class="fas fa-caret-left"></span></div> <span class="cart-quantity">2</span>
+                    <div class="cart-right d-inline-block"><span class="fas fa-caret-right"></span></div>
+                    <div class="cart-close d-inline-block"><span class="ml-3 fas fa-times"></span></div>
+                  </div><br />
+                </div>
+                <div class="cart-total-outer">
+                  <span class="mt-2">Total: </span><span id="cart-total">No items</span><span class="fas fa-euro-sign cart-price show-sign-euro"></span><a class="a-clean" href="purchase.php">Purchase</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="navbar-brand mx-auto d-inline-block" href="home.php"><img src="img/logo.svg" alt="DYP logo" /></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
             <span class="navbar-toggler-icon"></span>
           </button>

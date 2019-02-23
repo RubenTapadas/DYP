@@ -250,26 +250,6 @@ $(window).on('load', function() {
   });
 
   //Product Cost
-  function animate_count($el, duration, prefix, postfix, is_decimal) {
-    prefix = prefix || '';
-    postfix = postfix || '';
-    is_decimal = is_decimal || false;
-
-    var text = $el.text().replace(/[^0-9]/g, '')
-
-    jQuery({
-      counter: 0
-    }).animate({
-      counter: parseInt(text)
-    }, {
-      duration: 1250,
-      easing: 'swing',
-      step: function() {
-        text = is_decimal ? Math.ceil(this.counter) / 100 : Math.ceil(this.counter);
-        $el.text(prefix + text + postfix);
-      }
-    });
-  }
   var display_notch = 0;
   var display_size = 0;
   var display_aspectratio = 0;
@@ -645,7 +625,7 @@ $(window).on('load', function() {
   });
 
   //Product image
-  var color_black = "???";
+  var color_black = "Preto.png) center center no-repeat";
   var color_white = "Branco.png) center center no-repeat";
   var color_red = "Vermelho.png) center center no-repeat";
   var color_yellow = "Amarelo.png) center center no-repeat";
@@ -761,15 +741,14 @@ $(window).on('load', function() {
     $('.product-phone-display').css("background", screen_current_ratio + screen_current_notch + screen_current_flash + screen_current_color);
   });
 
-$('.p-flash-type').on('change', '', function(e) {
-if ($(this).val() == "both sides") {
-  screen_current_flash = screen_flash_yes;
-  $('.product-phone-display').css("background", screen_current_ratio + screen_current_notch + screen_current_flash + screen_current_color);
-}
-else if ($(this).val() == "only back") {
-  screen_current_flash = screen_flash_no;
-  $('.product-phone-display').css("background", screen_current_ratio + screen_current_notch + screen_current_flash + screen_current_color);
-}
+  $('.p-flash-type').on('change', '', function(e) {
+    if ($(this).val() == "both sides") {
+      screen_current_flash = screen_flash_yes;
+      $('.product-phone-display').css("background", screen_current_ratio + screen_current_notch + screen_current_flash + screen_current_color);
+    } else if ($(this).val() == "only back") {
+      screen_current_flash = screen_flash_no;
+      $('.product-phone-display').css("background", screen_current_ratio + screen_current_notch + screen_current_flash + screen_current_color);
+    }
   });
 
 
@@ -862,6 +841,14 @@ else if ($(this).val() == "only back") {
       $('.product-phone-camera').css("background", "url(img/smart/camera_horizontal.png) center center no-repeat");
     }
   });
+
+  //Pick image
+  $('input[type="file"]').change(function(e) {
+    var fileName = e.target.files[0].name;
+    $('.user-image').css("background-image", "url(img/profiles/" + fileName + ")");
+    console.log(fileName);
+  });
+
   //Product Material
   //var back_material = "plastic";
   //var back_color = "black";

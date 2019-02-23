@@ -65,20 +65,51 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link user_no" href="login.php">Login/Register</a>
-              <div class="user_yes active">
+
+              <div class="user_yes">
                 <a class="float-left" href="user.php">
                   <div class="user-mini float-left" style="background-image: url(img/profiles/<?php echo  $image; ?>);"></div>
                 </a>
                 <a class="nav-link float-left ml-3" href="user.php">
-                  <?php echo  $firstname; ?>
-                  <?php echo  $lastname; ?></a>
+                  <?php echo  $firstname; ?></a>
                 <a class="nav-link float-left logout ml-1" href="login.php">(logout)</a>
+
               </div>
             </li>
           </ul>
         </div>
-        <div class="mx-auto order-0">
-          <a class="navbar-brand mx-auto" href="home.php"><img src="img/logo.svg" alt="DYP logo" /></a>
+        <div class="mx-auto order-0 ">
+          <div class="user_yes mt-0">
+            <div class="cart-outer-icon" style="cursor:pointer; display:inline-block; margin-top:-1px; margin-left:30px; width:auto;">
+              <span style="font-size:28px; cursor:pointer;" class="fas fa-shopping-cart pt-1"></span>
+            </div>
+            <div class="cart-outer" style="margin-top:42px;">
+              <div class="cart-info shade transition pl-2">
+                <div class="cart-product-slot transition">
+                  <input type="hidden" class="cart-quantity-original" value="100.01">
+                  <div class="cart-product-icon"><span class="fas fa-mobile-alt"></span></div><span> </span><span class="cart-product-count">Body</span><span> </span><span class="cart-product-price">100.01</span><span class="fas fa-euro-sign cart-price"></span>
+                  <div class="float-right">
+                    <div class="cart-left d-inline-block"><span class="fas fa-caret-left"></span></div> <span class="cart-quantity">1</span>
+                    <div class="cart-right d-inline-block"><span class="fas fa-caret-right"></span></div>
+                    <div class="cart-close d-inline-block"><span class="ml-3 fas fa-times"></span></div>
+                  </div><br />
+                </div>
+                <div class="cart-product-slot transition">
+                  <input type="hidden" class="cart-quantity-original" value="0.41">
+                  <div class="cart-product-icon"><span class="fas fa-microchip fa-rotate-90"></span></div><span> </span><span class="cart-product-count">Component</span><span> </span><span class="cart-product-price">0.82</span><span class="fas fa-euro-sign cart-price"></span>
+                  <div class="float-right">
+                    <div class="cart-left d-inline-block"><span class="fas fa-caret-left"></span></div> <span class="cart-quantity">2</span>
+                    <div class="cart-right d-inline-block"><span class="fas fa-caret-right"></span></div>
+                    <div class="cart-close d-inline-block"><span class="ml-3 fas fa-times"></span></div>
+                  </div><br />
+                </div>
+                <div class="cart-total-outer">
+                  <span class="mt-2">Total: </span><span id="cart-total">No items</span><span class="fas fa-euro-sign cart-price show-sign-euro"></span><a class="a-clean" href="purchase.php">Purchase</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="navbar-brand mx-auto d-inline-block" href="home.php"><img src="img/logo.svg" alt="DYP logo" /></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -115,7 +146,7 @@
           <li class="nav-item" id="option2">
             <a class="nav-link" href="#"><span class="fas fa-map-marker-alt pr-1"></span>Address</a>
           </li>
-          <li class="nav-item" id="option3">
+          <li class="nav-item" id="option3" style="display:none">
             <a class="nav-link" href="#"><span class="fas fa-shopping-cart pr-1"></span>Purchases</a>
           </li>
         </ul>
@@ -126,7 +157,7 @@
       <div class="user-profile" id="user1">
         <h1><span class="fas fa-user pr-2"></span>Profile</h1>
         <div class="form-row">
-          <div class="col-9" style="padding-right: 15px;">
+          <div class="col-sm" style="padding-right: 15px;">
             <form class="p-4 pt-5 shade light">
               <div class="form-row">
                 <div class="col">
@@ -153,21 +184,35 @@
               <button type="submit" id="edit1" class="btn btn-primary">Save</button>
             </form>
           </div>
-          <div class="col-3" style="padding-left: 15px;">
+          <div class="col-3 readyhide-userimage" style="padding-left: 15px;">
             <h4><b>Profile image</b></h4>
             <form class="shade light p-4">
               <div class="form-row" style=" margin: 0 auto;width:170px;">
-                <div class="user-image d-inline-block position-absolute" style="width:170px; height:170px; z-index:10; background-image: url(img/profiles/<?php echo  $image; ?>);"></div>
+                <div class="user-image d-inline-block position-absolute" style="pointer-events:none;width:170px; height:170px; z-index:10; background-image: url(img/profiles/<?php echo  $image; ?>);"></div>
               </div>
               <div class="form-row">
-                <div class="col">
-                  <button type="submit" id="editphoto" class="btn btn-primary" style="margin-top: 198px; width:100%">Change image</button>
+                <div class="col mx-4">
+                  <input type="file" id="editphoto" class="btn btn-primary" style="overflow:hidden; width:100%;height: 170px;border-radius: 0.20rem"></input>
                 </div>
               </div>
             </form>
           </div>
         </div>
+        <div class="readyhide-userimage2" style="width: 220px;margin: 0 auto;">
+          <h4><b>Profile image</b></h4>
+          <form class="shade light p-4">
+            <div class="form-row" style=" margin: 0 auto;width:170px;">
+              <div class="user-image d-inline-block position-absolute" style="pointer-events:none;width:170px; height:170px; z-index:10; background-image: url(img/profiles/<?php echo  $image; ?>);"></div>
+            </div>
+            <div class="form-row">
+              <div class="col mx-4">
+                <input type="file" id="editphoto" class="btn btn-primary" style="overflow:hidden; width:100%;height: 170px;border-radius: 0.20rem"></input>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
+
 
       <div class="user-profile" id="user2">
         <h1><span class="fas fa-map-marker-alt pr-2"></span>Address</h1>
@@ -456,7 +501,7 @@
         </form>
       </div>
 
-      <div class="user-profile" id="user3">
+      <div class="user-profile" id="user3" >
         <h1><span class="fas fa-shopping-cart pr-2"></span>Purchases</h1>
         <form class="p-4 mb-4 shade light pointer form-purchase" id="go-productdetails2" style="overflow: hidden; ">
           <div class="slot-purchase">

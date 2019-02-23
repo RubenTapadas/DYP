@@ -64,8 +64,7 @@
                   <div class="user-mini float-left" style="background-image: url(img/profiles/<?php echo  $image; ?>);"></div>
                 </a>
                 <a class="nav-link float-left ml-3" href="user.php">
-                  <?php echo  $firstname; ?>
-                  <?php echo  $lastname; ?></a>
+                  <?php echo  $firstname; ?></a>
                 <a class="nav-link float-left logout ml-1" href="login.php">(logout)</a>
 
               </div>
